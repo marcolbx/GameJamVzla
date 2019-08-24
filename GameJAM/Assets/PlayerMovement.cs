@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float transitionTimer=0.2f;
     [SerializeField]
     private float walkingSpeed=1f;
-    public float horizontal;
+    public float horizontal=1;
     // Start is called before the first frame update
     void Start()
     {
