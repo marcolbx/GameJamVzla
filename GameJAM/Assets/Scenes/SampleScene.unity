@@ -203,6 +203,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1719985121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7861759870278703950, guid: 011da3ceda0a70f449a11f0c60d24a43,
+    type: 3}
+  m_PrefabInstance: {fileID: 7861759870862178302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1719985122
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719985121}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe4e8df12a45dec49805b3c6defe566f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7861759870862178302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -269,6 +294,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861759869490752730, guid: 011da3ceda0a70f449a11f0c60d24a43,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 18242ba834050024697a10ea9a3c3e33, type: 2}
+    - target: {fileID: 7861759869152066332, guid: 011da3ceda0a70f449a11f0c60d24a43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861759869152066333, guid: 011da3ceda0a70f449a11f0c60d24a43,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861759869152066333, guid: 011da3ceda0a70f449a11f0c60d24a43,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861759869152066333, guid: 011da3ceda0a70f449a11f0c60d24a43,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861759869152066333, guid: 011da3ceda0a70f449a11f0c60d24a43,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 011da3ceda0a70f449a11f0c60d24a43, type: 3}
