@@ -43,16 +43,15 @@ public class StatusController : MonoBehaviour
         if(onHazard == true){
             if(hearths>0 && invulnerability == false){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
-                float dot = Vector2.Dot(transform.right.normalized,col.gameObject.transform.right);
-                Debug.Log(dot);
+                float dot = Vector2.Dot(transform.right,col.gameObject.transform.right);
                 if(dot < -0.998){
-                    rb.AddForce(new Vector3(transform.position.x+ knockbackforcex ,transform.position.y,transform.position.z));
+                    rb.AddForce(new Vector3(knockbackforcex ,0,0));
                     rb.velocity = Vector2.up * knockbackforcey;
                     Debug.Log("izquierda");
                 }
                 else
                 {
-                    rb.AddForce(new Vector3(transform.position.x- knockbackforcex,transform.position.y,transform.position.z));
+                    rb.AddForce(new Vector3(-knockbackforcex,0,0));
                     rb.velocity = Vector2.up * knockbackforcey;
                     Debug.Log("derecha");
                 }

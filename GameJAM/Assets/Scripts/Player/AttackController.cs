@@ -22,7 +22,7 @@ public class AttackController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         movementController = GetComponent<PlayerMovement>();
     }
 
@@ -31,32 +31,31 @@ public class AttackController : MonoBehaviour
     {
         if (timeBtwAttackCounter<=0){
             if(Input.GetKey(KeyCode.Space)){
-                animator.SetBool("Attack",true);
+                //animator.SetBool("Attack",true);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,enemyLayer);
                 Collider2D interactable = Physics2D.OverlapBox(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,interactableLayer);
-                if(animator.GetBool("Sword")==true)
-                {
+                //if(animator.GetBool("Sword")==true)
+                //{
                     if(enemiesToDamage.Length>0){
                         for (int i=0; i < enemiesToDamage.Length; i++){
                             //enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
                             Rigidbody2D rb = enemiesToDamage[i].gameObject.GetComponent<Rigidbody2D>(); 
                             Transform tf = enemiesToDamage[i].gameObject.GetComponent<Transform>();
                             if(movementController.horizontal == 1){
-                                rb.AddForce(new Vector3(tf.position.x+ knockbackEnemyForcex ,0,0));
+                                rb.AddForce(new Vector3(tf.position.x* -knockbackEnemyForcex ,0,0));
                                 rb.velocity = Vector2.up * knockbackEnemyForcey;
                             }
                             else if(movementController.horizontal == -1){
-                                rb.AddForce(new Vector3(tf.position.x- knockbackEnemyForcex,0,0));
+                                rb.AddForce(new Vector3(tf.position.x* knockbackEnemyForcex,0,0));
                                 rb.velocity = Vector2.up * knockbackEnemyForcey;
                             }
                         }
                     }
-                }
-                else if(animator.GetBool("Book")==true){
-                    Shoot();
-                }
+                //}
+                //else if(animator.GetBool("Book")==true){
+                    //Shoot();
+                //}
                 if (interactable != null){
-                    Debug.Log("Consegui palanca");
                     interactable.GetComponent<LiftSystemLever>().ActiveLever();
                 }
                 timeBtwAttackCounter=timeBtwAttack;  
@@ -65,7 +64,7 @@ public class AttackController : MonoBehaviour
         }
         else{
             timeBtwAttackCounter -= Time.deltaTime;
-            animator.SetBool("Attack",false);
+            //animator.SetBool("Attack",false);
         } 
     }
 
