@@ -38,15 +38,14 @@ public class AttackController : MonoBehaviour
                 //{
                     if(enemiesToDamage.Length>0){
                         for (int i=0; i < enemiesToDamage.Length; i++){
-                            //enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                            enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
                             Rigidbody2D rb = enemiesToDamage[i].gameObject.GetComponent<Rigidbody2D>(); 
-                            Transform tf = enemiesToDamage[i].gameObject.GetComponent<Transform>();
                             if(movementController.horizontal == 1){
-                                rb.AddForce(new Vector3(tf.position.x* -knockbackEnemyForcex ,0,0));
+                                rb.AddForce(new Vector3(knockbackEnemyForcex ,0,0));
                                 rb.velocity = Vector2.up * knockbackEnemyForcey;
                             }
                             else if(movementController.horizontal == -1){
-                                rb.AddForce(new Vector3(tf.position.x* knockbackEnemyForcex,0,0));
+                                rb.AddForce(new Vector3(-knockbackEnemyForcex,0,0));
                                 rb.velocity = Vector2.up * knockbackEnemyForcey;
                             }
                         }
