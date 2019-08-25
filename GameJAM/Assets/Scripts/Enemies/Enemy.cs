@@ -40,7 +40,7 @@ public abstract class Enemy : MonoBehaviour
             hurtTimer =0.5f; //Recordardcambiar arriba
         }
 
-        if(hurt == true && hurtTimer >0)
+        if(hurt == true && hurtTimer > 0)
         {
             hurtTimer -= Time.deltaTime;
         }
@@ -51,7 +51,7 @@ public abstract class Enemy : MonoBehaviour
     {
         Debug.Log("Recibio " + damage +" de dano");
         this.health -= damage;
-        hurt = true;
+        Hurt();
     }
 
     public virtual void PlayerLocation()
@@ -68,7 +68,7 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void Hurt()
     {
-        for (int i = 0; i <=hurtSprites.Length; i++)
+        for (int i = 0; i <hurtSprites.Length; i++)
         {
             renderers[i].sprite = hurtSprites[i];
         }
@@ -77,7 +77,7 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void ReturnNormalSprites()
     {
-        for (int i = 0; i <=normalSprites.Length; i++)
+        for (int i = 0; i <normalSprites.Length; i++)
         {
             renderers[i].sprite = normalSprites[i];
         }
