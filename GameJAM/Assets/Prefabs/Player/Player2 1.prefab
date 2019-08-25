@@ -321,7 +321,7 @@ MonoBehaviour:
   firePoint: {fileID: 8110163874335420113}
   fireBolt: {fileID: 199006851677143056, guid: 20817bd5302182143bbfb22940e66699, type: 3}
   knockbackEnemyForcex: 100
-  knockbackEnemyForcey: 10
+  knockbackEnemyForcey: 5
   timeBtwAttack: 0.5
   timeBtwAttackCounter: 0
   attackPos: {fileID: 7838002067366899396}

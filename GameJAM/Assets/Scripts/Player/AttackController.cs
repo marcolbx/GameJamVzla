@@ -73,7 +73,7 @@ public class AttackController : MonoBehaviour
                     //Shoot();
                 //}
                 if (interactable != null){
-                    interactable.GetComponent<LiftSystemLever>().ActiveLever();
+                    interactable.GetComponent<Interactable>().Action();
                 }
                 timeBtwAttackCounter=timeBtwAttack;  
             }
