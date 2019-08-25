@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
+    public float offset;
     public Transform firePoint;
     public GameObject fireBolt;
     public float knockbackEnemyForcex;
@@ -26,6 +27,23 @@ public class AttackController : MonoBehaviour
         movementController = GetComponent<PlayerMovement>();
     }
 
+    private void FixedUpdate() {
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - firePoint.position;
+        float rotZ = Mathf.Atan2(difference.y,difference.x) * Mathf.Rad2Deg;
+        float rot=rotZ + offset;
+        Debug.Log(firePoint.rotation.y);
+        Debug.Log(firePoint.rotation.eulerAngles.y);
+        if(movementController.horizontal>0 && rot<-1 && rot >-170f)
+            firePoint.rotation= Quaternion.Euler(firePoint.rotation.x,firePoint.rotation.y,rot);
+        else if(movementController.horizontal<0 && firePoint.rotation.y==-180 && rot>-20f)
+            firePoint.rotation= Quaternion.Euler(firePoint.rotation.x,firePoint.rotation.y,rot);     
+        else if(movementController.horizontal<0 && firePoint.rotation.y==0 && rot<-230f)
+            firePoint.rotation= Quaternion.Euler(firePoint.rotation.x,firePoint.rotation.y,rot);
+        else
+        {
+            firePoint.rotation= Quaternion.Euler(firePoint.rotation.x,firePoint.rotation.y,rot);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -52,7 +70,7 @@ public class AttackController : MonoBehaviour
                     }
                 //}
                 //else if(animator.GetBool("Book")==true){
-                    //Shoot();
+                    Shoot();
                 //}
                 if (interactable != null){
                     interactable.GetComponent<LiftSystemLever>().ActiveLever();
@@ -74,11 +92,21 @@ public class AttackController : MonoBehaviour
     
     void Shoot(){
         
-       /*  StatusController controller = GetComponent<StatusController>();
+        /* if(rot>90f && movementController.horizontal>0)
+            rot = 90f;
+        if(rot<-90 && movementController.horizontal>0)
+            rot = -90f;*/
+        /* if(rot<90f && movementController.horizontal<0)
+            rot = -90f;
+         if(rot>-90 && movementController.horizontal<0)
+            rot = +90f;
+            */
+        
+        StatusController controller = GetComponent<StatusController>();
         if(controller.stamina>0){
             Instantiate(fireBolt, firePoint.position, firePoint.rotation);
             controller.stamina -= 0.1f;
         }
-        */
+        
     }
 }

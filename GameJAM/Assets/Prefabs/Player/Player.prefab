@@ -257,8 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b88adcca3c0c348b645533229e824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
-  fireBolt: {fileID: 0}
+  firePoint: {fileID: 2661738779302925813}
+  fireBolt: {fileID: 199006851677143056, guid: 20817bd5302182143bbfb22940e66699, type: 3}
   knockbackEnemyForcex: 100
   knockbackEnemyForcey: 10
   timeBtwAttack: 0.5

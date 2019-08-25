@@ -676,6 +676,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2661738779302925813, guid: 57d94b163fdd507448f3d8e6c6d0e4df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.868
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661738779302925813, guid: 57d94b163fdd507448f3d8e6c6d0e4df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.167
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062421640836757143, guid: 57d94b163fdd507448f3d8e6c6d0e4df,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 4087965650689836323, guid: 57d94b163fdd507448f3d8e6c6d0e4df,
         type: 3}
       propertyPath: m_Name
@@ -870,11 +886,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 393245832}
-    - target: {fileID: 6571750165720446842, guid: 4234880955bebf240b6ac9411757dbf4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Stamina
-      objectReference: {fileID: 0}
     - target: {fileID: 6571750167655474533, guid: 4234880955bebf240b6ac9411757dbf4,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -884,6 +895,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571750165720446842, guid: 4234880955bebf240b6ac9411757dbf4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Stamina
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4234880955bebf240b6ac9411757dbf4, type: 3}
