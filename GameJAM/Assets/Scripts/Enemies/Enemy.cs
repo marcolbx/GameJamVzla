@@ -10,6 +10,13 @@ public abstract class Enemy : MonoBehaviour
     public Animator animator;
     protected Transform target;
     public Rigidbody2D rigidbody;
+    public GameObject PS_Explosion;
+    private bool oneTimedead = false;
+    public Sprite[] hurtSprites;
+    public Sprite[] normalSprites;
+    public SpriteRenderer[] renderers;
+    [SerializeField] private float hurtTimer =0.5f;
+    private bool hurt = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +26,32 @@ public abstract class Enemy : MonoBehaviour
     // Update is called once per frame
     virtual protected void Update()
     {
-        if(health <= 0 )
-        Die();
+        if(health <= 0 && oneTimedead == false )
+        {
+            Die();
+            oneTimedead = true;
+        }
+
+        animator.SetFloat("Hp",health);
+
+        if(hurtTimer <= 0)
+        {
+            ReturnNormalSprites();
+            hurtTimer =0.5f; //Recordardcambiar arriba
+        }
+
+        if(hurt == true && hurtTimer >0)
+        {
+            hurtTimer -= Time.deltaTime;
+        }
+        
     }
 
     public virtual void TakeDamage(float damage)
     {
         Debug.Log("Recibio " + damage +" de dano");
         this.health -= damage;
+        hurt = true;
     }
 
     public virtual void PlayerLocation()
@@ -36,6 +61,26 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void Die()
     {
-        Destroy(gameObject);
+        Debug.Log("DIE()");
+        GameObject explosion = Instantiate(PS_Explosion,transform.position,Quaternion.identity);
+        Destroy(gameObject,0.87f); // asi esta bien
+    }
+
+    public virtual void Hurt()
+    {
+        for (int i = 0; i <=hurtSprites.Length; i++)
+        {
+            renderers[i].sprite = hurtSprites[i];
+        }
+        hurt = true;
+    }
+
+    public virtual void ReturnNormalSprites()
+    {
+        for (int i = 0; i <=normalSprites.Length; i++)
+        {
+            renderers[i].sprite = normalSprites[i];
+        }
+        hurt = false;
     }
 }

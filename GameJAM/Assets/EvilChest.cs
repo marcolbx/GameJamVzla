@@ -14,9 +14,9 @@ public class EvilChest : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+    override protected void Update()
     {
-        
+        base.Update();
     }
 
     public void Open()
@@ -28,4 +28,11 @@ public class EvilChest : Enemy
     {
         pursuit = true;
     }
+
+    public void DisableRigidbody()
+    {
+        rigidbody.Sleep();
+        rigidbody.isKinematic = true;
+    }
+
 }
