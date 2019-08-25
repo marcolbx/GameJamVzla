@@ -43,7 +43,8 @@ public class NormalChest : MonoBehaviour
     public void Action()
     {
         animator.SetTrigger("open");
-        InstantiateMoney();
+        burst = true;
+       // InstantiateMoney();
     }
 
     private void InstantiateMoney()
