@@ -9,7 +9,7 @@ TagManager:
   - Waypoint
   - Hp
   - Stamina
-  - Experience
+  - Collectable
   layers:
   - Default
   - TransparentFX
@@ -26,7 +26,7 @@ TagManager:
   - Waypoint
   - Interactable
   - Hp
-  - 
+  - Collectable
   - 
   - 
   - 
