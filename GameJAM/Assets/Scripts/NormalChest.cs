@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalChest : MonoBehaviour
+public class NormalChest : Interactable
 {
     public Animator animator;
     public GameObject coin;
@@ -40,7 +40,7 @@ public class NormalChest : MonoBehaviour
 
     }
 
-    public void Action()
+    public override void Action()
     {
         animator.SetTrigger("open");
         burst = true;
