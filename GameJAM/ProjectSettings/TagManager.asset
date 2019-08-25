@@ -9,6 +9,7 @@ TagManager:
   - Waypoint
   - Hp
   - Stamina
+  - Experience
   layers:
   - Default
   - TransparentFX
