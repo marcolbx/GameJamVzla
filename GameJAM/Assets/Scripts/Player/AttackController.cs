@@ -70,7 +70,7 @@ public class AttackController : MonoBehaviour
                     }
                 //}
                 //else if(animator.GetBool("Book")==true){
-                    Shoot();
+                    //Shoot();
                 //}
                 if (interactable != null){
                     interactable.GetComponent<LiftSystemLever>().ActiveLever();

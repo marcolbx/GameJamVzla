@@ -10,6 +10,7 @@ TagManager:
   - Hp
   - Stamina
   - Collectable
+  - Experience
   layers:
   - Default
   - TransparentFX

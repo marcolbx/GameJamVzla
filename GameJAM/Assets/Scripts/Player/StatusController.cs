@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 public class StatusController : MonoBehaviour
 {
+    private int level=1;
+    public float proportionExp=1f;
+    private float experience=0;
     public float knockbackforcex;
     public GameObject staminaSlider;
+    public GameObject experienceSlider;
     public float stamina=1;
     public float knockbackforcey;
     private Rigidbody2D rb;
@@ -21,6 +25,7 @@ public class StatusController : MonoBehaviour
     public float checkRadius;
     public bool onHazard;
     public bool onHp;
+    private float newExperience=0;
     [SerializeField]private float timer =0;
     [SerializeField] private float flashTime=0.2f;
     public LayerMask hazardLayer;
@@ -33,10 +38,13 @@ public class StatusController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr= GetComponent<MeshRenderer>();
         staminaSlider = GameObject.FindGameObjectWithTag("Stamina");
+        experienceSlider = GameObject.FindGameObjectWithTag("Experience");
     }
     // Update is called once per frame
     void Update()
     {
+        experience = Mathf.Lerp(experience,newExperience,4*Time.deltaTime);
+        experienceSlider.GetComponent<Image>().fillAmount =experience;
         staminaSlider.GetComponent<Slider>().value=stamina;
         onHazard = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
         onHp = Physics2D.OverlapCircle(transform.position,checkRadius*2.5f,hpLayer);
@@ -57,7 +65,6 @@ public class StatusController : MonoBehaviour
                 }
                 hearths--;
                 spriteRendHearth.sprite = spriteHearths[hearths];
-                
                 invulnerability =true;
                 Debug.Log("soy Invulnerable");
             }    
@@ -106,6 +113,17 @@ public class StatusController : MonoBehaviour
             hearths--;
             spriteRendHearth.sprite = spriteHearths[hearths];
             invulnerability =true;
+        }
+    }
+
+    public void ObtainExp(float exp){
+        exp=exp/(level*proportionExp*100);
+        if(newExperience + exp >=1){
+            newExperience = (newExperience+exp)-1;
+            proportionExp -= proportionExp/10;
+        }
+        else{
+            newExperience +=exp;
         }
     }
 }
