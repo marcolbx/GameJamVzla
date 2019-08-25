@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LiftSystemLever : MonoBehaviour
+public class LiftSystemLever : Interactable
 {
     public LiftSystem system;
     // Start is called before the first frame update
@@ -17,8 +17,8 @@ public class LiftSystemLever : MonoBehaviour
         
     }
 
-    public void ActiveLever()
+    public override void Action()
     {
-        system.ChangeLever();
+        system.Action();
     }
 }

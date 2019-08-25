@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LiftSystem : MonoBehaviour
+public class LiftSystem : Interactable
 {
     public Animator[] leverAnimators;
     public Collider2D[] leverColliders;
@@ -40,7 +40,7 @@ public class LiftSystem : MonoBehaviour
        // Debug.Log("currentAction" + currentAction);
     }
 
-    public void ChangeLever()
+    public override void Action()
     {
         if(currentAction == 0 && goDown ==false && goUp == false && startUp==true)
         {
