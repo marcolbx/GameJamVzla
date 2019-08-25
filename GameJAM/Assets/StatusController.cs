@@ -12,7 +12,7 @@ public class StatusController : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     public int hearths;
-    public int intialhearts=6;
+    public int intialhearts=5;
     [SerializeField] private float invulnerableTimeCounter=0;
     public SpriteRenderer spriteRendHearth;
     public Sprite[] spriteHearths;
@@ -68,7 +68,7 @@ public class StatusController : MonoBehaviour
             Destroy(col.gameObject);
             if(hearths<intialhearts){
                 hearths++;
-                spriteRendHearth.sprite = spriteHearths[0];
+                spriteRendHearth.sprite = spriteHearths[hearths];
             }
         }
         if (hearths<=0){
@@ -104,8 +104,8 @@ public class StatusController : MonoBehaviour
         {
             rb.AddForce(new Vector3(transform.position.x- knockbackforcex,transform.position.y,transform.position.z));
             rb.velocity = Vector2.up * knockbackforcey;
-            spriteRendHearth.sprite = spriteHearths[hearths-1];
             hearths--;
+            spriteRendHearth.sprite = spriteHearths[hearths];
             invulnerability =true;
         }
     }
