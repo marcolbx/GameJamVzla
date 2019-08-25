@@ -83,4 +83,11 @@ public abstract class Enemy : MonoBehaviour
         }
         hurt = false;
     }
+
+    public virtual void DisableRigidbody()
+    {
+        rigidbody.Sleep();
+        rigidbody.isKinematic = true;
+    }
+
 }
