@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 44ce3f141391c8e46aa14089b2a14571
+guid: bad05370ee04db149b854444540296eb
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2581655528948528230
-    second: XP_Bottle_0
-  - first:
-      213: 8600676936889275975
-    second: XP_Bottle_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -46,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,49 +96,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: XP_Bottle_0
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 74
-        width: 913
-        height: 931
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00a7bd7d3fe1e0f4e8330b6066b02b2a
-      internalID: -2581655528948528230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: XP_Bottle_1
-      rect:
-        serializedVersion: 2
-        x: 1255
-        y: 124
-        width: 815
-        height: 831
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 630056fe8f182be4d9dd222b17512a3e
-      internalID: 8600676936889275975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
