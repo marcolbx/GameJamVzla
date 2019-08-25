@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 44ce3f141391c8e46aa14089b2a14571
+guid: 54bbc0bfaee917d429ed7d554853f120
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2581655528948528230
-    second: XP_Bottle_0
+      213: -3932351910201261966
+    second: Stamina_Bar_0
   - first:
-      213: 8600676936889275975
-    second: XP_Bottle_1
+      213: -8061900502071969442
+    second: Stamina_Bar_1
+  - first:
+      213: -8507744673076157163
+    second: Stamina_Bar_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,43 +107,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: XP_Bottle_0
+      name: Stamina_Bar_1
       rect:
         serializedVersion: 2
-        x: 218
-        y: 74
-        width: 913
-        height: 931
+        x: 71
+        y: 239
+        width: 939
+        height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a7bd7d3fe1e0f4e8330b6066b02b2a
-      internalID: -2581655528948528230
+      spriteID: 095b43433c0e1d241bd5a81bb17dac54
+      internalID: -8061900502071969442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: XP_Bottle_1
+      name: Stamina_Bar_2
       rect:
         serializedVersion: 2
-        x: 1255
-        y: 124
-        width: 815
-        height: 831
+        x: 108
+        y: 645
+        width: 864
+        height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 630056fe8f182be4d9dd222b17512a3e
-      internalID: 8600676936889275975
+      spriteID: b881c52a62d67e64a9a23991b9642a03
+      internalID: -8507744673076157163
       vertices: []
       indices: 
       edges: []

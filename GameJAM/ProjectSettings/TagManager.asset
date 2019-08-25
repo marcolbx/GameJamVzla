@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Waypoint
   - Hp
+  - Stamina
   layers:
   - Default
   - TransparentFX
@@ -20,10 +21,10 @@ TagManager:
   - Ground
   - Enemy
   - Player
-  - HazzardObject
+  - HazardObject
   - Waypoint
   - Interactable
-  - 
+  - Hp
   - 
   - 
   - 
@@ -45,6 +46,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Bottle
-    uniqueID: 392302363
+  - name: UI
+    uniqueID: 2518595881
     locked: 0
