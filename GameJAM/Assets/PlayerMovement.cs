@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public JumpController jumpController;
     public float wallCheckX;
     public float wallCheckY;
     public Transform wallLeft;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float horizontal=1;
     public bool isWallLeft;
     public bool isWallRight;
+    private bool wasOnWall;
     public LayerMask groundLayer;
     private Rigidbody2D rb;
     private float initialGravity;
@@ -22,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         initialGravity = rb.gravityScale;
+        jumpController = GetComponent<JumpController>();
     }
 
     // Update is called once per frame
@@ -34,10 +37,17 @@ public class PlayerMovement : MonoBehaviour
         }
         if(isWallLeft || isWallRight){
             rb.gravityScale = initialGravity/5;
-            rb.velocity = Vector2.down;
+            if(!jumpController.onGround && jumpController.jumpTimeCounter<jumpController.jumpTime/2)
+                rb.velocity = Vector2.down;
+            wasOnWall = true;
         }
         else{
             rb.gravityScale = initialGravity;
+            if(wasOnWall == true){
+                jumpController.jumping=true;
+                jumpController.jumpTimeCounter=jumpController.jumpTime;
+            }
+            wasOnWall = false;
         }
         if(Input.GetKey(KeyCode.RightArrow) && !isWallRight){
             horizontal=1;
