@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalChest : MonoBehaviour
+public class RotateObject : MonoBehaviour
 {
-    public Animator animator;
+    [SerializeField] private float rotateSpeed = 90f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +14,6 @@ public class NormalChest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void Action()
-    {
-        animator.SetTrigger("open");
+        transform.Rotate(0 ,0 ,rotateSpeed * Time.deltaTime);
     }
 }

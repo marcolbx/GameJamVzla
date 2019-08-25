@@ -39,13 +39,13 @@ public class PurpleEnemy : Enemy
         {
             if(movingRight == true)
             {
-                Debug.Log("Entro en movingRight = true");
+              //  Debug.Log("Entro en movingRight = true");
                 animator.transform.eulerAngles = new Vector3(0,0,0);
                 movingRight = false;
             }
             else
             {
-                Debug.Log("Entro en movingRight = false");
+               // Debug.Log("Entro en movingRight = false");
                 animator.transform.eulerAngles = new Vector3(0,180,0);
                 movingRight = true;
             }
