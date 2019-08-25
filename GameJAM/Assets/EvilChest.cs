@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EvilChest : MonoBehaviour
+public class EvilChest : Enemy
 {
-    public Animator animator;
     private bool pursuit = false;
     private Vector2 targetX; // solo en la X position
     private AudioSource audioSource;
