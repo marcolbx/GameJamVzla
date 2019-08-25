@@ -25,7 +25,7 @@ public class RoomMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /* 
+        
         if(other.CompareTag("Player") && !other.isTrigger && other.gameObject.GetComponent<PlayerMovement>().transitionTimer>=0.2f)
         {
             Debug.Log("TRIGGERED");
@@ -36,6 +36,6 @@ public class RoomMove : MonoBehaviour
             other.transform.position += playerChange;
 
         }
-        */
+        
     }
 }
