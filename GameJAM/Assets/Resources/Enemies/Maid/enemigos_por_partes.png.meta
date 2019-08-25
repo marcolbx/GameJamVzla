@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 91137ea06c3e1a140b733fed4812f665
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -741353289845732199
+    second: enemigos_por_partes_0
+  - first:
+      213: 975543162219210660
+    second: enemigos_por_partes_1
+  - first:
+      213: 3827281015964215332
+    second: enemigos_por_partes_2
+  - first:
+      213: 5212617251186502367
+    second: enemigos_por_partes_3
+  - first:
+      213: -8584638032416973927
+    second: enemigos_por_partes_4
+  - first:
+      213: 3298091131019976449
+    second: enemigos_por_partes_5
+  - first:
+      213: 2937013258005659827
+    second: enemigos_por_partes_6
+  - first:
+      213: 4280206789374058367
+    second: enemigos_por_partes_7
+  - first:
+      213: 3892849586438710811
+    second: enemigos_por_partes_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigos_por_partes_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1333
+        width: 439
+        height: 496
+      alignment: 9
+      pivot: {x: 0.46218288, y: 0.2768572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b214731bbb8cc094ea541dd70ba7d22b
+      internalID: -741353289845732199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1318
+        width: 436
+        height: 518
+      alignment: 9
+      pivot: {x: 0.44922996, y: 0.25962612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3520a1d5a0b7638429b146040d101f9f
+      internalID: 975543162219210660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 663
+        width: 165
+        height: 387
+      alignment: 9
+      pivot: {x: 0.26522675, y: 0.936137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8e1d4674540c046874bc5a6a1c0e79
+      internalID: 3827281015964215332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 559
+        width: 465
+        height: 634
+      alignment: 9
+      pivot: {x: 0.49404967, y: 0.95825195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b7f84c9ccf6b74b885fb7b99f0b2de
+      internalID: 5212617251186502367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_4
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 771
+        width: 144
+        height: 386
+      alignment: 9
+      pivot: {x: 0.15412903, y: 0.93726695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d5ce16b141bcb4ab657d1426547841
+      internalID: -8584638032416973927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 110
+        width: 108
+        height: 340
+      alignment: 9
+      pivot: {x: 0.32065907, y: 0.90690714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b336b4ff5d3ee164bbed880730f7b1aa
+      internalID: 3298091131019976449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 94
+        width: 124
+        height: 325
+      alignment: 9
+      pivot: {x: 0.12065715, y: 0.9512288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188d51a269bbf2c418b0be12757ba148
+      internalID: 2937013258005659827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_7
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 27
+        width: 180
+        height: 401
+      alignment: 9
+      pivot: {x: 0.6537208, y: 0.94161105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2402fc31c79e31458f7743fd997160c
+      internalID: 4280206789374058367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigos_por_partes_8
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 61
+        width: 180
+        height: 400
+      alignment: 9
+      pivot: {x: 0.6690921, y: 0.95655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2a94240d9f6fa44ac84111be4f4434
+      internalID: 3892849586438710811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

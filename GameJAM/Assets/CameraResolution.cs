@@ -16,11 +16,7 @@ public class CameraResolution : MonoBehaviour
         cameraPos = Camera.main.transform.position;
         cameraHeight = Camera.main.orthographicSize;
         cameraWidth = Camera.main.orthographicSize * Camera.main.aspect;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
         if (attachWidth){
             Camera.main.orthographicSize = cameraWidth / Camera.main.aspect;
 
@@ -29,5 +25,20 @@ public class CameraResolution : MonoBehaviour
         else{
             Camera.main.transform.position = new Vector3(adaptPosition*(cameraWidth-Camera.main.orthographicSize*Camera.main.aspect),cameraPos.y,cameraPos.z);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        /* 
+        if (attachWidth){
+            Camera.main.orthographicSize = cameraWidth / Camera.main.aspect;
+
+            Camera.main.transform.position = new Vector3(cameraPos.x,adaptPosition*(cameraHeight-Camera.main.orthographicSize-cameraPos.y),cameraPos.z);
+        }
+        else{
+            Camera.main.transform.position = new Vector3(adaptPosition*(cameraWidth-Camera.main.orthographicSize*Camera.main.aspect),cameraPos.y,cameraPos.z);
+        }
+        */
     }
 }

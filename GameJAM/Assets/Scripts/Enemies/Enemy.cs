@@ -14,9 +14,11 @@ public abstract class Enemy : MonoBehaviour
     private bool oneTimedead = false;
     public Sprite[] hurtSprites;
     public Sprite[] normalSprites;
+    public Sprite[] evilSprites;
     public SpriteRenderer[] renderers;
     [SerializeField] private float hurtTimer =0.5f;
-    private bool hurt = false;
+    protected bool hurt = false;
+    [SerializeField] protected bool isEvil = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -83,6 +85,8 @@ public abstract class Enemy : MonoBehaviour
         }
         hurt = false;
     }
+
+
 
     public virtual void DisableRigidbody()
     {
