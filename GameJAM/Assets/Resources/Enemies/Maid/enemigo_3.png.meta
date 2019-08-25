@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 3abb4f7bbb3eabe44ad3ab3f50f1fb60
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9081833629886335486
+    second: enemigo_3_0
+  - first:
+      213: 8064829697556491969
+    second: enemigo_3_1
+  - first:
+      213: -4117369103520210319
+    second: enemigo_3_2
+  - first:
+      213: -6444288633925016094
+    second: enemigo_3_3
+  - first:
+      213: 6907789092220792507
+    second: enemigo_3_4
+  - first:
+      213: -763240469829180242
+    second: enemigo_3_5
+  - first:
+      213: -6652100932852432157
+    second: enemigo_3_6
+  - first:
+      213: 6244350024876107458
+    second: enemigo_3_7
+  - first:
+      213: -3898599907011313948
+    second: enemigo_3_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigo_3_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1333
+        width: 439
+        height: 496
+      alignment: 9
+      pivot: {x: 0.4495771, y: 0.29917145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb9ee5142cee9044a42fe0d0f7f881d
+      internalID: -9081833629886335486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1318
+        width: 436
+        height: 518
+      alignment: 9
+      pivot: {x: 0.4555762, y: 0.2703094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e751da2b71b7d44abf4acbfb6c50349
+      internalID: 8064829697556491969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 663
+        width: 165
+        height: 387
+      alignment: 9
+      pivot: {x: 0.28199625, y: 0.9575864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb5c2bb40b590c48a109547061c1364
+      internalID: -4117369103520210319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 559
+        width: 465
+        height: 634
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.9669806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869d07bf7b352ab4f835dcf3ba04ddae
+      internalID: -6444288633925016094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_4
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 771
+        width: 144
+        height: 386
+      alignment: 9
+      pivot: {x: 0.13491398, y: 0.9587719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c098f2cfdc99c44adbf0f656954577
+      internalID: 6907789092220792507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 110
+        width: 108
+        height: 340
+      alignment: 9
+      pivot: {x: 0.42313936, y: 0.9475979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca09c2814e3dba4a9cb961749a3a4af
+      internalID: -763240469829180242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 94
+        width: 124
+        height: 325
+      alignment: 9
+      pivot: {x: 0.12065715, y: 0.94271505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316cd8eeb117c92469f11c6aa0177866
+      internalID: -6652100932852432157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_7
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 27
+        width: 180
+        height: 401
+      alignment: 9
+      pivot: {x: 0.6537208, y: 0.96231157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a539fa132d89749810d541d1e53b9a
+      internalID: 6244350024876107458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_3_8
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 61
+        width: 180
+        height: 400
+      alignment: 9
+      pivot: {x: 0.63834804, y: 0.97038484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bdfa092df12774e95f23a077f61d01
+      internalID: -3898599907011313948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

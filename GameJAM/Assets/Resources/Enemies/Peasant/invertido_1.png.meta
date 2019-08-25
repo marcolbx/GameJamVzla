@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 21f575fb070a6b04e86ef54e329737c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -638922345155500154
+    second: invertido_1_0
+  - first:
+      213: 7461034494997588161
+    second: invertido_1_1
+  - first:
+      213: -5213128694769784156
+    second: invertido_1_2
+  - first:
+      213: 1265537908935731786
+    second: invertido_1_3
+  - first:
+      213: 2109513588577605576
+    second: invertido_1_4
+  - first:
+      213: 4159495877546131735
+    second: invertido_1_5
+  - first:
+      213: -6199718976496529307
+    second: invertido_1_6
+  - first:
+      213: -8249006621366538729
+    second: invertido_1_7
+  - first:
+      213: -8805923412900670475
+    second: invertido_1_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: invertido_1_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1339
+        width: 456
+        height: 494
+      alignment: 9
+      pivot: {x: 0.3725738, y: 0.03510411}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f41f5959e25d724da2e89696f23199e
+      internalID: -638922345155500154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1330
+        width: 445
+        height: 521
+      alignment: 9
+      pivot: {x: 0.369424, y: 0.043263968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d780164fbd0ff84897e90acada786fc
+      internalID: 7461034494997588161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 918
+        width: 104
+        height: 323
+      alignment: 9
+      pivot: {x: 0.71284443, y: 0.93688965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8268101ecdbb4f642a8b6edb50a3bfb7
+      internalID: -5213128694769784156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 926
+        width: 124
+        height: 344
+      alignment: 9
+      pivot: {x: 0.20991516, y: 0.9504366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c133a6d4181c0947a4feafae89ec5f1
+      internalID: 1265537908935731786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_4
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 611
+        width: 384
+        height: 536
+      alignment: 9
+      pivot: {x: 0.5288224, y: 0.95944077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328d6fb9d0de4144eae3eef7cbfff355
+      internalID: 2109513588577605576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 502
+        width: 124
+        height: 376
+      alignment: 9
+      pivot: {x: 0.76777154, y: 0.9488965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f499f6dbfe624e94aa36e5f0646478c8
+      internalID: 4159495877546131735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_6
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 124
+        width: 184
+        height: 406
+      alignment: 9
+      pivot: {x: 0.1541287, y: 0.9634332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cca48273c41ee24387481241cd3318e
+      internalID: -6199718976496529307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 118
+        width: 147
+        height: 305
+      alignment: 9
+      pivot: {x: 0.650584, y: 0.9445295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f6dd39c4185944481dcdc032c9dab7
+      internalID: -8249006621366538729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: invertido_1_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 122
+        width: 147
+        height: 305
+      alignment: 9
+      pivot: {x: 0.6505831, y: 0.9536015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349a1979269f0934d96aa66bdfbd2733
+      internalID: -8805923412900670475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
