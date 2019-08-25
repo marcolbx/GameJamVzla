@@ -6,7 +6,7 @@ public class RedEnemy : Enemy
 {
     private Vector2 targetX; // solo en la X position
     [SerializeField] private float minDistance = 4f;
-    [SerializeField] private float normalSpeed = 1f;
+    [SerializeField] private float normalSpeed = 1.4f;
     private AudioSource audioSource;
     private bool soundPlayed = false;
     // Start is called before the first frame update
@@ -58,6 +58,10 @@ public class RedEnemy : Enemy
 
                 animator.transform.eulerAngles = new Vector3(0,180,0);
         }
+        if(isEvil == true && hurt == false)
+        {
+            EvilSprites();
+        }
     }
 
     void ChillModeState()
@@ -68,5 +72,12 @@ public class RedEnemy : Enemy
         speed = normalSpeed;
         animator.SetTrigger("Idle");
         animator.speed = 1.0f;
+    }
+
+        public void EvilSprites()
+    {
+        renderers[1].sprite = evilSprites[0];
+        renderers[2].sprite = evilSprites[1];
+        renderers[3].sprite = evilSprites[2];
     }
 }
