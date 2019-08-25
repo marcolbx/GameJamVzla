@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 171ea7f2784bc414e91f8acbe63e0671
+guid: 60597c6897434ff438a0716179d968e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8884657694821909252
-    second: enemigo_4_0
+      213: 1511702039939553066
+    second: invertido_4_0
   - first:
-      213: 1580015601930552376
-    second: enemigo_4_1
+      213: -1136534426476954364
+    second: invertido_4_1
   - first:
-      213: 5977010282915841225
-    second: enemigo_4_2
+      213: 3005091897816526847
+    second: invertido_4_2
   - first:
-      213: 2755288111428558706
-    second: enemigo_4_3
+      213: 4342741731361337973
+    second: invertido_4_3
   - first:
-      213: 614961839333941006
-    second: enemigo_4_4
+      213: 3319887109904843101
+    second: invertido_4_4
   - first:
-      213: -9139714106086835087
-    second: enemigo_4_5
+      213: -1774725650859619570
+    second: invertido_4_5
   - first:
-      213: 7369449664114377887
-    second: enemigo_4_6
+      213: -4855331736587694446
+    second: invertido_4_6
   - first:
-      213: 7813269664401604778
-    second: enemigo_4_7
+      213: -4625955646991688800
+    second: invertido_4_7
   - first:
-      213: 4102297755085388517
-    second: enemigo_4_8
+      213: 8676278301095130904
+    second: invertido_4_8
   - first:
-      213: 8012328880468336629
-    second: enemigo_4_9
+      213: 3121245881011561785
+    second: invertido_4_9
   - first:
-      213: 730033397279635880
-    second: enemigo_4_10
+      213: 3744045994303761571
+    second: invertido_4_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -143,7 +143,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemigo_4_0
+      name: invertido_4_0
       rect:
         serializedVersion: 2
         x: 64
@@ -151,20 +151,20 @@ TextureImporter:
         width: 401
         height: 359
       alignment: 9
-      pivot: {x: 0.4447989, y: 0.052968655}
+      pivot: {x: 0.4585992, y: 0.052968655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 330206471b837194c8f94ddab2d16e17
-      internalID: 8884657694821909252
+      spriteID: 4ba89a390977e98418ac627527008bec
+      internalID: 1511702039939553066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_1
+      name: invertido_4_1
       rect:
         serializedVersion: 2
         x: 675
@@ -172,20 +172,20 @@ TextureImporter:
         width: 374
         height: 347
       alignment: 9
-      pivot: {x: 0.41122013, y: 0.04548333}
+      pivot: {x: 0.44821167, y: 0.053457297}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e3beb389c4b5340aa2868a063ba620
-      internalID: 1580015601930552376
+      spriteID: da1fa1e534c7ea5408306c98c07d2f0d
+      internalID: -1136534426476954364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_2
+      name: invertido_4_2
       rect:
         serializedVersion: 2
         x: 63
@@ -193,20 +193,20 @@ TextureImporter:
         width: 295
         height: 386
       alignment: 9
-      pivot: {x: 0.3217883, y: 0.90142536}
+      pivot: {x: 0.3405474, y: 0.8870888}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ab282afbe32ff46b8732c2f7d25e4c
-      internalID: 5977010282915841225
+      spriteID: 19769c2fe00989a46aa152111b6b246b
+      internalID: 3005091897816526847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_3
+      name: invertido_4_3
       rect:
         serializedVersion: 2
         x: 440
@@ -214,20 +214,20 @@ TextureImporter:
         width: 293
         height: 411
       alignment: 9
-      pivot: {x: 0.29224154, y: 0.8702755}
+      pivot: {x: 0.31112868, y: 0.8702755}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 555bdbdff30a0c846b4ad27fc8bbcb4e
-      internalID: 2755288111428558706
+      spriteID: 241b46c15f7eb384e9414ee985f92b43
+      internalID: 4342741731361337973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_4
+      name: invertido_4_4
       rect:
         serializedVersion: 2
         x: 862
@@ -235,20 +235,20 @@ TextureImporter:
         width: 123
         height: 534
       alignment: 9
-      pivot: {x: 0.5, y: 0.95597994}
+      pivot: {x: 0.5449914, y: 0.95597994}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777fdf354eda6174da20db06b0cacc03
-      internalID: 614961839333941006
+      spriteID: e197bef26c7cae04f8d12e5ea55fd693
+      internalID: 3319887109904843101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_5
+      name: invertido_4_5
       rect:
         serializedVersion: 2
         x: 60
@@ -256,20 +256,20 @@ TextureImporter:
         width: 387
         height: 722
       alignment: 9
-      pivot: {x: 0.5142995, y: 0.9752135}
+      pivot: {x: 0.4857003, y: 0.9713812}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 001aa68e80c57ae4ca4084700f7af793
-      internalID: -9139714106086835087
+      spriteID: 2fcb0970188054843857ea3741b12cad
+      internalID: -1774725650859619570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_6
+      name: invertido_4_6
       rect:
         serializedVersion: 2
         x: 650
@@ -277,20 +277,20 @@ TextureImporter:
         width: 415
         height: 125
       alignment: 9
-      pivot: {x: 0.9533827, y: 0.54427147}
+      pivot: {x: 0.94004786, y: 0.5664072}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e19ccfd963ad7645af8e611205cd57d
-      internalID: 7369449664114377887
+      spriteID: 2ca723f6d3ae7f3499a7ee66c4f7e587
+      internalID: -4855331736587694446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_7
+      name: invertido_4_7
       rect:
         serializedVersion: 2
         x: 611
@@ -298,20 +298,20 @@ TextureImporter:
         width: 387
         height: 92
       alignment: 9
-      pivot: {x: 0.94328713, y: 0.62030363}
+      pivot: {x: 0.94328713, y: 0.7105308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f90ff2a230055fc44af4c093976e9b3c
-      internalID: 7813269664401604778
+      spriteID: 10806cad8f2e05c4587f9e06422a0946
+      internalID: -4625955646991688800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_8
+      name: invertido_4_8
       rect:
         serializedVersion: 2
         x: 598
@@ -319,20 +319,20 @@ TextureImporter:
         width: 397
         height: 100
       alignment: 9
-      pivot: {x: 0.9669694, y: 0.61067903}
+      pivot: {x: 0.9251512, y: 0.69368804}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa519969c192c2c40b5458bcea9b34d8
-      internalID: 4102297755085388517
+      spriteID: 07794075121736645b2a0c132310c17a
+      internalID: 8676278301095130904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_9
+      name: invertido_4_9
       rect:
         serializedVersion: 2
         x: 13
@@ -340,35 +340,35 @@ TextureImporter:
         width: 377
         height: 160
       alignment: 9
-      pivot: {x: 0.514679, y: 0.84587175}
+      pivot: {x: 0.5366973, y: 0.81128466}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 233ba185ada85ae4d8a33140f1c76955
-      internalID: 8012328880468336629
+      spriteID: 026bc0a207d5ab44ba4dbe863130795f
+      internalID: 3121245881011561785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo_4_10
+      name: invertido_4_10
       rect:
         serializedVersion: 2
         x: 468
         y: 79
         width: 435
         height: 106
-      alignment: 9
-      pivot: {x: 0.5063607, y: 0.5000004}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858afe3c96fe7384381993a92c6a8258
-      internalID: 730033397279635880
+      spriteID: 33abea5f5303cea4495ca42b7a46a429
+      internalID: 3744045994303761571
       vertices: []
       indices: 
       edges: []

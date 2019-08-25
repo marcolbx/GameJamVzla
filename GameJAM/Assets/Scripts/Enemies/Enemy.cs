@@ -16,7 +16,7 @@ public abstract class Enemy : MonoBehaviour
     public Sprite[] normalSprites;
     public Sprite[] evilSprites;
     public SpriteRenderer[] renderers;
-    [SerializeField] private float hurtTimer =0.5f;
+    [SerializeField] protected float hurtTimer =0.5f;
     protected bool hurt = false;
     [SerializeField] protected bool isEvil = true;
     // Start is called before the first frame update
