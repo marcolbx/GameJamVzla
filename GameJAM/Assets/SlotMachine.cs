@@ -17,6 +17,7 @@ public class SlotMachine : Interactable
     [SerializeField] private bool activated =false;
     private Collider2D collider;
     public Animator[] animators;
+    public Rigidbody2D rigidbody;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,9 @@ public class SlotMachine : Interactable
             slotReelRenderers[1].sprite = slotReelSprites[0]; //Enemies
             slotReelRenderers[2].sprite = slotReelSprites[0]; //Enemies
             DisableCollider();
+            AwakeRigidbody();
+
+            activated = false;
             }
         
 
@@ -49,8 +53,18 @@ public class SlotMachine : Interactable
                 }
 
                 DisableCollider();
+                AwakeRigidbody();
                 if(result == 2)
                 Instantiate(chest,transform.position,Quaternion.identity);
+
+                if(result == 0)
+                foreach (GameObject enemy in enemies)
+                {
+                    Vector3 pos = new Vector3(transform.position.x,transform.position.y +1f,transform.position.z);
+                    Instantiate(enemy,pos,Quaternion.Euler(0,0,0));
+                }
+                
+
                 activated = false;
 
             }
@@ -85,5 +99,15 @@ public class SlotMachine : Interactable
     void DisableCollider()
     {
         collider.enabled = false;
+    }
+
+    void AwakeRigidbody()
+    {
+        rigidbody.WakeUp();
+        int random = Random.Range(-3,3);
+        if(Mathf.Abs(random) <=1)
+        random +=1;
+        Vector2 direction = new Vector2(random, 3 * Mathf.Abs(random+2));
+        rigidbody.velocity = direction;
     }
 }
