@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 7d01deb7b4718134b9f562a412f1afc3
+guid: f5c048491c8a2134eaaa42319560d652
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -914063267591670859
-    second: ChestThing_0
+      213: -5563858499040934933
+    second: ChestThing 1_0
   - first:
-      213: 3183099127406600198
-    second: ChestThing_1
+      213: -1998311851855155166
+    second: ChestThing 1_1
   - first:
-      213: 3214522804807916523
-    second: ChestThing_2
+      213: 8233875605747327668
+    second: ChestThing 1_2
   - first:
-      213: -2081113179867167474
-    second: ChestThing_3
+      213: 7017407192557809386
+    second: ChestThing 1_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,85 +122,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChestThing_0
+      name: ChestThing 1_0
       rect:
         serializedVersion: 2
-        x: 394
-        y: 2568
-        width: 1451
-        height: 675
+        x: 395
+        y: 2580
+        width: 1449
+        height: 673
       alignment: 9
-      pivot: {x: 0.5193256, y: 0.94312537}
+      pivot: {x: 0.5064707, y: 0.9597436}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ee1426b2a07dbb479e1abd2cf3339b3
-      internalID: -914063267591670859
+      spriteID: b005dc6008b3df34eb7cb853896d2469
+      internalID: -5563858499040934933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestThing_1
+      name: ChestThing 1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 1414
+        y: 1425
         width: 241
         height: 532
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb1d709022a46f48af4b287ece96fba
-      internalID: 3183099127406600198
+      spriteID: 586fb49d17223494e907373e4e4194c3
+      internalID: -1998311851855155166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestThing_2
+      name: ChestThing 1_2
       rect:
         serializedVersion: 2
-        x: 268
-        y: 1286
-        width: 2028
-        height: 1248
+        x: 259
+        y: 1287
+        width: 2047
+        height: 1266
       alignment: 9
-      pivot: {x: 0.9632102, y: 0.05061702}
+      pivot: {x: 0.9649063, y: 0.05564015}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0c98b8d9623bc04ba380b07334b7c6a
-      internalID: 3214522804807916523
+      spriteID: 37d561a6ca7b4a14db307d2d0bfcf4e0
+      internalID: 8233875605747327668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestThing_3
+      name: ChestThing 1_3
       rect:
         serializedVersion: 2
-        x: 253
+        x: 245
         y: 0
-        width: 2043
-        height: 1196
+        width: 2061
+        height: 1215
       alignment: 9
-      pivot: {x: 0.97811013, y: 0.9493832}
+      pivot: {x: 0.9731213, y: 0.9630118}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7909c647f3019f14eb09c4c6f0436f65
-      internalID: -2081113179867167474
+      spriteID: 66bdcb1d250b89b42ba8675813c168d4
+      internalID: 7017407192557809386
       vertices: []
       indices: 
       edges: []

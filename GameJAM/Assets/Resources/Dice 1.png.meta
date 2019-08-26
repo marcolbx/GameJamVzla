@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: d4092e1651e538048b54f02ebff0b20b
+guid: 22c1b74b59c7ac54aa13be6d5517d15a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1429224144528161296
-    second: slot_machine_0
+      213: -2998603427704623991
+    second: Dice 2
   - first:
-      213: 3923086221016226760
-    second: slot_machine_1
+      213: 3806258460993284326
+    second: Dice 4
   - first:
-      213: 9058499776457455273
-    second: slot_machine_2
+      213: 1706698494462342711
+    second: Dice 3
   - first:
-      213: -3802192211752298318
-    second: slot_machine_3
+      213: 3962137506557414479
+    second: Dice 1
   - first:
-      213: -7374478248066720439
-    second: slot_machine_4
+      213: -6779576732892793422
+    second: Dice 5
   - first:
-      213: -9198927284103787491
-    second: slot_machine_5
+      213: -711756833388200226
+    second: Dice 6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 750
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slot_machine_0
+      name: Dice 2
       rect:
         serializedVersion: 2
         x: 0
-        y: 631
-        width: 1086
-        height: 1085
+        y: 1315
+        width: 1166
+        height: 1166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 836fb4ae2cffb954fbe42c3ad44dfbc2
-      internalID: 1429224144528161296
+      spriteID: bed1ea6a8bff0af4194aac28c50d7ccd
+      internalID: -2998603427704623991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slot_machine_1
+      name: Dice 4
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 890
-        width: 349
-        height: 610
+        x: 1542
+        y: 1315
+        width: 1166
+        height: 1166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 547c5a08bc2752340bf0c3b3d98a3282
-      internalID: 3923086221016226760
+      spriteID: 3352918070393ea458a18679fe151b08
+      internalID: 3806258460993284326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slot_machine_2
+      name: Dice 3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 39
-        width: 302
-        height: 492
+        x: 3084
+        y: 1315
+        width: 1166
+        height: 1166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,71 +184,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca8d97d56726c44f849428a60bbce24
-      internalID: 9058499776457455273
+      spriteID: 92176aef017c2fc48aa7c4d65ad19abb
+      internalID: 1706698494462342711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slot_machine_3
+      name: Dice 1
       rect:
         serializedVersion: 2
-        x: 392
-        y: 39
-        width: 301
-        height: 492
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34efee8061c00994cb9d5c441fef7611
-      internalID: -3802192211752298318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slot_machine_4
-      rect:
-        serializedVersion: 2
-        x: 788
-        y: 39
-        width: 302
-        height: 492
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d027b1c2904d484c8de5c715d73a17e
-      internalID: -7374478248066720439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slot_machine_5
-      rect:
-        serializedVersion: 2
-        x: 1157
+        x: 0
         y: 0
-        width: 286
-        height: 820
-      alignment: 9
-      pivot: {x: 0.48270613, y: 0.02953084}
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b47650d413dbfdd4886f57357310a65a
-      internalID: -9198927284103787491
+      spriteID: 6029c858e62f7594ab88eddd19bb052b
+      internalID: 3962137506557414479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice 5
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 0
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63b4d33f03a72643929b3fe47fd4a28
+      internalID: -6779576732892793422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice 6
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 0
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4703ef27fcdbddd408ffc7bacfe410d6
+      internalID: -711756833388200226
       vertices: []
       indices: 
       edges: []
