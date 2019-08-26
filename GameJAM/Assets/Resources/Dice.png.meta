@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: cac0165ac4b29044ba04f47d5605fc19
+guid: f3925f92f56a2644bbfc02a6a0230772
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2654952491014960469
-    second: Blue_Enemy_Head
+      213: -2205863333093305225
+    second: Dice_02
   - first:
-      213: -1457789952925521848
-    second: Blue_Enemy_HeadEvil
+      213: -5420220854288092238
+    second: Dice_04
   - first:
-      213: -3025042731946618264
-    second: Blue_Enemy_Chest
+      213: 1094064525842813209
+    second: Dice_03
   - first:
-      213: 8821524191973172895
-    second: Blue_Enemy_LeftArm
+      213: 7934114944782325874
+    second: Dice_01
   - first:
-      213: 7307893237522643765
-    second: Blue_Enemy_LeftArmEvil
+      213: -880043905950401250
+    second: Dice_05
   - first:
-      213: 3617554045279677862
-    second: Blue_Enemy_RightArm
-  - first:
-      213: -2305247453741926090
-    second: Blue_Enemy_LeftLeg
-  - first:
-      213: 773205414175132300
-    second: Blue_Enemy_RightLeg
-  - first:
-      213: 1646851098224014036
-    second: Blue_Enemy_RightArmEvil
+      213: -5478230469006044976
+    second: Dice_06
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -137,55 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue_Enemy_Head
+      name: Dice_02
       rect:
         serializedVersion: 2
-        x: 127
-        y: 1438
-        width: 391
-        height: 444
-      alignment: 9
-      pivot: {x: 0.46461692, y: 0.051302247}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e48d210b08e725c409b0566beaaa241c
-      internalID: 2654952491014960469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_HeadEvil
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 1470
-        width: 322
-        height: 397
-      alignment: 9
-      pivot: {x: 0.4484416, y: 0.046969704}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b943bcc578060049ab6f163c51b3def
-      internalID: -1457789952925521848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_Chest
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 636
-        width: 494
-        height: 647
+        x: 0
+        y: 1195
+        width: 1086
+        height: 1087
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,134 +142,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27de025b322bec34882b703c124834ed
-      internalID: -3025042731946618264
+      spriteID: 4149fd1c4271c8743b8e3fdb88c66f65
+      internalID: -2205863333093305225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftArm
+      name: Dice_04
       rect:
         serializedVersion: 2
-        x: 609
-        y: 940
-        width: 124
-        height: 360
-      alignment: 9
-      pivot: {x: 0.47768623, y: 0.9611616}
+        x: 1170
+        y: 1195
+        width: 1085
+        height: 1087
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d976977f0ef0e144be4e0f790cc5218
-      internalID: 8821524191973172895
+      spriteID: ae35735ab8e8011448f8d8ea9eaf2d71
+      internalID: -5420220854288092238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftArmEvil
+      name: Dice_03
       rect:
         serializedVersion: 2
-        x: 838
-        y: 915
-        width: 149
-        height: 426
-      alignment: 9
-      pivot: {x: 0.5371405, y: 0.94817084}
+        x: 2361
+        y: 1197
+        width: 1086
+        height: 1085
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d51d91845a97642b02e250c14a729b
-      internalID: 7307893237522643765
+      spriteID: 16781bb21e25fbd4fa54de280cc4809b
+      internalID: 1094064525842813209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_RightArm
+      name: Dice_01
       rect:
         serializedVersion: 2
-        x: 43
-        y: 134
-        width: 171
-        height: 380
-      alignment: 9
-      pivot: {x: 0.6779919, y: 0.9296086}
+        x: 0
+        y: 20
+        width: 1086
+        height: 1087
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e121dc81137cd046833a9ddb2d261cc
-      internalID: 3617554045279677862
+      spriteID: b2728b0f830e598418b8384c951a9fc3
+      internalID: 7934114944782325874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftLeg
+      name: Dice_05
       rect:
         serializedVersion: 2
-        x: 303
-        y: 125
-        width: 168
-        height: 312
-      alignment: 9
-      pivot: {x: 0.7305806, y: 0.9079509}
+        x: 1170
+        y: 0
+        width: 1085
+        height: 1085
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f5c8d6fb4c2aed4c8d1f147e91d058f
-      internalID: -2305247453741926090
+      spriteID: ed5eca320dd42744e84be0a7e9e28072
+      internalID: -880043905950401250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_RightLeg
+      name: Dice_06
       rect:
         serializedVersion: 2
-        x: 551
-        y: 128
-        width: 168
-        height: 313
-      alignment: 9
-      pivot: {x: 0.714111, y: 0.9243276}
+        x: 2361
+        y: 0
+        width: 1086
+        height: 1085
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21da70ac1de4e434bb62fb4b29bd4de0
-      internalID: 773205414175132300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_RightArmEvil
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 362
-        width: 212
-        height: 438
-      alignment: 9
-      pivot: {x: 0.76103467, y: 0.94852716}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eb2d4491b7f04b4d9b2d3ffadf39d09
-      internalID: 1646851098224014036
+      spriteID: faa088b0bcbe85b468a54b08f9770aef
+      internalID: -5478230469006044976
       vertices: []
       indices: 
       edges: []
