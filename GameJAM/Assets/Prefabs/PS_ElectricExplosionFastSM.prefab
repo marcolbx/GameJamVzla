@@ -24766,8 +24766,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -29693,8 +29693,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -34629,8 +34629,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -34668,7 +34668,7 @@ GameObject:
   - component: {fileID: 7625417846942852590}
   - component: {fileID: 1841286972326197287}
   m_Layer: 0
-  m_Name: PS_ElectricExplosionFast 1
+  m_Name: PS_ElectricExplosionFastSM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39857,8 +39857,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -49612,8 +49612,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -54711,6 +54711,46 @@ PrefabInstance:
         type: 3}
       propertyPath: simulationSpeed
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207350968879335, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1457666827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207350968879335, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207350082033751, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1457666827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207350082033751, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207350973244316, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1457666827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207350973244316, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207351207277944, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1457666827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269207351207277944, guid: 3fa260bf1a67f064c8c3dcaa7d135d69,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fa260bf1a67f064c8c3dcaa7d135d69, type: 3}

@@ -62,6 +62,9 @@ TagManager:
   - name: Interactables
     uniqueID: 1457666827
     locked: 0
+  - name: TilesetHidder
+    uniqueID: 2432137823
+    locked: 0
   - name: Player
     uniqueID: 3846533283
     locked: 0
