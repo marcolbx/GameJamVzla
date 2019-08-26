@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 1332141412991487609}
   m_Layer: 0
   m_Name: PlayerNew2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,8 +481,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06483817, y: 0.33563197}
-  m_Size: {x: 0.69070005, y: 1.6712639}
+  m_Offset: {x: -0.049655437, y: 0.053665996}
+  m_Size: {x: 0.47814083, y: 1.107332}
   m_Direction: 0
 --- !u!114 &2438093642066570059
 MonoBehaviour:
@@ -588,19 +588,19 @@ MonoBehaviour:
   fireBolt: {fileID: 1710561109499738695, guid: 294ee9dffcc64634085592b82b4c2e8b,
     type: 3}
   knockbackEnemyForcex: 100
-  knockbackEnemyForcey: 5
+  knockbackEnemyForcey: 4
   timeBtwAttack: 0.5
   timeBtwAttackCounter: 0
   attackPos: {fileID: 2651105704299262479}
-  attackRangeX: 1.01
+  attackRangeX: 1.31
   attackRangeY: 1.73
   damage: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8192
 --- !u!1 &2438093642083224969
 GameObject:
   m_ObjectHideFlags: 0
