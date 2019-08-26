@@ -12,6 +12,7 @@ public class NormalChest : Interactable
     public bool action = false; //Sim solamente;
     private float timer = 0.5f;
     private bool burst =false;
+    public Rigidbody2D rigidbody;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,5 +66,11 @@ public class NormalChest : Interactable
         {
             Instantiate(topaz,transform.position,Quaternion.identity);
         }
+    }
+
+    public void DisableRigidbody()
+    {
+        rigidbody.Sleep();
+        rigidbody.isKinematic = true;
     }
 }

@@ -15,10 +15,12 @@ public class SlotMachine : Interactable
     public GameObject[] hazards;
     public GameObject chest;
     [SerializeField] private bool activated =false;
+    private Collider2D collider;
+    public Animator[] animators;
     // Start is called before the first frame update
     void Start()
     {
-        
+        collider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class SlotMachine : Interactable
             slotReelRenderers[0].sprite = slotReelSprites[0]; //Enemies
             slotReelRenderers[1].sprite = slotReelSprites[0]; //Enemies
             slotReelRenderers[2].sprite = slotReelSprites[0]; //Enemies
+            DisableCollider();
             }
         
 
@@ -44,7 +47,12 @@ public class SlotMachine : Interactable
                     renderer.sprite = slotReelSprites[random];
                     result = random;
                 }
-            
+
+                DisableCollider();
+                if(result == 2)
+                Instantiate(chest,transform.position,Quaternion.identity);
+                activated = false;
+
             }
         
 
@@ -54,7 +62,11 @@ public class SlotMachine : Interactable
 
     public override void Action()
     {
-        Randomize();
+        activated = true;
+        foreach (Animator anim in animators)
+        {
+            anim.SetTrigger("action");
+        }
     }
 
     void Randomize() 
@@ -68,5 +80,10 @@ public class SlotMachine : Interactable
                 slotReelRenderers[1].sprite = slotReelSprites[j];
                 slotReelRenderers[2].sprite = slotReelSprites[k];
             
+    }
+
+    void DisableCollider()
+    {
+        collider.enabled = false;
     }
 }
