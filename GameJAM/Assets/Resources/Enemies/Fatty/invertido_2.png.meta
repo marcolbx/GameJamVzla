@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: cac0165ac4b29044ba04f47d5605fc19
+guid: 22ed9a81937deb94cb83ec933cd7f6bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2654952491014960469
+      213: -1590650186316943589
     second: Blue_Enemy_Head
   - first:
-      213: -1457789952925521848
+      213: -3605883424132835836
     second: Blue_Enemy_HeadEvil
   - first:
-      213: -3025042731946618264
+      213: 5212758208502256282
     second: Blue_Enemy_Chest
   - first:
-      213: 8821524191973172895
-    second: Blue_Enemy_LeftArm
-  - first:
-      213: 7307893237522643765
-    second: Blue_Enemy_LeftArmEvil
-  - first:
-      213: 3617554045279677862
+      213: 7499357624584415865
     second: Blue_Enemy_RightArm
   - first:
-      213: -2305247453741926090
+      213: -5020481180013949816
+    second: Blue_Enemy_RightArmEvil
+  - first:
+      213: -9130666057732947863
+    second: Blue_Enemy_LeftArm
+  - first:
+      213: 1046939345756683658
     second: Blue_Enemy_LeftLeg
   - first:
-      213: 773205414175132300
+      213: 4928366387378848659
     second: Blue_Enemy_RightLeg
   - first:
-      213: 1646851098224014036
-    second: Blue_Enemy_RightArmEvil
+      213: -3547706963413260839
+    second: Blue_Enemy_LeftArmEvil
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -141,18 +141,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 1438
+        y: 1435
         width: 391
         height: 444
       alignment: 9
-      pivot: {x: 0.46461692, y: 0.051302247}
+      pivot: {x: 0.46461692, y: 0.045070063}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48d210b08e725c409b0566beaaa241c
-      internalID: 2654952491014960469
+      spriteID: db490ba16a444bc4db94eaae67dc844d
+      internalID: -1590650186316943589
       vertices: []
       indices: 
       edges: []
@@ -166,14 +166,14 @@ TextureImporter:
         width: 322
         height: 397
       alignment: 9
-      pivot: {x: 0.4484416, y: 0.046969704}
+      pivot: {x: 0.45703465, y: 0.0539394}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b943bcc578060049ab6f163c51b3def
-      internalID: -1457789952925521848
+      spriteID: f302e8ea65027ca4da23983a06835fb5
+      internalID: -3605883424132835836
       vertices: []
       indices: 
       edges: []
@@ -193,50 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27de025b322bec34882b703c124834ed
-      internalID: -3025042731946618264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_LeftArm
-      rect:
-        serializedVersion: 2
-        x: 609
-        y: 940
-        width: 124
-        height: 360
-      alignment: 9
-      pivot: {x: 0.47768623, y: 0.9611616}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d976977f0ef0e144be4e0f790cc5218
-      internalID: 8821524191973172895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_LeftArmEvil
-      rect:
-        serializedVersion: 2
-        x: 838
-        y: 915
-        width: 149
-        height: 426
-      alignment: 9
-      pivot: {x: 0.5371405, y: 0.94817084}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76d51d91845a97642b02e250c14a729b
-      internalID: 7307893237522643765
+      spriteID: 16abc3fc1c3171543bbf4e35abd983b2
+      internalID: 5212758208502256282
       vertices: []
       indices: 
       edges: []
@@ -245,19 +203,61 @@ TextureImporter:
       name: Blue_Enemy_RightArm
       rect:
         serializedVersion: 2
-        x: 43
-        y: 134
-        width: 171
-        height: 380
+        x: 612
+        y: 940
+        width: 124
+        height: 360
       alignment: 9
-      pivot: {x: 0.6779919, y: 0.9296086}
+      pivot: {x: 0.41074347, y: 0.9457896}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e121dc81137cd046833a9ddb2d261cc
-      internalID: 3617554045279677862
+      spriteID: 90e943407c6c4254eb13e789450a6f50
+      internalID: 7499357624584415865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_RightArmEvil
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 915
+        width: 149
+        height: 426
+      alignment: 9
+      pivot: {x: 0.51857024, y: 0.9546661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333578cdd27a92c4dae627463af341a7
+      internalID: -5020481180013949816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_LeftArm
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 134
+        width: 171
+        height: 380
+      alignment: 9
+      pivot: {x: 0.694173, y: 0.91504556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e1dbf95f5994943832600e5c24d248
+      internalID: -9130666057732947863
       vertices: []
       indices: 
       edges: []
@@ -271,14 +271,14 @@ TextureImporter:
         width: 168
         height: 312
       alignment: 9
-      pivot: {x: 0.7305806, y: 0.9079509}
+      pivot: {x: 0.7141106, y: 0.9345563}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f5c8d6fb4c2aed4c8d1f147e91d058f
-      internalID: -2305247453741926090
+      spriteID: 79a02d68165c8684d82670f1ee5dd69d
+      internalID: 1046939345756683658
       vertices: []
       indices: 
       edges: []
@@ -292,20 +292,20 @@ TextureImporter:
         width: 168
         height: 313
       alignment: 9
-      pivot: {x: 0.714111, y: 0.9243276}
+      pivot: {x: 0.714111, y: 0.9508481}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21da70ac1de4e434bb62fb4b29bd4de0
-      internalID: 773205414175132300
+      spriteID: b5af9362fca50ca45a00209ba1391189
+      internalID: 4928366387378848659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_RightArmEvil
+      name: Blue_Enemy_LeftArmEvil
       rect:
         serializedVersion: 2
         x: 780
@@ -313,14 +313,14 @@ TextureImporter:
         width: 212
         height: 438
       alignment: 9
-      pivot: {x: 0.76103467, y: 0.94852716}
+      pivot: {x: 0.76103467, y: 0.9548444}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eb2d4491b7f04b4d9b2d3ffadf39d09
-      internalID: 1646851098224014036
+      spriteID: 1cf7c2d6b66f97844a7ddc9570578aab
+      internalID: -3547706963413260839
       vertices: []
       indices: 
       edges: []

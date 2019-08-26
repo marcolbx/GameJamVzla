@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 7d01deb7b4718134b9f562a412f1afc3
+guid: 22c1b74b59c7ac54aa13be6d5517d15a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -914063267591670859
-    second: ChestThing_0
+      213: -2998603427704623991
+    second: Dice 2
   - first:
-      213: 3183099127406600198
-    second: ChestThing_1
+      213: 3806258460993284326
+    second: Dice 4
   - first:
-      213: 3214522804807916523
-    second: ChestThing_2
+      213: 1706698494462342711
+    second: Dice 3
   - first:
-      213: -2081113179867167474
-    second: ChestThing_3
+      213: 3962137506557414479
+    second: Dice 1
+  - first:
+      213: -6779576732892793422
+    second: Dice 5
+  - first:
+      213: -711756833388200226
+    second: Dice 6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,85 +128,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChestThing_0
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 2568
-        width: 1451
-        height: 675
-      alignment: 9
-      pivot: {x: 0.5193256, y: 0.94312537}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ee1426b2a07dbb479e1abd2cf3339b3
-      internalID: -914063267591670859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChestThing_1
+      name: Dice 2
       rect:
         serializedVersion: 2
         x: 0
-        y: 1414
-        width: 241
-        height: 532
+        y: 1315
+        width: 1166
+        height: 1166
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb1d709022a46f48af4b287ece96fba
-      internalID: 3183099127406600198
+      spriteID: bed1ea6a8bff0af4194aac28c50d7ccd
+      internalID: -2998603427704623991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestThing_2
+      name: Dice 4
       rect:
         serializedVersion: 2
-        x: 268
-        y: 1286
-        width: 2028
-        height: 1248
-      alignment: 9
-      pivot: {x: 0.9632102, y: 0.05061702}
+        x: 1542
+        y: 1315
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0c98b8d9623bc04ba380b07334b7c6a
-      internalID: 3214522804807916523
+      spriteID: 3352918070393ea458a18679fe151b08
+      internalID: 3806258460993284326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestThing_3
+      name: Dice 3
       rect:
         serializedVersion: 2
-        x: 253
+        x: 3084
+        y: 1315
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92176aef017c2fc48aa7c4d65ad19abb
+      internalID: 1706698494462342711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice 1
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 2043
-        height: 1196
-      alignment: 9
-      pivot: {x: 0.97811013, y: 0.9493832}
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7909c647f3019f14eb09c4c6f0436f65
-      internalID: -2081113179867167474
+      spriteID: 6029c858e62f7594ab88eddd19bb052b
+      internalID: 3962137506557414479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice 5
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 0
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63b4d33f03a72643929b3fe47fd4a28
+      internalID: -6779576732892793422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice 6
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 0
+        width: 1166
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4703ef27fcdbddd408ffc7bacfe410d6
+      internalID: -711756833388200226
       vertices: []
       indices: 
       edges: []

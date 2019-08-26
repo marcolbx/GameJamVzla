@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: cac0165ac4b29044ba04f47d5605fc19
+guid: ca997160e0947e9458f1b4079c8bff3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2654952491014960469
-    second: Blue_Enemy_Head
+      213: -7009052872282134230
+    second: slot_machine 1_0
   - first:
-      213: -1457789952925521848
-    second: Blue_Enemy_HeadEvil
+      213: 3194133978127420494
+    second: slot_machine 1_1
   - first:
-      213: -3025042731946618264
-    second: Blue_Enemy_Chest
+      213: -580528636001871138
+    second: slot_machine 1_2
   - first:
-      213: 8821524191973172895
-    second: Blue_Enemy_LeftArm
+      213: -1090404590065843436
+    second: slot_machine 1_3
   - first:
-      213: 7307893237522643765
-    second: Blue_Enemy_LeftArmEvil
+      213: -3715662934741508874
+    second: slot_machine 1_4
   - first:
-      213: 3617554045279677862
-    second: Blue_Enemy_RightArm
-  - first:
-      213: -2305247453741926090
-    second: Blue_Enemy_LeftLeg
-  - first:
-      213: 773205414175132300
-    second: Blue_Enemy_RightLeg
-  - first:
-      213: 1646851098224014036
-    second: Blue_Enemy_RightArmEvil
+      213: 2375185883633072563
+    second: slot_machine 1_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -72,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 750
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,190 +128,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue_Enemy_Head
+      name: slot_machine 1_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 1438
-        width: 391
-        height: 444
-      alignment: 9
-      pivot: {x: 0.46461692, y: 0.051302247}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e48d210b08e725c409b0566beaaa241c
-      internalID: 2654952491014960469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_HeadEvil
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 1470
-        width: 322
-        height: 397
-      alignment: 9
-      pivot: {x: 0.4484416, y: 0.046969704}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b943bcc578060049ab6f163c51b3def
-      internalID: -1457789952925521848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_Chest
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 636
-        width: 494
-        height: 647
+        x: 0
+        y: 631
+        width: 1086
+        height: 1085
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27de025b322bec34882b703c124834ed
-      internalID: -3025042731946618264
+      spriteID: 338f24d3d7c0c0b4ab9ea9e6625490d5
+      internalID: -7009052872282134230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftArm
+      name: slot_machine 1_1
       rect:
         serializedVersion: 2
-        x: 609
-        y: 940
-        width: 124
-        height: 360
-      alignment: 9
-      pivot: {x: 0.47768623, y: 0.9611616}
+        x: 1125
+        y: 890
+        width: 349
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d976977f0ef0e144be4e0f790cc5218
-      internalID: 8821524191973172895
+      spriteID: 0aa794a225370eb4a956eac6b2536ae9
+      internalID: 3194133978127420494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftArmEvil
+      name: slot_machine 1_2
       rect:
         serializedVersion: 2
-        x: 838
-        y: 915
-        width: 149
-        height: 426
-      alignment: 9
-      pivot: {x: 0.5371405, y: 0.94817084}
+        x: 16
+        y: 39
+        width: 302
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d51d91845a97642b02e250c14a729b
-      internalID: 7307893237522643765
+      spriteID: fc8d4f99c25fdb147b9f2f183e87c4e0
+      internalID: -580528636001871138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_RightArm
+      name: slot_machine 1_3
       rect:
         serializedVersion: 2
-        x: 43
-        y: 134
-        width: 171
-        height: 380
-      alignment: 9
-      pivot: {x: 0.6779919, y: 0.9296086}
+        x: 392
+        y: 39
+        width: 301
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e121dc81137cd046833a9ddb2d261cc
-      internalID: 3617554045279677862
+      spriteID: 2dedd09da7047e74091b07fff84df0a8
+      internalID: -1090404590065843436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftLeg
+      name: slot_machine 1_4
       rect:
         serializedVersion: 2
-        x: 303
-        y: 125
-        width: 168
-        height: 312
-      alignment: 9
-      pivot: {x: 0.7305806, y: 0.9079509}
+        x: 788
+        y: 39
+        width: 302
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f5c8d6fb4c2aed4c8d1f147e91d058f
-      internalID: -2305247453741926090
+      spriteID: 079ac2edca3e09a48a649faee1812a68
+      internalID: -3715662934741508874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_RightLeg
+      name: slot_machine 1_5
       rect:
         serializedVersion: 2
-        x: 551
-        y: 128
-        width: 168
-        height: 313
+        x: 1157
+        y: 0
+        width: 286
+        height: 820
       alignment: 9
-      pivot: {x: 0.714111, y: 0.9243276}
+      pivot: {x: 0.49999958, y: 0.032546666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21da70ac1de4e434bb62fb4b29bd4de0
-      internalID: 773205414175132300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_RightArmEvil
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 362
-        width: 212
-        height: 438
-      alignment: 9
-      pivot: {x: 0.76103467, y: 0.94852716}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eb2d4491b7f04b4d9b2d3ffadf39d09
-      internalID: 1646851098224014036
+      spriteID: 84f7593c6f3d60b46a433f28cdd17c5f
+      internalID: 2375185883633072563
       vertices: []
       indices: 
       edges: []

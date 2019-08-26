@@ -1,34 +1,19 @@
 fileFormatVersion: 2
-guid: cac0165ac4b29044ba04f47d5605fc19
+guid: f5c048491c8a2134eaaa42319560d652
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2654952491014960469
-    second: Blue_Enemy_Head
+      213: -5563858499040934933
+    second: ChestThing 1_0
   - first:
-      213: -1457789952925521848
-    second: Blue_Enemy_HeadEvil
+      213: -1998311851855155166
+    second: ChestThing 1_1
   - first:
-      213: -3025042731946618264
-    second: Blue_Enemy_Chest
+      213: 8233875605747327668
+    second: ChestThing 1_2
   - first:
-      213: 8821524191973172895
-    second: Blue_Enemy_LeftArm
-  - first:
-      213: 7307893237522643765
-    second: Blue_Enemy_LeftArmEvil
-  - first:
-      213: 3617554045279677862
-    second: Blue_Enemy_RightArm
-  - first:
-      213: -2305247453741926090
-    second: Blue_Enemy_LeftLeg
-  - first:
-      213: 773205414175132300
-    second: Blue_Enemy_RightLeg
-  - first:
-      213: 1646851098224014036
-    second: Blue_Enemy_RightArmEvil
+      213: 7017407192557809386
+    second: ChestThing 1_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -137,190 +122,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue_Enemy_Head
+      name: ChestThing 1_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 1438
-        width: 391
-        height: 444
+        x: 395
+        y: 2580
+        width: 1449
+        height: 673
       alignment: 9
-      pivot: {x: 0.46461692, y: 0.051302247}
+      pivot: {x: 0.5064707, y: 0.9597436}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48d210b08e725c409b0566beaaa241c
-      internalID: 2654952491014960469
+      spriteID: b005dc6008b3df34eb7cb853896d2469
+      internalID: -5563858499040934933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_HeadEvil
+      name: ChestThing 1_1
       rect:
         serializedVersion: 2
-        x: 654
-        y: 1470
-        width: 322
-        height: 397
-      alignment: 9
-      pivot: {x: 0.4484416, y: 0.046969704}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b943bcc578060049ab6f163c51b3def
-      internalID: -1457789952925521848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_Chest
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 636
-        width: 494
-        height: 647
+        x: 0
+        y: 1425
+        width: 241
+        height: 532
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27de025b322bec34882b703c124834ed
-      internalID: -3025042731946618264
+      spriteID: 586fb49d17223494e907373e4e4194c3
+      internalID: -1998311851855155166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftArm
+      name: ChestThing 1_2
       rect:
         serializedVersion: 2
-        x: 609
-        y: 940
-        width: 124
-        height: 360
+        x: 259
+        y: 1287
+        width: 2047
+        height: 1266
       alignment: 9
-      pivot: {x: 0.47768623, y: 0.9611616}
+      pivot: {x: 0.9649063, y: 0.05564015}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d976977f0ef0e144be4e0f790cc5218
-      internalID: 8821524191973172895
+      spriteID: 37d561a6ca7b4a14db307d2d0bfcf4e0
+      internalID: 8233875605747327668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue_Enemy_LeftArmEvil
+      name: ChestThing 1_3
       rect:
         serializedVersion: 2
-        x: 838
-        y: 915
-        width: 149
-        height: 426
+        x: 245
+        y: 0
+        width: 2061
+        height: 1215
       alignment: 9
-      pivot: {x: 0.5371405, y: 0.94817084}
+      pivot: {x: 0.9731213, y: 0.9630118}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d51d91845a97642b02e250c14a729b
-      internalID: 7307893237522643765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_RightArm
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 134
-        width: 171
-        height: 380
-      alignment: 9
-      pivot: {x: 0.6779919, y: 0.9296086}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e121dc81137cd046833a9ddb2d261cc
-      internalID: 3617554045279677862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_LeftLeg
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 125
-        width: 168
-        height: 312
-      alignment: 9
-      pivot: {x: 0.7305806, y: 0.9079509}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f5c8d6fb4c2aed4c8d1f147e91d058f
-      internalID: -2305247453741926090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_RightLeg
-      rect:
-        serializedVersion: 2
-        x: 551
-        y: 128
-        width: 168
-        height: 313
-      alignment: 9
-      pivot: {x: 0.714111, y: 0.9243276}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21da70ac1de4e434bb62fb4b29bd4de0
-      internalID: 773205414175132300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Enemy_RightArmEvil
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 362
-        width: 212
-        height: 438
-      alignment: 9
-      pivot: {x: 0.76103467, y: 0.94852716}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eb2d4491b7f04b4d9b2d3ffadf39d09
-      internalID: 1646851098224014036
+      spriteID: 66bdcb1d250b89b42ba8675813c168d4
+      internalID: 7017407192557809386
       vertices: []
       indices: 
       edges: []
