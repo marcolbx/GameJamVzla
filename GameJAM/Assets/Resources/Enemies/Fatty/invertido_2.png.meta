@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 22ed9a81937deb94cb83ec933cd7f6bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1590650186316943589
+    second: Blue_Enemy_Head
+  - first:
+      213: -3605883424132835836
+    second: Blue_Enemy_HeadEvil
+  - first:
+      213: 5212758208502256282
+    second: Blue_Enemy_Chest
+  - first:
+      213: 7499357624584415865
+    second: Blue_Enemy_RightArm
+  - first:
+      213: -5020481180013949816
+    second: Blue_Enemy_RightArmEvil
+  - first:
+      213: -9130666057732947863
+    second: Blue_Enemy_LeftArm
+  - first:
+      213: 1046939345756683658
+    second: Blue_Enemy_LeftLeg
+  - first:
+      213: 4928366387378848659
+    second: Blue_Enemy_RightLeg
+  - first:
+      213: -3547706963413260839
+    second: Blue_Enemy_LeftArmEvil
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue_Enemy_Head
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1435
+        width: 391
+        height: 444
+      alignment: 9
+      pivot: {x: 0.46461692, y: 0.045070063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db490ba16a444bc4db94eaae67dc844d
+      internalID: -1590650186316943589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_HeadEvil
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1470
+        width: 322
+        height: 397
+      alignment: 9
+      pivot: {x: 0.45703465, y: 0.0539394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f302e8ea65027ca4da23983a06835fb5
+      internalID: -3605883424132835836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_Chest
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 636
+        width: 494
+        height: 647
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16abc3fc1c3171543bbf4e35abd983b2
+      internalID: 5212758208502256282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_RightArm
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 940
+        width: 124
+        height: 360
+      alignment: 9
+      pivot: {x: 0.41074347, y: 0.9457896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e943407c6c4254eb13e789450a6f50
+      internalID: 7499357624584415865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_RightArmEvil
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 915
+        width: 149
+        height: 426
+      alignment: 9
+      pivot: {x: 0.51857024, y: 0.9546661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333578cdd27a92c4dae627463af341a7
+      internalID: -5020481180013949816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_LeftArm
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 134
+        width: 171
+        height: 380
+      alignment: 9
+      pivot: {x: 0.694173, y: 0.91504556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e1dbf95f5994943832600e5c24d248
+      internalID: -9130666057732947863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_LeftLeg
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 125
+        width: 168
+        height: 312
+      alignment: 9
+      pivot: {x: 0.7141106, y: 0.9345563}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a02d68165c8684d82670f1ee5dd69d
+      internalID: 1046939345756683658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_RightLeg
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 128
+        width: 168
+        height: 313
+      alignment: 9
+      pivot: {x: 0.714111, y: 0.9508481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5af9362fca50ca45a00209ba1391189
+      internalID: 4928366387378848659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Enemy_LeftArmEvil
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 362
+        width: 212
+        height: 438
+      alignment: 9
+      pivot: {x: 0.76103467, y: 0.9548444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf7c2d6b66f97844a7ddc9570578aab
+      internalID: -3547706963413260839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

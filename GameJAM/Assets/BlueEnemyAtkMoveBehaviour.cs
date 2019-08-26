@@ -40,10 +40,6 @@ public class BlueEnemyAtkMoveBehaviour : StateMachineBehaviour
             }
 
         }
-        else if(Vector2.Distance(animator.transform.position,target.position) < 4f)
-        {
-            animator.GetComponent<BlueEnemy>().Die();
-        }
         else
         {
         animator.ResetTrigger("Pursuit");

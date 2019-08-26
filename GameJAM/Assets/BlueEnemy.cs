@@ -11,6 +11,9 @@ public class BlueEnemy : Enemy
     private bool soundPlayed = false;
     public GameObject implosion;
      Vector3 handsTogether;
+     private float explosionTimer =0f;
+     public GameObject parent;
+     private float explosionDistance = 0.75f;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +42,11 @@ public class BlueEnemy : Enemy
             {
                 ChillModeState();
             }
+        }
+
+        if(Vector2.Distance(animator.transform.position,target.position) < explosionDistance)
+        {
+            health = 0;
         }
     }
 
@@ -99,6 +107,22 @@ public class BlueEnemy : Enemy
         GameObject bullet = Instantiate(implosion, handsTogether,Quaternion.identity );
         bullet.transform.SetParent(this.transform);
         Destroy(bullet,1f);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        
+        Gizmos.DrawWireSphere(transform.position, explosionDistance);
+    }
+
+    public override void Die()
+    {
+        explosionTimer += Time.deltaTime;
+        Debug.Log("DIE()");
+        PlayerManager.instance.player.GetComponent<StatusController>().ObtainExp(this.experience);
+        GameObject explosion = Instantiate(PS_Explosion,handsTogether,Quaternion.identity);
+        Destroy(gameObject,1.3f); // asi esta bien
     }
 
 }

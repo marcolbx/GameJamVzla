@@ -44042,7 +44042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169709746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13996768, y: -0.19126725, z: 0}
+  m_LocalPosition: {x: -0.1399677, y: -0.19126725, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1727413089}
@@ -47368,9 +47368,9 @@ GameObject:
   - component: {fileID: 1727413092}
   - component: {fileID: 1727413093}
   - component: {fileID: 1727413094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blue_Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47439,10 +47439,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -47556,7 +47556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e991eaf4337b31b4389c8be011908d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 6
   damage: 0
   experience: 10
   speed: 2
@@ -47565,12 +47565,12 @@ MonoBehaviour:
   PS_Explosion: {fileID: 5886572926592860256, guid: 33314bc91df750341b6cf924cad18655,
     type: 3}
   hurtSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5212758208502256282, guid: 22ed9a81937deb94cb83ec933cd7f6bd, type: 3}
+  - {fileID: -1590650186316943589, guid: 22ed9a81937deb94cb83ec933cd7f6bd, type: 3}
+  - {fileID: -9130666057732947863, guid: 22ed9a81937deb94cb83ec933cd7f6bd, type: 3}
+  - {fileID: 7499357624584415865, guid: 22ed9a81937deb94cb83ec933cd7f6bd, type: 3}
+  - {fileID: 4928366387378848659, guid: 22ed9a81937deb94cb83ec933cd7f6bd, type: 3}
+  - {fileID: 1046939345756683658, guid: 22ed9a81937deb94cb83ec933cd7f6bd, type: 3}
   normalSprites:
   - {fileID: -3025042731946618264, guid: cac0165ac4b29044ba04f47d5605fc19, type: 3}
   - {fileID: 2654952491014960469, guid: cac0165ac4b29044ba04f47d5605fc19, type: 3}
@@ -47598,6 +47598,7 @@ MonoBehaviour:
   normalSpeed: 1.4
   implosion: {fileID: 3169012475532346419, guid: 9557b59cfb9eba74e8500c544878140d,
     type: 3}
+  parent: {fileID: 1756138510}
 --- !u!1 &1756138510
 GameObject:
   m_ObjectHideFlags: 0
