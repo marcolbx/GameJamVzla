@@ -9,6 +9,8 @@ public class BlueEnemy : Enemy
     [SerializeField] private float normalSpeed = 1.4f;
     private AudioSource audioSource;
     private bool soundPlayed = false;
+    public GameObject implosion;
+     Vector3 handsTogether;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class BlueEnemy : Enemy
     // Update is called once per frame
     override protected void Update()
     {
+        handsTogether = new Vector3(transform.position.x,transform.position.y +1f,transform.position.z);
         base.Update();
         targetX = new Vector2(target.position.x,this.transform.position.y);
         if(health > 0)
@@ -63,6 +66,7 @@ public class BlueEnemy : Enemy
                 animator.transform.eulerAngles = new Vector3(0,180,0);
         }
         */
+        
         if(isEvil == true && hurt == false)
         {
             EvilSprites();
@@ -87,6 +91,14 @@ public class BlueEnemy : Enemy
         renderers[3].sprite = evilSprites[3];
         renderers[4].sprite = evilSprites[4];
         renderers[5].sprite = evilSprites[5];
+    }
+
+    public void InstantiateImplosion()
+    {
+       
+        GameObject bullet = Instantiate(implosion, handsTogether,Quaternion.identity );
+        bullet.transform.SetParent(this.transform);
+        Destroy(bullet,1f);
     }
 
 }

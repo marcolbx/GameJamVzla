@@ -9,7 +9,7 @@ public class BlueEnemyAtkMoveBehaviour : StateMachineBehaviour
     [SerializeField] private float minDistance = 4f;
     private AudioSource audioSource;
     private bool soundPlayed = false;
-    [SerializeField] private float speed = 2.6f;
+    [SerializeField] private float speed = 3f;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -22,7 +22,7 @@ public class BlueEnemyAtkMoveBehaviour : StateMachineBehaviour
     {
         target = PlayerManager.instance.player.transform;
         targetX = new Vector2(target.position.x,animator.transform.position.y);
-        
+
         if(Vector2.Distance(animator.transform.position,target.position) < minDistance +2f)
         {
 
@@ -39,6 +39,10 @@ public class BlueEnemyAtkMoveBehaviour : StateMachineBehaviour
                 animator.transform.eulerAngles = new Vector3(0,180,0);
             }
 
+        }
+        else if(Vector2.Distance(animator.transform.position,target.position) < 4f)
+        {
+            animator.GetComponent<BlueEnemy>().Die();
         }
         else
         {
