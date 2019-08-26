@@ -17,12 +17,15 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private Rigidbody2D rb;
     private float initialGravity;
+
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         initialGravity = rb.gravityScale;
         jumpController = GetComponent<JumpController>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
             if(!jumpController.onGround && jumpController.jumpTimeCounter<jumpController.jumpTime/2)
                 rb.velocity = Vector2.down;
             wasOnWall = true;
+            animator.SetBool("Walking",false);
         }
         else{
             rb.gravityScale = initialGravity;
@@ -51,14 +55,19 @@ public class PlayerMovement : MonoBehaviour
             if(!isWall){
                 horizontal=1;
                 transform.Translate(walkingSpeed* Time.deltaTime,0,0);
+                animator.SetBool("Walking",true);
             }
+            
         }
         else if(Input.GetKey(KeyCode.LeftArrow)){
             transform.eulerAngles = new Vector3 (0,180,0);
             if(!isWall){
                 horizontal =-1;
                 transform.Translate(walkingSpeed* Time.deltaTime,0,0);
+                animator.SetBool("Walking",true);
             }
+        }else{
+            animator.SetBool("Walking",false);
         }
         
     }
