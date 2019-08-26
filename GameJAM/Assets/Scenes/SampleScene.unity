@@ -51613,6 +51613,36 @@ PrefabInstance:
       propertyPath: experience
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 229911055081649708, guid: ddb7df5e137ee234ea36ea47df9b600e,
+        type: 3}
+      propertyPath: normalSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -5563858499040934933, guid: f5c048491c8a2134eaaa42319560d652,
+        type: 3}
+    - target: {fileID: 229911055081649708, guid: ddb7df5e137ee234ea36ea47df9b600e,
+        type: 3}
+      propertyPath: normalSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -1998311851855155166, guid: f5c048491c8a2134eaaa42319560d652,
+        type: 3}
+    - target: {fileID: 229911055081649708, guid: ddb7df5e137ee234ea36ea47df9b600e,
+        type: 3}
+      propertyPath: normalSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -5563858499040934933, guid: f5c048491c8a2134eaaa42319560d652,
+        type: 3}
+    - target: {fileID: 229911055081649708, guid: ddb7df5e137ee234ea36ea47df9b600e,
+        type: 3}
+      propertyPath: normalSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 7017407192557809386, guid: f5c048491c8a2134eaaa42319560d652,
+        type: 3}
+    - target: {fileID: 229911055081649708, guid: ddb7df5e137ee234ea36ea47df9b600e,
+        type: 3}
+      propertyPath: normalSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 8233875605747327668, guid: f5c048491c8a2134eaaa42319560d652,
+        type: 3}
     - target: {fileID: 229911053227912453, guid: ddb7df5e137ee234ea36ea47df9b600e,
         type: 3}
       propertyPath: m_Sprite
