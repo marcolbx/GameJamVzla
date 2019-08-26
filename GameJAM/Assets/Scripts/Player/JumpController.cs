@@ -14,10 +14,13 @@ public class JumpController : MonoBehaviour
     public LayerMask groundLayer;
     public bool jumping;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,14 +28,25 @@ public class JumpController : MonoBehaviour
     {
         onGround = Physics2D.OverlapCircle(feetPos.position,checkRadius,groundLayer);
         if(onGround == true){
+            animator.SetBool("Jumping",false);
+            animator.SetBool("false",true);
+            animator.SetBool("OnAir",false);
+            animator.SetBool("Fall",true);
             jumpTimeCounter = jumpTime;
         }
-        if (Input.GetKeyDown(KeyCode.X) && onGround ==true){   
+        else{
+            animator.SetBool("OnAir",true);
+        }
+        if (Input.GetKeyDown(KeyCode.X) && onGround ==true){ 
+            animator.SetBool("Jumping",true);  
+            animator.SetBool("Fall",false);
             rb.velocity = Vector2.up * jumpforce;
             jumping= true;
         }
         if  (Input.GetKey(KeyCode.X) && jumping==true){
             if(jumpTimeCounter > 0){
+                animator.SetBool("Jumping",true);  
+                animator.SetBool("Fall",false);
                 rb.velocity = Vector2.up * jumpforce;
                 jumpTimeCounter -= Time.deltaTime;
             }
