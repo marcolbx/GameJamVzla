@@ -6,6 +6,7 @@ public abstract class Enemy : MonoBehaviour
 {
     [SerializeField] protected float health;
     [SerializeField] protected int   damage;
+    [SerializeField] protected float experience;
     [SerializeField] protected float speed;
     public Animator animator;
     protected Transform target;
@@ -64,6 +65,7 @@ public abstract class Enemy : MonoBehaviour
     public virtual void Die()
     {
         Debug.Log("DIE()");
+        PlayerManager.instance.player.GetComponent<StatusController>().ObtainExp(this.experience);
         GameObject explosion = Instantiate(PS_Explosion,transform.position,Quaternion.identity);
         Destroy(gameObject,0.87f); // asi esta bien
     }
@@ -93,5 +95,7 @@ public abstract class Enemy : MonoBehaviour
         rigidbody.Sleep();
         rigidbody.isKinematic = true;
     }
+
+
 
 }

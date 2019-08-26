@@ -13245,6 +13245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 0
+  experience: 6
   speed: 0
   animator: {fileID: 262687235}
   rigidbody: {fileID: 262687237}
@@ -45658,6 +45659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   damage: 0
+  experience: 0
   speed: 2
   animator: {fileID: 1460112585}
   rigidbody: {fileID: 1460112587}
@@ -51484,6 +51486,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5701472201369074040, guid: f54d6d762084edc4b8395b31f257ab9d,
+        type: 3}
+      propertyPath: experience
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f54d6d762084edc4b8395b31f257ab9d, type: 3}
