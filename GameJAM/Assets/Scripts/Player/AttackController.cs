@@ -23,7 +23,7 @@ public class AttackController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         movementController = GetComponent<PlayerMovement>();
     }
 
@@ -47,25 +47,11 @@ public class AttackController : MonoBehaviour
     {
         if (timeBtwAttackCounter<=0){
             if(Input.GetKey(KeyCode.Space)){
-                //animator.SetBool("Attack",true);
-                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,enemyLayer);
+                animator.SetBool("Attack",true);
                 Collider2D interactable = Physics2D.OverlapBox(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,interactableLayer);
                 //if(animator.GetBool("Sword")==true)
                 //{
-                    if(enemiesToDamage.Length>0){
-                        for (int i=0; i < enemiesToDamage.Length; i++){
-                            enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
-                            Rigidbody2D rb = enemiesToDamage[i].gameObject.GetComponent<Rigidbody2D>(); 
-                            if(movementController.horizontal == 1){
-                                rb.AddForce(new Vector3(knockbackEnemyForcex ,0,0));
-                                rb.velocity = Vector2.up * knockbackEnemyForcey;
-                            }
-                            else if(movementController.horizontal == -1){
-                                rb.AddForce(new Vector3(-knockbackEnemyForcex,0,0));
-                                rb.velocity = Vector2.up * knockbackEnemyForcey;
-                            }
-                        }
-                    }
+                    MeleeAttack();
                 //}
                 //else if(animator.GetBool("Book")==true){
                     //Shoot();
@@ -79,7 +65,7 @@ public class AttackController : MonoBehaviour
         }
         else{
             timeBtwAttackCounter -= Time.deltaTime;
-            //animator.SetBool("Attack",false);
+            animator.SetBool("Attack",false);
         } 
     }
 
@@ -88,7 +74,7 @@ public class AttackController : MonoBehaviour
         Gizmos.DrawWireCube(attackPos.position,new Vector3(attackRangeX,attackRangeY,1));
     }
     
-    void Shoot(){
+    private void Shoot(){
         
         /* if(rot>90f && movementController.horizontal>0)
             rot = 90f;
@@ -106,5 +92,22 @@ public class AttackController : MonoBehaviour
             controller.stamina -= 0.1f;
         }
         
+    }
+    public void MeleeAttack(){
+        Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,enemyLayer);
+        if(enemiesToDamage.Length>0){
+            for (int i=0; i < enemiesToDamage.Length; i++){
+                enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                Rigidbody2D rb = enemiesToDamage[i].gameObject.GetComponent<Rigidbody2D>(); 
+                if(movementController.horizontal == 1){
+                    rb.AddForce(new Vector3(knockbackEnemyForcex ,0,0));
+                    rb.velocity = Vector2.up * knockbackEnemyForcey;
+                }
+                else if(movementController.horizontal == -1){
+                    rb.AddForce(new Vector3(-knockbackEnemyForcex,0,0));
+                    rb.velocity = Vector2.up * knockbackEnemyForcey;
+                }
+            }
+        }
     }
 }

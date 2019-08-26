@@ -607,7 +607,7 @@ MonoBehaviour:
   feetPos: {fileID: 2438093640064508961}
   jumpTimeCounter: 0
   jumpTime: 0.2
-  checkRadius: 0.3
+  checkRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
