@@ -25,7 +25,7 @@ public class RoomMoveVertical : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /* 
+        
         if(other.CompareTag("Player") && !other.isTrigger && other.GetComponent<Rigidbody2D>().velocity.y >=-0.001 && upper == false && other.gameObject.GetComponent<PlayerMovement>().transitionTimer>=0.5f )
         {
             Debug.Log("TRIGGERED");
@@ -45,6 +45,6 @@ public class RoomMoveVertical : MonoBehaviour
           //  other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
             other.transform.position += playerChange;
         }
-        */
+        
     }
 }
