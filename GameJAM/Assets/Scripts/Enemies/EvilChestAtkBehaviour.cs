@@ -7,7 +7,7 @@ public class EvilChestAtkBehaviour : StateMachineBehaviour
     Transform target;
     private Vector2 targetX; // solo en la X position
     private float health;
-    [SerializeField] private float speed =1f;
+    [SerializeField] private float speed =1.5f;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
