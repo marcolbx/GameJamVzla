@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float wallCheckX;
     public float wallCheckY;
     public Transform wall;
-    public float transitionTimer=0.2f;
+    public float transitionTimer=0.5f;
     [SerializeField]
     private float walkingSpeed=1f;
     public float horizontal=1;
