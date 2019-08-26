@@ -14,7 +14,6 @@ public class StatusController : MonoBehaviour
     public float stamina=1;
     public float knockbackforcey;
     private Rigidbody2D rb;
-    private MeshRenderer sr;
     public int hearths;
     public int intialhearts=5;
     [SerializeField] private float invulnerableTimeCounter=0;
@@ -31,14 +30,15 @@ public class StatusController : MonoBehaviour
     public LayerMask hazardLayer;
     public LayerMask hpLayer;
     private Collider2D col;
+    private SpriteRenderer[] sprites;
     // Start is called before the first frame update
     void Start()
     {
         hearths = intialhearts;
         rb = GetComponent<Rigidbody2D>();
-        sr= GetComponent<MeshRenderer>();
         staminaSlider = GameObject.FindGameObjectWithTag("Stamina");
         experienceSlider = GameObject.FindGameObjectWithTag("Experience");
+        sprites = gameObject.GetComponentsInChildren<SpriteRenderer>();
     }
     // Update is called once per frame
     void Update()
@@ -66,7 +66,6 @@ public class StatusController : MonoBehaviour
                 hearths--;
                 spriteRendHearth.sprite = spriteHearths[hearths];
                 invulnerability =true;
-                Debug.Log("soy Invulnerable");
             }    
         }
         if(onHp == true && hearths>0){
@@ -88,19 +87,23 @@ public class StatusController : MonoBehaviour
                 invulnerableTimeCounter = 0;
             }
             if (timer >= flashTime){
-                if(sr.enabled == true){
-                    sr.enabled = false;
-                    timer=0;
-                }
-                else{
-                    sr.enabled = true;
-                    timer=0;
+                for(int i=0;i<sprites.Length;i++){
+                    if(sprites[i].enabled== true){
+                        sprites[i].enabled = false;
+                        timer=0;
+                    }
+                    else{
+                        sprites[i].enabled = true;
+                        timer=0;
+                    }
                 }
             }
         }
         else{
             timer=0;
-            sr.enabled = true;
+            for(int i=0;i<sprites.Length;i++){
+                sprites[i].enabled = true;
+            }
         }
     }
 

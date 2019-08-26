@@ -29,7 +29,7 @@ public class JumpController : MonoBehaviour
         onGround = Physics2D.OverlapCircle(feetPos.position,checkRadius,groundLayer);
         if(onGround == true){
             animator.SetBool("Jumping",false);
-            animator.SetBool("false",true);
+            animator.SetBool("Fall",true);
             animator.SetBool("OnAir",false);
             animator.SetBool("Fall",true);
             jumpTimeCounter = jumpTime;

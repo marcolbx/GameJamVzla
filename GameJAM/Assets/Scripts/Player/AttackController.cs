@@ -31,8 +31,6 @@ public class AttackController : MonoBehaviour
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - firePoint.position;
         float rotZ = Mathf.Atan2(difference.y,difference.x) * Mathf.Rad2Deg;
         float rot=rotZ + offset;
-        Debug.Log(firePoint.rotation.y);
-        Debug.Log(firePoint.rotation.eulerAngles.y);
         if(movementController.horizontal>0 && rot<-1 && rot >-170f)
             firePoint.rotation= Quaternion.Euler(firePoint.rotation.x,firePoint.rotation.y,rot);
         else if(movementController.horizontal<0 && firePoint.rotation.y==-180 && rot>-20f)
