@@ -11,6 +11,8 @@ TagManager:
   - Stamina
   - Collectable
   - Experience
+  - Checkpoint
+  - GM
   layers:
   - Default
   - TransparentFX
