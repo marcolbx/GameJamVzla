@@ -517,16 +517,6 @@ PrefabInstance:
       propertyPath: spriteRendHearth
       value: 
       objectReference: {fileID: 1523028784}
-    - target: {fileID: 1332141412991487609, guid: 184ecd907c0626b4e89565824fa77aec,
-        type: 3}
-      propertyPath: knockbackEnemyForcex
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1332141412991487609, guid: 184ecd907c0626b4e89565824fa77aec,
-        type: 3}
-      propertyPath: knockbackEnemyForcey
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2438093642083224969, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: m_Layer
