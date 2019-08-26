@@ -19,9 +19,15 @@ public class EvilChest : Enemy
         base.Update();
     }
 
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        Open();
+    }
+
     public void Open()
     {
-        animator.SetTrigger("open");
+        animator.SetTrigger("atk");
     }
 
     public void PursuitMode()
