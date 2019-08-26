@@ -451,6 +451,30 @@ SpriteRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1626185681}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1508117507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2438093642066570062, guid: 184ecd907c0626b4e89565824fa77aec,
+    type: 3}
+  m_PrefabInstance: {fileID: 2438093640179758917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1508117516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508117507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc770cfee89e3d3409cb6d9025c4c047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask: {fileID: 0}
+  controlerImage: {fileID: 1626185682}
+  equipedMask: 0
+  LeftArms: []
+  RightArms: []
+  statusController: {fileID: 0}
 --- !u!1001 &1626185681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -583,8 +607,19 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 548836799848405632, guid: 4fdee64f7192bff43b24926c5523161a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -301.00003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fdee64f7192bff43b24926c5523161a, type: 3}
+--- !u!212 &1626185682 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 387644814242449451, guid: 4fdee64f7192bff43b24926c5523161a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1626185681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1772871481
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +819,31 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.045
       objectReference: {fileID: 0}
+    - target: {fileID: 710072285684633934, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710072285684633934, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710072285684633934, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710072285684633934, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 710072285684633934, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5668967467103388658, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: m_Sprite
@@ -940,6 +1000,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.438313
       objectReference: {fileID: 0}
+    - target: {fileID: 2438093642066570068, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1332141412991487608, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: spriteRendHearth
@@ -990,6 +1055,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2438093640687977914, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4341260555911328888, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98,
+        type: 3}
     - target: {fileID: 2438093640730900160, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1020,6 +1091,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2438093640730900161, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7010199680497250642, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98,
+        type: 3}
     - target: {fileID: 2438093641515045800, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: m_LocalPosition.x

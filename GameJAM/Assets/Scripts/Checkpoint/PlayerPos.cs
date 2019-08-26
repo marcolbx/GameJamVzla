@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerPos : MonoBehaviour
 {
-    private GameMaster gameMaster;
+    private GameMaster gm;
     // Start is called before the first frame update
     void Start()
     {
-        gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        transform.position = gameMaster.lastCheckpointPos;
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        transform.position = gm.lastCheckpointPos;
     }
 
     // Update is called once per frame
