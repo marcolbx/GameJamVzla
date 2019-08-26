@@ -50,11 +50,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3302901405
+    locked: 0
+  - name: Tileset
+    uniqueID: 3636220827
+    locked: 0
   - name: UI
     uniqueID: 2518595881
     locked: 0
   - name: Interactables
     uniqueID: 1457666827
+    locked: 0
+  - name: TilesetHidder
+    uniqueID: 2432137823
     locked: 0
   - name: Player
     uniqueID: 3846533283
