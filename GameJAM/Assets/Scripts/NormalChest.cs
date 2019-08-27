@@ -13,10 +13,11 @@ public class NormalChest : Interactable
     private float timer = 0.5f;
     private bool burst =false;
     public Rigidbody2D rigidbody;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -72,5 +73,10 @@ public class NormalChest : Interactable
     {
         rigidbody.Sleep();
         rigidbody.isKinematic = true;
+    }
+
+    public void PlaySound()
+    {
+        audioSource.Play();
     }
 }
