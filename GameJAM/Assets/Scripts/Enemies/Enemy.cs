@@ -20,6 +20,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] protected float hurtTimer =0.5f;
     protected bool hurt = false;
     [SerializeField] protected bool isEvil = true;
+    public GameObject[] moneyToSpawn;
+    public GameObject[] items;//0 Potion, 1 Bullets
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +70,8 @@ public abstract class Enemy : MonoBehaviour
         PlayerManager.instance.player.GetComponent<StatusController>().ObtainExp(this.experience);
         GameObject explosion = Instantiate(PS_Explosion,transform.position,Quaternion.identity);
         Destroy(gameObject,0.87f); // asi esta bien
+
+
     }
 
     public virtual void Hurt()
@@ -94,6 +98,23 @@ public abstract class Enemy : MonoBehaviour
     {
         rigidbody.Sleep();
         rigidbody.isKinematic = true;
+    }
+
+    public virtual void InstantiateMoneyItems()
+    {
+        Debug.Log("Instantiate MoneyItems");
+    foreach (GameObject money in moneyToSpawn)
+    {
+        GameObject geld = Instantiate(money,transform.position,Quaternion.identity);
+    }
+
+    
+    if(items.Length>0)
+    {
+        int random = Random.Range(0,2);
+        GameObject item = Instantiate(items[random],transform.position,Quaternion.identity);
+    }
+    
     }
 
 

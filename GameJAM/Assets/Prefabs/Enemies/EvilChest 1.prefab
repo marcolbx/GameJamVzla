@@ -203,6 +203,11 @@ MonoBehaviour:
   - {fileID: 1725084596094555404}
   hurtTimer: 0.5
   isEvil: 1
+  moneyToSpawn:
+  - {fileID: 63457365835235906, guid: 655a22b34f1605b43bb4ff5dd814076b, type: 3}
+  - {fileID: 7008300543069221188, guid: 597ecf8251e8e0440ba0d2f604b0e84d, type: 3}
+  - {fileID: 63457365835235906, guid: 655a22b34f1605b43bb4ff5dd814076b, type: 3}
+  items: []
 --- !u!50 &1725084595153194583
 Rigidbody2D:
   serializedVersion: 4

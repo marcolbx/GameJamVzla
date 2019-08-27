@@ -431,6 +431,12 @@ MonoBehaviour:
   - {fileID: 8132029033871544245}
   hurtTimer: 0.5
   isEvil: 1
+  moneyToSpawn:
+  - {fileID: 7008300543069221188, guid: 597ecf8251e8e0440ba0d2f604b0e84d, type: 3}
+  - {fileID: 7008300543069221188, guid: 597ecf8251e8e0440ba0d2f604b0e84d, type: 3}
+  - {fileID: 7008300543069221188, guid: 597ecf8251e8e0440ba0d2f604b0e84d, type: 3}
+  - {fileID: 63457365835235906, guid: 655a22b34f1605b43bb4ff5dd814076b, type: 3}
+  items: []
   minDistance: 4
   normalSpeed: 1
 --- !u!50 &8132029034412568451
