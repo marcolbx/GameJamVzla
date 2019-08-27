@@ -22,6 +22,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] protected bool isEvil = true;
     public GameObject[] moneyToSpawn;
     public GameObject[] items;//0 Potion, 1 Bullets
+
+    public AudioSource hurtSound;
     // Start is called before the first frame update
     void Start()
     {
