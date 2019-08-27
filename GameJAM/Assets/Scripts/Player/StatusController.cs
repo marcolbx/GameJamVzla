@@ -97,6 +97,11 @@ public class StatusController : MonoBehaviour
                 float money= col.gameObject.GetComponent<Money>().amount;
                 inventory.money +=money;
             }
+            else if(col.tag==("Key"))
+            {
+                inventory.keys++;
+                Destroy(col.gameObject);
+            }
         }
         if (hearths<=0){
             Destroy(this.gameObject);

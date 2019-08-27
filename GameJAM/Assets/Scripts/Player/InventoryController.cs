@@ -18,6 +18,7 @@ public class InventoryController : MonoBehaviour
     public Sprite[] faces;
     public Sprite[] skills;
     public float money;
+    public int keys;
     public bool restore=false;
     private StatusController statusController;
     private GameObject[] wires;

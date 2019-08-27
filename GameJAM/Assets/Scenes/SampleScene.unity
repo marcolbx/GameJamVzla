@@ -14224,9 +14224,9 @@ GameObject:
   - component: {fileID: 267218977}
   - component: {fileID: 267218980}
   - component: {fileID: 267218979}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
