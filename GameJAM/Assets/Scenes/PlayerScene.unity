@@ -700,11 +700,6 @@ PrefabInstance:
       propertyPath: controlerImage
       value: 
       objectReference: {fileID: 1626185682}
-    - target: {fileID: 8061255516615801465, guid: 184ecd907c0626b4e89565824fa77aec,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 180166051926978299, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: m_Sprite
@@ -1016,6 +1011,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438093640687977541, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438093640687977541, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2438093640687977914, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}

@@ -22,7 +22,7 @@ public class InventoryController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controlerImage.enabled = false;
+        controlerImage.enabled = true;
         animator = GetComponent<Animator>();
         rightArm = GameObject.FindGameObjectWithTag("RightArm");
         leftArm = GameObject.FindGameObjectWithTag("LeftArm");
@@ -30,6 +30,7 @@ public class InventoryController : MonoBehaviour
         yoyoObject = GameObject.FindGameObjectWithTag("Yoyo");
         yoyoWire =  GameObject.FindGameObjectWithTag("YoyoWire");
         statusController = GetComponent<StatusController>();
+        EquipYoyo();
 
     }
 
@@ -44,7 +45,7 @@ public class InventoryController : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.Alpha3)&& statusController.stamina+0.1f > 0){
             restore =true;
-            //controlerImage.sprite = mask;
+            controlerImage.sprite = skills[2];
             equipedGlass= true;
             rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
             leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[1];
@@ -58,19 +59,11 @@ public class InventoryController : MonoBehaviour
             yoyoWire.GetComponent<SpriteRenderer>().enabled=false;
                 
         }else if(Input.GetKey(KeyCode.Alpha1)){
-            restore = false;
-            rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
-            leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[0];
-            face.GetComponent<SpriteRenderer>().sprite = faces[0];
-            yoyoObject.GetComponent<SpriteRenderer>().enabled=true;
-            yoyoWire.GetComponent<SpriteRenderer>().enabled=true;
-            animator.SetBool("Yoyo",true);
-            animator.SetBool("SlingShot",false);
-            animator.SetBool("Glass",false);
-            equipedGlass= false;
+            EquipYoyo();
         }
         else if(Input.GetKey(KeyCode.Alpha2)){
             restore = false;
+            controlerImage.sprite = skills[1];
             rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[1];
             leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[2];
             face.GetComponent<SpriteRenderer>().sprite = faces[1];
@@ -84,7 +77,9 @@ public class InventoryController : MonoBehaviour
     }
 
     public void EquipYoyo(){
+        restore = false;
         rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
+        controlerImage.sprite = skills[0];
         leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[0];
         face.GetComponent<SpriteRenderer>().sprite = faces[0];
         yoyoObject.GetComponent<SpriteRenderer>().enabled=true;
