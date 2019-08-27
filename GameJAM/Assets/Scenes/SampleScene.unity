@@ -732,6 +732,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8061255516615801465, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: controlerImage
+      value: 
+      objectReference: {fileID: 1046488510}
     - target: {fileID: 2438093642066570062, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: m_Name
@@ -797,6 +802,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2438093642066570059, guid: 184ecd907c0626b4e89565824fa77aec,
+        type: 3}
+      propertyPath: transitionTimer
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1332141412991487608, guid: 184ecd907c0626b4e89565824fa77aec,
         type: 3}
       propertyPath: spriteRendHearth
@@ -851,11 +861,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2438093642066570059, guid: 184ecd907c0626b4e89565824fa77aec,
-        type: 3}
-      propertyPath: transitionTimer
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 184ecd907c0626b4e89565824fa77aec, type: 3}
@@ -32086,6 +32091,12 @@ Transform:
   m_Father: {fileID: 1460112584}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1046488510 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3808446360042003182, guid: 0ea875dd0072f2445b089e0d6db3034b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3583564782403159723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1047198372
 GameObject:
   m_ObjectHideFlags: 0
@@ -56863,6 +56874,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778817890541056549, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778817890541056549, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ea875dd0072f2445b089e0d6db3034b, type: 3}
