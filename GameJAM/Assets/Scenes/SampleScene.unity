@@ -49183,12 +49183,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 250120740}
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -55593,16 +55593,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1514416021}
-    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9151428668141835175, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -55623,6 +55613,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -598
       objectReference: {fileID: 0}
+    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3902013967362361413, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -55633,6 +55633,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -572.9999
       objectReference: {fileID: 0}
+    - target: {fileID: 6920396338891418738, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2778817890541056549, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -55642,11 +55647,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 477.00006
-      objectReference: {fileID: 0}
-    - target: {fileID: 6920396338891418738, guid: 0ea875dd0072f2445b089e0d6db3034b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ea875dd0072f2445b089e0d6db3034b, type: 3}
@@ -56510,6 +56510,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1667597225348765693, guid: 0da33ac5613d10f4facc0b3365e30dc7,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.24
+      objectReference: {fileID: 0}
     - target: {fileID: 8132029034412568455, guid: 0da33ac5613d10f4facc0b3365e30dc7,
         type: 3}
       propertyPath: m_Name
@@ -56609,11 +56614,6 @@ PrefabInstance:
       propertyPath: hurtSound
       value: 
       objectReference: {fileID: 1522913330}
-    - target: {fileID: -1667597225348765693, guid: 0da33ac5613d10f4facc0b3365e30dc7,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.24
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da33ac5613d10f4facc0b3365e30dc7, type: 3}
 --- !u!1001 &8251033982954084853
