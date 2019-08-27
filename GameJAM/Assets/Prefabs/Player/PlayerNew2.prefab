@@ -655,6 +655,7 @@ MonoBehaviour:
   hpLayer:
     serializedVersion: 2
     m_Bits: 16384
+  restore: 0
 --- !u!114 &1332141412991487609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,15 +693,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2438093642066570062}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc770cfee89e3d3409cb6d9025c4c047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controlerImage: {fileID: 0}
   equipedGlass: 0
-  yoyoObject: {fileID: 5691129527651952990}
-  yoyoWire: {fileID: 615702000050760806}
   leftArms:
   - {fileID: -7010199680497250642, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
   - {fileID: 3785285938016517850, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
@@ -711,7 +710,11 @@ MonoBehaviour:
   faces:
   - {fileID: 2796841161235054742, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
   - {fileID: 2806363112574051905, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
-  skills: []
+  skills:
+  - {fileID: -191431627173939306, guid: f26eada841a16a24693b3278aa703872, type: 3}
+  - {fileID: 3197849309637569979, guid: f26eada841a16a24693b3278aa703872, type: 3}
+  - {fileID: -8599051684187611097, guid: f26eada841a16a24693b3278aa703872, type: 3}
+  restore: 0
 --- !u!1 &2438093642083224969
 GameObject:
   m_ObjectHideFlags: 0
