@@ -30,8 +30,10 @@ public class StatusController : MonoBehaviour
     public LayerMask hazardLayer;
     public LayerMask hpLayer;
     public bool restore=false;
+    public int staminaRecover=50;
     private Collider2D col;
     private SpriteRenderer[] sprites;
+    private InventoryController inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,10 +42,14 @@ public class StatusController : MonoBehaviour
         staminaSlider = GameObject.FindGameObjectWithTag("Stamina");
         experienceSlider = GameObject.FindGameObjectWithTag("Experience");
         sprites = gameObject.GetComponentsInChildren<SpriteRenderer>();
+        inventory = gameObject.GetComponent<InventoryController>();
     }
     // Update is called once per frame
     void Update()
     {
+        if(inventory.GetPower()==false && stamina+(Time.deltaTime/staminaRecover)<=1){
+            stamina+=Time.deltaTime/staminaRecover;
+        }
         experience = Mathf.Lerp(experience,newExperience,4*Time.deltaTime);
         experienceSlider.GetComponent<Image>().fillAmount =experience;
         staminaSlider.GetComponent<Slider>().value=stamina;
