@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         isWall = Physics2D.OverlapBox(wall.position,new Vector2(wallCheckX,wallCheckY),0,groundLayer);
-        if(transitionTimer <=0.2){
+        if(transitionTimer <=0.5){
             transitionTimer +=Time.deltaTime;
         }
         if(isWall){

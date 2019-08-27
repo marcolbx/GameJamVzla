@@ -589,7 +589,7 @@ MonoBehaviour:
   wallCheckX: 0
   wallCheckY: 0
   wall: {fileID: 817710861574005430}
-  transitionTimer: 0.2
+  transitionTimer: 0.5
   walkingSpeed: 5
   horizontal: 1
   isWall: 0
@@ -722,7 +722,10 @@ MonoBehaviour:
   - {fileID: 3197849309637569979, guid: f26eada841a16a24693b3278aa703872, type: 3}
   - {fileID: -8599051684187611097, guid: f26eada841a16a24693b3278aa703872, type: 3}
   money: 0
+  keys: 0
   restore: 0
+  moneyUI: {fileID: 0}
+  keysUI: {fileID: 0}
 --- !u!1 &817710862536528091
 GameObject:
   m_ObjectHideFlags: 0
