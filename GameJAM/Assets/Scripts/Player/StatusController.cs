@@ -34,6 +34,7 @@ public class StatusController : MonoBehaviour
     private Collider2D col;
     private SpriteRenderer[] sprites;
     private InventoryController inventory;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +44,7 @@ public class StatusController : MonoBehaviour
         experienceSlider = GameObject.FindGameObjectWithTag("Experience");
         sprites = gameObject.GetComponentsInChildren<SpriteRenderer>();
         inventory = gameObject.GetComponent<InventoryController>();
+        animator = gameObject.GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -101,8 +103,24 @@ public class StatusController : MonoBehaviour
                         timer=0;
                     }
                     else{
-                        sprites[i].enabled = true;
-                        timer=0;
+                        if(animator.GetBool("SlingShot")==true)
+                        {
+                            if (sprites[i].tag!="Yoyo")
+                            {
+                                sprites[i].enabled = true;
+                                timer=0;
+                            }
+                        } else if(animator.GetBool("Yoyo")==true){
+                            if (sprites[i].tag!="SlingShot")
+                            {
+                                sprites[i].enabled = true;
+                                timer=0;
+                            }
+                        }
+                        else{
+                            sprites[i].enabled = true;
+                            timer=0;
+                        }
                     }
                 }
             }
@@ -110,7 +128,20 @@ public class StatusController : MonoBehaviour
         else if(restore == true){
             timer=0;
             for(int i=0;i<sprites.Length;i++){
-                sprites[i].enabled = true;
+                if(animator.GetBool("SlingShot")==true)
+                {
+                    if (sprites[i].tag!="Yoyo")
+                    {
+                        sprites[i].enabled = true;
+                    }
+                }
+                else if(animator.GetBool("Yoyo")==true)
+                {
+                    if (sprites[i].tag!="SlingShot")
+                    {
+                        sprites[i].enabled = true;
+                    }
+                }
             }
             restore = false;
         }

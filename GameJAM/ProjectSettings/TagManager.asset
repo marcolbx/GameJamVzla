@@ -17,8 +17,8 @@ TagManager:
   - RightArm
   - LeftArm
   - Yoyo
-  - YoyoWire
   - Face
+  - SlingShot
   layers:
   - Default
   - TransparentFX

@@ -10,8 +10,7 @@ public class InventoryController : MonoBehaviour
     private Animator animator;
     private GameObject rightArm;
     private GameObject leftArm;
-    private GameObject yoyoObject;
-    private GameObject yoyoWire;
+    private GameObject[] yoyo;
     private GameObject face;
     public Sprite[] leftArms;
     public int staminaLoss=2;
@@ -20,6 +19,7 @@ public class InventoryController : MonoBehaviour
     public Sprite[] skills;
     public bool restore=false;
     private StatusController statusController;
+    private GameObject[] wires;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +28,9 @@ public class InventoryController : MonoBehaviour
         rightArm = GameObject.FindGameObjectWithTag("RightArm");
         leftArm = GameObject.FindGameObjectWithTag("LeftArm");
         face = GameObject.FindGameObjectWithTag("Face");
-        yoyoObject = GameObject.FindGameObjectWithTag("Yoyo");
-        yoyoWire =  GameObject.FindGameObjectWithTag("YoyoWire");
+        yoyo = GameObject.FindGameObjectsWithTag("Yoyo");
         statusController = GetComponent<StatusController>();
+        wires = GameObject.FindGameObjectsWithTag("SlingShot");
         EquipYoyo();
 
     }
@@ -45,6 +45,8 @@ public class InventoryController : MonoBehaviour
             statusController.stamina -=Time.deltaTime/staminaLoss;
         }
         if(Input.GetKey(KeyCode.Alpha3)&& statusController.stamina+0.1f > 0){
+            HideShow(wires,false);
+            HideShow(yoyo,false);
             restore =true;
             controlerImage.sprite = skills[2];
             equipedGlass= true;
@@ -56,20 +58,19 @@ public class InventoryController : MonoBehaviour
             animator.SetBool("Yoyo",false);
             animator.SetBool("SlingShot",false);
             animator.SetBool("Glass",true);
-            yoyoObject.GetComponent<SpriteRenderer>().enabled=false;
-            yoyoWire.GetComponent<SpriteRenderer>().enabled=false;
+            
                 
         }else if(Input.GetKey(KeyCode.Alpha1)){
             EquipYoyo();
         }
         else if(Input.GetKey(KeyCode.Alpha2)){
+            HideShow(wires,true);
             restore = false;
             controlerImage.sprite = skills[1];
             rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[1];
             leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[2];
             face.GetComponent<SpriteRenderer>().sprite = faces[1];
-            yoyoObject.GetComponent<SpriteRenderer>().enabled=false;
-            yoyoWire.GetComponent<SpriteRenderer>().enabled=false;
+            HideShow(yoyo,false);
             animator.SetBool("Yoyo",false);
             animator.SetBool("SlingShot",true);
             animator.SetBool("Glass",false);
@@ -77,14 +78,27 @@ public class InventoryController : MonoBehaviour
         }
     }
 
+    public void HideShow(GameObject[] go,bool constraint){
+        if(constraint ==true){
+            for(int i=0;i<wires.Length;i++){
+                go[i].GetComponent<SpriteRenderer>().enabled =true;
+            }
+        }
+        else{
+            for(int i=0;i<wires.Length;i++){
+                go[i].GetComponent<SpriteRenderer>().enabled =false;
+            }
+        }
+    }
     public void EquipYoyo(){
+        HideShow(wires,false);
+        HideShow(yoyo,true);
         restore = false;
         rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
         controlerImage.sprite = skills[0];
         leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[0];
         face.GetComponent<SpriteRenderer>().sprite = faces[0];
-        yoyoObject.GetComponent<SpriteRenderer>().enabled=true;
-        yoyoWire.GetComponent<SpriteRenderer>().enabled=true;
+        
         animator.SetBool("Yoyo",true);
         animator.SetBool("SlingShot",false);
         animator.SetBool("Glass",false);

@@ -28,7 +28,7 @@ public class AttackController : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - firePoint.position;
+        /* Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - firePoint.position;
         float rotZ = Mathf.Atan2(difference.y,difference.x) * Mathf.Rad2Deg;
         float rot=rotZ + offset;
         if(movementController.horizontal>0 && rot<-1 && rot >-170f)
@@ -40,7 +40,7 @@ public class AttackController : MonoBehaviour
         else
         {
             firePoint.rotation= Quaternion.Euler(firePoint.rotation.x,firePoint.rotation.y,rot);
-        }
+        }*/
     }
     // Update is called once per frame
     void Update()
@@ -49,13 +49,13 @@ public class AttackController : MonoBehaviour
             if(Input.GetKey(KeyCode.Space)){
                 animator.SetBool("Attack",true);
                 Collider2D interactable = Physics2D.OverlapBox(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,interactableLayer);
-                //if(animator.GetBool("Sword")==true)
-                //{
+                if(animator.GetBool("Yoyo")==true)
+                {
                     MeleeAttack();
-                //}
-                //else if(animator.GetBool("Book")==true){
-                    //Shoot();
-                //}
+                }
+                else if(animator.GetBool("SlingShot")==true){
+                    Shoot();
+                }
                 if (interactable != null){
                     interactable.GetComponent<Interactable>().Action();
                 }
@@ -76,22 +76,11 @@ public class AttackController : MonoBehaviour
     
     private void Shoot(){
         
-        /* if(rot>90f && movementController.horizontal>0)
-            rot = 90f;
-        if(rot<-90 && movementController.horizontal>0)
-            rot = -90f;*/
-        /* if(rot<90f && movementController.horizontal<0)
-            rot = -90f;
-         if(rot>-90 && movementController.horizontal<0)
-            rot = +90f;
-            */
-        
         StatusController controller = GetComponent<StatusController>();
         if(controller.stamina>0){
             Instantiate(fireBolt, firePoint.position, firePoint.rotation);
             controller.stamina -= 0.1f;
         }
-        
     }
     public void MeleeAttack(){
         Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,enemyLayer);
