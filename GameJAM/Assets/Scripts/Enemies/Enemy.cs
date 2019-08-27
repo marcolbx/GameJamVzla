@@ -58,6 +58,7 @@ public abstract class Enemy : MonoBehaviour
     {
         Debug.Log("Recibio " + damage +" de dano");
         this.health -= damage;
+        hurtSound.Play();
         Hurt();
     }
 

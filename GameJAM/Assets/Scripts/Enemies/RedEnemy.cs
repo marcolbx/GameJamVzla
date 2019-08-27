@@ -7,12 +7,11 @@ public class RedEnemy : Enemy
     private Vector2 targetX; // solo en la X position
     [SerializeField] private float minDistance = 4f;
     [SerializeField] private float normalSpeed = 1.4f;
-    private AudioSource audioSource;
+    public AudioSource aSPursuit;
     private bool soundPlayed = false;
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         target = PlayerManager.instance.player.transform;
         targetX = new Vector2(target.position.x,this.transform.position.y);
         animator.SetFloat("Hp",health);
@@ -42,7 +41,7 @@ public class RedEnemy : Enemy
     void PursuitModeState()
     {
         if(soundPlayed == false)
-        audioSource.Play();
+        aSPursuit.Play();
         soundPlayed = true;
         animator.speed = 1.0f;
         animator.ResetTrigger("Idle");

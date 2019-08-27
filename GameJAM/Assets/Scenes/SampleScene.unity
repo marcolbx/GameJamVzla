@@ -31246,7 +31246,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897279193}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 64139e242f497af48a845b6804736cbd, type: 3}
@@ -51036,6 +51036,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1517199578}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1522913330 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8132029034412568449, guid: 0da33ac5613d10f4facc0b3365e30dc7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8132029034306119046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1523769673
 GameObject:
   m_ObjectHideFlags: 0
@@ -52202,8 +52208,8 @@ GameObject:
   - component: {fileID: 1727413090}
   - component: {fileID: 1727413091}
   - component: {fileID: 1727413092}
-  - component: {fileID: 1727413093}
   - component: {fileID: 1727413094}
+  - component: {fileID: 1727413093}
   - component: {fileID: 1727413095}
   m_Layer: 9
   m_Name: Blue_Enemy
@@ -52295,7 +52301,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9ced314c7ff93dc4293d79c390e7cd28, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -52434,7 +52440,7 @@ MonoBehaviour:
   moneyToSpawn:
   - {fileID: 9124387193509689492, guid: 598068d6d9538eb418c96a558c6b57e9, type: 3}
   items: []
-  hurtSound: {fileID: 0}
+  hurtSound: {fileID: 1727413093}
   minDistance: 4
   normalSpeed: 1.4
   implosion: {fileID: 3169012475532346419, guid: 9557b59cfb9eba74e8500c544878140d,
@@ -57566,6 +57572,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1667597225348765693, guid: 0da33ac5613d10f4facc0b3365e30dc7,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.24
+      objectReference: {fileID: 0}
     - target: {fileID: 8132029034412568455, guid: 0da33ac5613d10f4facc0b3365e30dc7,
         type: 3}
       propertyPath: m_Name
@@ -57660,6 +57671,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7008300543069221188, guid: 597ecf8251e8e0440ba0d2f604b0e84d,
         type: 3}
+    - target: {fileID: 8132029034412568450, guid: 0da33ac5613d10f4facc0b3365e30dc7,
+        type: 3}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 1522913330}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da33ac5613d10f4facc0b3365e30dc7, type: 3}
 --- !u!1001 &8251033982954084853
