@@ -14,6 +14,7 @@ public class InventoryController : MonoBehaviour
     private GameObject yoyoWire;
     private GameObject face;
     public Sprite[] leftArms;
+    public int staminaLoss=2;
     public Sprite[] rightArms;
     public Sprite[] faces;
     public Sprite[] skills;
@@ -41,7 +42,7 @@ public class InventoryController : MonoBehaviour
             EquipYoyo();    
         }
         if(statusController.stamina > 0 && equipedGlass ==true){
-            statusController.stamina -=Time.deltaTime/10;
+            statusController.stamina -=Time.deltaTime/staminaLoss;
         }
         if(Input.GetKey(KeyCode.Alpha3)&& statusController.stamina+0.1f > 0){
             restore =true;
@@ -51,7 +52,7 @@ public class InventoryController : MonoBehaviour
             leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[1];
             face.GetComponent<SpriteRenderer>().sprite = faces[1];
             if(equipedGlass == false)
-                statusController.stamina -=0.1f;
+                statusController.stamina -=0.2f;
             animator.SetBool("Yoyo",false);
             animator.SetBool("SlingShot",false);
             animator.SetBool("Glass",true);
