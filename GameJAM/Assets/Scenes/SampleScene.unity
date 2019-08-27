@@ -50261,6 +50261,7 @@ MonoBehaviour:
   isEvil: 1
   moneyToSpawn: []
   items: []
+  hurtSound: {fileID: 0}
   minDistance: 4
   normalSpeed: 1.4
   groundDetection: {fileID: 662036959}
@@ -52433,6 +52434,7 @@ MonoBehaviour:
   moneyToSpawn:
   - {fileID: 9124387193509689492, guid: 598068d6d9538eb418c96a558c6b57e9, type: 3}
   items: []
+  hurtSound: {fileID: 0}
   minDistance: 4
   normalSpeed: 1.4
   implosion: {fileID: 3169012475532346419, guid: 9557b59cfb9eba74e8500c544878140d,
@@ -56805,6 +56807,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1514416021}
+    - target: {fileID: 9151428668141835175, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 410
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151428668141835175, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -628
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151428667950194336, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 361.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151428667950194336, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -598
+      objectReference: {fileID: 0}
     - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -56814,6 +56836,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902013967362361413, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 409.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902013967362361413, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -572.9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920396338891418738, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778817890541056549, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 353.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778817890541056549, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 477.00006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ea875dd0072f2445b089e0d6db3034b, type: 3}
