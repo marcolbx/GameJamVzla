@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InventoryController : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class InventoryController : MonoBehaviour
     public float money;
     public int keys;
     public bool restore=false;
+    public GameObject moneyUI;
+    public GameObject keysUI;
     private StatusController statusController;
     private GameObject[] wires;
     // Start is called before the first frame update
@@ -40,6 +43,8 @@ public class InventoryController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moneyUI.GetComponent<TextMeshProUGUI>().SetText(money.ToString());
+        keysUI.GetComponent<TextMeshProUGUI>().SetText(keys.ToString());
         if(statusController.stamina <= 0 && restore == true){
             EquipYoyo();    
         }
@@ -59,9 +64,7 @@ public class InventoryController : MonoBehaviour
                 statusController.stamina -=0.2f;
             animator.SetBool("Yoyo",false);
             animator.SetBool("SlingShot",false);
-            animator.SetBool("Glass",true);
-            
-                
+            animator.SetBool("Glass",true);    
         }else if(Input.GetKey(KeyCode.Alpha1)){
             EquipYoyo();
         }
