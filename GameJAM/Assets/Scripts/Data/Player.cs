@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      //  money = this.gameObject.GetComponent<>().money;
     }
 
     public void SavePlayer()
@@ -26,10 +26,20 @@ public class Player : MonoBehaviour
         money = data.money;
         amountKeys = data.amountKeys;
 
-        Vector3 position;
-        position.x = data.position[0];
-        position.y = data.position[0];
-        position.z = data.position[0];
-        transform.position = position;
+        Vector3 pos;
+        pos.x = data.position[0];
+        pos.y = data.position[1];
+        pos.z = data.position[2];
+        transform.position = pos;
+    }
+
+    public Vector3 SavedPlayerPosition()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        Vector3 pos;
+        pos.x = data.position[0];
+        pos.y = data.position[1];
+        pos.z = data.position[2];
+        return  pos;
     }
 }

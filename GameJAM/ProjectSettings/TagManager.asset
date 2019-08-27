@@ -20,6 +20,7 @@ TagManager:
   - Face
   - SlingShot
   - Poison
+  - SaveLoad
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - Interactable
   - 
   - Collectable
-  - 
+  - Save&Load
   - 
   - 
   - 

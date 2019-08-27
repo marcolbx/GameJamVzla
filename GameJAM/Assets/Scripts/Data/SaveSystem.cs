@@ -35,13 +35,13 @@ public static class SaveSystem {
         }
     }
 
-    public static void SavePlayer(Camera camera)
+    public static void SaveCamera(CameraX camerax)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.fun";
+        string path = Application.persistentDataPath + "/camera.fun";
         FileStream stream = new FileStream(path,FileMode.Create);
 
-        CameraData data = new CameraData(camera);
+        CameraData data = new CameraData(camerax);
 
         formatter.Serialize(stream,data);
         stream.Close();

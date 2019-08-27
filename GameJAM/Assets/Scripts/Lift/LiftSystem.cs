@@ -27,8 +27,8 @@ public class LiftSystem : Interactable
         
         //Debug.Log("currentAction" + currentAction);
        // ChangeLever();
-        Debug.Log("goDown" + goDown);
-        Debug.Log("goUp" + goUp);
+     //   Debug.Log("goDown" + goDown);
+     //   Debug.Log("goUp" + goUp);
         if(currentAction > 0 && playOnce == false)
         {
             movementSound.Play();
@@ -47,7 +47,7 @@ public class LiftSystem : Interactable
             leverSound.Play();
             startSound.Play();
             
-            Debug.Log("ChangeLever");
+      //      Debug.Log("ChangeLever");
             goDown=true;
             currentAction = 1; //goDown
             foreach (Animator animator in leverAnimators)
@@ -61,7 +61,7 @@ public class LiftSystem : Interactable
             leverSound.Play();
             startSound.Play();
            // movementSound.Play();
-            Debug.Log("ChangeLever");
+       //     Debug.Log("ChangeLever");
             goUp = true;
             currentAction = 2; // goUp
             foreach (Animator animator in leverAnimators)
@@ -73,7 +73,7 @@ public class LiftSystem : Interactable
 
     public void ChangeCurrentAction()
     {
-         Debug.Log("ChangeCurrentAction");
+      //   Debug.Log("ChangeCurrentAction");
         if(currentAction == 1)
         startUp = false;
         if(currentAction == 2)
@@ -93,7 +93,7 @@ public class LiftSystem : Interactable
 
     public int GetCurrentAction()
     {
-        Debug.Log("currentAction :" + currentAction);
+     //   Debug.Log("currentAction :" + currentAction);
         return currentAction;
     }
 
