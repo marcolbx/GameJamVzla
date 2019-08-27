@@ -56,7 +56,7 @@ public class StatusController : MonoBehaviour
         experienceSlider.GetComponent<Image>().fillAmount =experience;
         staminaSlider.GetComponent<Slider>().value=stamina;
         onHazard = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
-        onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius*2.5f,CollectableLayer);
+        onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
         if(onHazard == true){
             if(hearths>0 && invulnerability == false){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
@@ -78,7 +78,7 @@ public class StatusController : MonoBehaviour
             }    
         }
         if(onCollectable == true && hearths>0){
-            col = Physics2D.OverlapCircle(transform.position,checkRadius*2.5f,CollectableLayer);
+            col = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
             if(col.tag==("Hp")){
                 if(hearths<intialhearts){
                     hearths++;

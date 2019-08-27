@@ -29462,9 +29462,10 @@ GameObject:
   m_Component:
   - component: {fileID: 674100121}
   - component: {fileID: 674100120}
+  - component: {fileID: 674100122}
   m_Layer: 15
   m_Name: potions_0
-  m_TagString: Untagged
+  m_TagString: Poison
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29533,6 +29534,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &674100122
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674100119}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.36133334
 --- !u!1 &694874981
 GameObject:
   m_ObjectHideFlags: 0
@@ -56813,6 +56830,16 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1514416021}
+    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9151428668141835175, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -56833,16 +56860,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -598
       objectReference: {fileID: 0}
-    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9151428669345434808, guid: 0ea875dd0072f2445b089e0d6db3034b,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3902013967362361413, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -56853,11 +56870,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -572.9999
       objectReference: {fileID: 0}
-    - target: {fileID: 6920396338891418738, guid: 0ea875dd0072f2445b089e0d6db3034b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2778817890541056549, guid: 0ea875dd0072f2445b089e0d6db3034b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -56867,6 +56879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 477.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920396338891418738, guid: 0ea875dd0072f2445b089e0d6db3034b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ea875dd0072f2445b089e0d6db3034b, type: 3}
@@ -57508,6 +57525,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 7948575567793885224, guid: 5c900ac12d03f124eabe43ffba84da4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948575567793885224, guid: 5c900ac12d03f124eabe43ffba84da4d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hp
+      objectReference: {fileID: 0}
     - target: {fileID: 7948575567793885226, guid: 5c900ac12d03f124eabe43ffba84da4d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57572,11 +57599,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1667597225348765693, guid: 0da33ac5613d10f4facc0b3365e30dc7,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.24
-      objectReference: {fileID: 0}
     - target: {fileID: 8132029034412568455, guid: 0da33ac5613d10f4facc0b3365e30dc7,
         type: 3}
       propertyPath: m_Name
@@ -57676,6 +57698,11 @@ PrefabInstance:
       propertyPath: hurtSound
       value: 
       objectReference: {fileID: 1522913330}
+    - target: {fileID: -1667597225348765693, guid: 0da33ac5613d10f4facc0b3365e30dc7,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da33ac5613d10f4facc0b3365e30dc7, type: 3}
 --- !u!1001 &8251033982954084853
