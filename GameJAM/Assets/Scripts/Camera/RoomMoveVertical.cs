@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomMoveVertical : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class RoomMoveVertical : MonoBehaviour
     public bool needText;
     public string placeName;
     public GameObject text;
+    public Text placeText;
     public bool upper = false;
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,11 @@ public class RoomMoveVertical : MonoBehaviour
         //    other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
             other.transform.position += playerChange;
 
+            if(needText)
+            {
+                StartCoroutine(placeNameCo());
+            }
+
         }
         else if (other.CompareTag("Player") && !other.isTrigger && other.GetComponent<Rigidbody2D>().velocity.y <-0.001 && upper == true && other.gameObject.GetComponent<PlayerMovement>().transitionTimer>=0.5f)
         {
@@ -44,7 +51,19 @@ public class RoomMoveVertical : MonoBehaviour
             cam.maxPosition += cameraChange;
           //  other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
             other.transform.position += playerChange;
+
+            if(needText)
+            {
+                StartCoroutine(placeNameCo());
+            }
         }
-        
+    }
+
+    private IEnumerator placeNameCo()
+    {
+        text.SetActive(true);
+        placeText.text = placeName;
+        yield return new WaitForSeconds(4f);
+        text.SetActive(false);
     }
 }

@@ -1,40 +1,28 @@
 fileFormatVersion: 2
-guid: 171ea7f2784bc414e91f8acbe63e0671
+guid: 73274db508cc0d54f935a385a9da685e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8884657694821909252
-    second: Yellow_Enemy_Head
+      213: 1637553627553611133
+    second: decorations_0
   - first:
-      213: 1580015601930552376
-    second: Yellow_Enemy_HeadEvil
+      213: -6791966830784600789
+    second: decorations_1
   - first:
-      213: 5977010282915841225
-    second: Yellow_Enemy_Hair
+      213: 8606214133557198973
+    second: decorations_2
   - first:
-      213: 2755288111428558706
-    second: Yellow_Enemy_HairEvil
+      213: -1125347774928963618
+    second: decorations_3
   - first:
-      213: 614961839333941006
-    second: Yellow_Enemy_HandEvil
+      213: 4748566177799071609
+    second: decorations_4
   - first:
-      213: -9139714106086835087
-    second: Yellow_Enemy_Chest
+      213: -2674238886720689716
+    second: decorations_5
   - first:
-      213: 7369449664114377887
-    second: Yellow_Enemy_HandEVil2
-  - first:
-      213: 7813269664401604778
-    second: Yellow_EnemyHand1
-  - first:
-      213: 4102297755085388517
-    second: Yellow_Enemy_Hand2
-  - first:
-      213: 8012328880468336629
-    second: Yellow_Enemy_AXE
-  - first:
-      213: 730033397279635880
-    second: Yellow_Enemy_Umbrella
+      213: 3298991621691050485
+    second: decorations_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -78,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 1500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -143,232 +131,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Yellow_Enemy_Head
+      name: decorations_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1488
-        width: 401
-        height: 359
-      alignment: 9
-      pivot: {x: 0.4447989, y: 0.052968655}
+        x: 46
+        y: 2189
+        width: 871
+        height: 1092
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 330206471b837194c8f94ddab2d16e17
-      internalID: 8884657694821909252
+      spriteID: 5c975d10ef19c8b47804eff1762c9cd8
+      internalID: 1637553627553611133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Enemy_HeadEvil
+      name: decorations_1
       rect:
         serializedVersion: 2
-        x: 675
-        y: 1518
-        width: 374
-        height: 347
-      alignment: 9
-      pivot: {x: 0.41122013, y: 0.04548333}
+        x: 2244
+        y: 1158
+        width: 546
+        height: 2361
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e3beb389c4b5340aa2868a063ba620
-      internalID: 1580015601930552376
+      spriteID: 82358fd5e63c3af408cd72887341fca6
+      internalID: -6791966830784600789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Enemy_Hair
+      name: decorations_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1015
-        width: 295
-        height: 386
-      alignment: 9
-      pivot: {x: 0.3217883, y: 0.90142536}
+        x: 3042
+        y: 1158
+        width: 1250
+        height: 3812
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ab282afbe32ff46b8732c2f7d25e4c
-      internalID: 5977010282915841225
+      spriteID: 08a98e34cb11457488b24365d4ce38b8
+      internalID: 8606214133557198973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Enemy_HairEvil
+      name: decorations_3
       rect:
         serializedVersion: 2
-        x: 440
-        y: 1046
-        width: 293
-        height: 411
-      alignment: 9
-      pivot: {x: 0.29224154, y: 0.8702755}
+        x: 53
+        y: 1150
+        width: 694
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 555bdbdff30a0c846b4ad27fc8bbcb4e
-      internalID: 2755288111428558706
+      spriteID: d7f9f8fa33ecb3749bc1cff4ec02fa37
+      internalID: -1125347774928963618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Enemy_HandEvil
+      name: decorations_4
       rect:
         serializedVersion: 2
-        x: 862
-        y: 891
-        width: 123
-        height: 534
-      alignment: 9
-      pivot: {x: 0.5, y: 0.95597994}
+        x: 1046
+        y: 1158
+        width: 664
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777fdf354eda6174da20db06b0cacc03
-      internalID: 614961839333941006
+      spriteID: 156511727554ca446b2f7d9bf44dcde3
+      internalID: 4748566177799071609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Enemy_Chest
+      name: decorations_5
       rect:
         serializedVersion: 2
-        x: 60
-        y: 196
-        width: 387
-        height: 722
-      alignment: 9
-      pivot: {x: 0.5142995, y: 0.9752135}
+        x: 0
+        y: 29
+        width: 1354
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 001aa68e80c57ae4ca4084700f7af793
-      internalID: -9139714106086835087
+      spriteID: 42676fa02584a0f4fb25b685075cc24f
+      internalID: -2674238886720689716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Enemy_HandEVil2
+      name: decorations_6
       rect:
         serializedVersion: 2
-        x: 650
-        y: 711
-        width: 415
-        height: 125
-      alignment: 9
-      pivot: {x: 0.9533827, y: 0.54427147}
+        x: 1519
+        y: 0
+        width: 1109
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e19ccfd963ad7645af8e611205cd57d
-      internalID: 7369449664114377887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_EnemyHand1
-      rect:
-        serializedVersion: 2
-        x: 611
-        y: 489
-        width: 387
-        height: 92
-      alignment: 9
-      pivot: {x: 0.94328713, y: 0.62030363}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f90ff2a230055fc44af4c093976e9b3c
-      internalID: 7813269664401604778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Enemy_Hand2
-      rect:
-        serializedVersion: 2
-        x: 595
-        y: 254
-        width: 397
-        height: 100
-      alignment: 9
-      pivot: {x: 0.9669694, y: 0.61067903}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa519969c192c2c40b5458bcea9b34d8
-      internalID: 4102297755085388517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Enemy_AXE
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 26
-        width: 377
-        height: 160
-      alignment: 9
-      pivot: {x: 0.514679, y: 0.84587175}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 233ba185ada85ae4d8a33140f1c76955
-      internalID: 8012328880468336629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Enemy_Umbrella
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 79
-        width: 435
-        height: 106
-      alignment: 9
-      pivot: {x: 0.5063607, y: 0.5000004}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 858afe3c96fe7384381993a92c6a8258
-      internalID: 730033397279635880
+      spriteID: b3d1360102a28e342a27493f582f29ed
+      internalID: 3298991621691050485
       vertices: []
       indices: 
       edges: []
