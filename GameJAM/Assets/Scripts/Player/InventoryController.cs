@@ -5,26 +5,30 @@ using UnityEngine.UI;
 
 public class InventoryController : MonoBehaviour
 {
-    public Sprite Yoyo;
     public SpriteRenderer controlerImage;
-    public bool equipedMask=false;
-    private GameObject maskObject;
+    public bool equipedGlass=false;
     private Animator animator;
     private GameObject rightArm;
-    private GameObject weapon;
-    public Sprite[] LeftArms;
-    public Sprite[] RightArms;
-    public StatusController statusController;
+    private GameObject leftArm;
+    private GameObject yoyoObject;
+    private GameObject yoyoWire;
+    private GameObject face;
+    public Sprite[] leftArms;
+    public Sprite[] rightArms;
+    public Sprite[] faces;
+    public Sprite[] skills;
+    public bool restore=false;
+    private StatusController statusController;
     // Start is called before the first frame update
     void Start()
     {
         controlerImage.enabled = false;
-        maskObject = GameObject.FindGameObjectWithTag("Mask");
-        maskObject.GetComponent<SpriteRenderer>().enabled=false;
         animator = GetComponent<Animator>();
         rightArm = GameObject.FindGameObjectWithTag("RightArm");
-        weapon =  GameObject.FindGameObjectWithTag("Weapon");
-        animator.SetBool("Sword",true);
+        leftArm = GameObject.FindGameObjectWithTag("LeftArm");
+        face = GameObject.FindGameObjectWithTag("Face");
+        yoyoObject = GameObject.FindGameObjectWithTag("Yoyo");
+        yoyoWire =  GameObject.FindGameObjectWithTag("YoyoWire");
         statusController = GetComponent<StatusController>();
 
     }
@@ -32,50 +36,65 @@ public class InventoryController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(statusController.stamina <= 0){
-            controlerImage.sprite = null;
-            controlerImage.enabled = false;
-            equipedMask=false;
-            maskObject.GetComponent<SpriteRenderer>().enabled=false;
+        if(statusController.stamina <= 0 && restore == true){
+            EquipYoyo();    
         }
-        if(statusController.stamina > 0 && equipedMask ==true){
+        if(statusController.stamina > 0 && equipedGlass ==true){
             statusController.stamina -=Time.deltaTime/10;
         }
-        if(Input.GetKeyDown(KeyCode.F)&& statusController.stamina > 0){
-            if(controlerImage.enabled == false){
-                controlerImage.enabled = true;
-                //controlerImage.sprite = mask;
-                equipedMask= true;
+        if(Input.GetKey(KeyCode.Alpha3)&& statusController.stamina+0.1f > 0){
+            restore =true;
+            //controlerImage.sprite = mask;
+            equipedGlass= true;
+            rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
+            leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[1];
+            face.GetComponent<SpriteRenderer>().sprite = faces[1];
+            if(equipedGlass == false)
                 statusController.stamina -=0.1f;
-                maskObject.GetComponent<SpriteRenderer>().enabled=true;
-            }
-            else{
-                if(equipedMask==true){
-                    controlerImage.sprite = null;
-                    controlerImage.enabled = false;
-                    equipedMask=false;
-                    maskObject.GetComponent<SpriteRenderer>().enabled=false;
-                }
-                else{
-                    //controlerImage.sprite = mask;
-                    equipedMask= true;
-                    maskObject.GetComponent<SpriteRenderer>().enabled=true;
-                }
-            }
-        }else if(Input.GetKeyDown(KeyCode.Alpha1)){
-            rightArm.GetComponent<SpriteRenderer>().sprite = LeftArms[1];
-            weapon.GetComponent<SpriteRenderer>().enabled=true;
-            animator.SetBool("Sword",true);
-            animator.SetBool("Book",false);
+            animator.SetBool("Yoyo",false);
+            animator.SetBool("SlingShot",false);
+            animator.SetBool("Glass",true);
+            yoyoObject.GetComponent<SpriteRenderer>().enabled=false;
+            yoyoWire.GetComponent<SpriteRenderer>().enabled=false;
+                
+        }else if(Input.GetKey(KeyCode.Alpha1)){
+            restore = false;
+            rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
+            leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[0];
+            face.GetComponent<SpriteRenderer>().sprite = faces[0];
+            yoyoObject.GetComponent<SpriteRenderer>().enabled=true;
+            yoyoWire.GetComponent<SpriteRenderer>().enabled=true;
+            animator.SetBool("Yoyo",true);
+            animator.SetBool("SlingShot",false);
+            animator.SetBool("Glass",false);
+            equipedGlass= false;
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha2)){
-            rightArm.GetComponent<SpriteRenderer>().sprite = LeftArms[0];
-            weapon.GetComponent<SpriteRenderer>().enabled=false;
-            animator.SetBool("Sword",false);
-            animator.SetBool("Book",true);
+        else if(Input.GetKey(KeyCode.Alpha2)){
+            restore = false;
+            rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[1];
+            leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[2];
+            face.GetComponent<SpriteRenderer>().sprite = faces[1];
+            yoyoObject.GetComponent<SpriteRenderer>().enabled=false;
+            yoyoWire.GetComponent<SpriteRenderer>().enabled=false;
+            animator.SetBool("Yoyo",false);
+            animator.SetBool("SlingShot",true);
+            animator.SetBool("Glass",false);
+            equipedGlass= false;
         }
     }
+
+    public void EquipYoyo(){
+        rightArm.GetComponent<SpriteRenderer>().sprite = rightArms[0];
+        leftArm.GetComponent<SpriteRenderer>().sprite = leftArms[0];
+        face.GetComponent<SpriteRenderer>().sprite = faces[0];
+        yoyoObject.GetComponent<SpriteRenderer>().enabled=true;
+        yoyoWire.GetComponent<SpriteRenderer>().enabled=true;
+        animator.SetBool("Yoyo",true);
+        animator.SetBool("SlingShot",false);
+        animator.SetBool("Glass",false);
+        equipedGlass= false;
+    }
     public bool GetPower(){
-        return equipedMask;
+        return equipedGlass;
     }
 }

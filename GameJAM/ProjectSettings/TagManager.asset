@@ -14,6 +14,11 @@ TagManager:
   - Checkpoint
   - GM
   - Key
+  - RightArm
+  - LeftArm
+  - Yoyo
+  - YoyoWire
+  - Face
   layers:
   - Default
   - TransparentFX

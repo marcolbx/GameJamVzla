@@ -29,6 +29,7 @@ public class StatusController : MonoBehaviour
     [SerializeField] private float flashTime=0.2f;
     public LayerMask hazardLayer;
     public LayerMask hpLayer;
+    public bool restore=false;
     private Collider2D col;
     private SpriteRenderer[] sprites;
     // Start is called before the first frame update
@@ -85,6 +86,7 @@ public class StatusController : MonoBehaviour
             if(invulnerableTimeCounter>=invulnerableTime){
                 invulnerability = false;
                 invulnerableTimeCounter = 0;
+                restore=true;
             }
             if (timer >= flashTime){
                 for(int i=0;i<sprites.Length;i++){
@@ -99,11 +101,12 @@ public class StatusController : MonoBehaviour
                 }
             }
         }
-        else{
+        else if(restore == true){
             timer=0;
             for(int i=0;i<sprites.Length;i++){
                 sprites[i].enabled = true;
             }
+            restore = false;
         }
     }
 

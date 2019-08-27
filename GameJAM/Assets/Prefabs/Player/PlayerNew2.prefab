@@ -38,7 +38,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615702000050760806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 2438093642066570068}
   - component: {fileID: 1332141412991487608}
   - component: {fileID: 1332141412991487609}
+  - component: {fileID: 8061255516615801465}
   m_Layer: 0
   m_Name: PlayerNew2
   m_TagString: Player
@@ -684,6 +685,33 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 8192
+--- !u!114 &8061255516615801465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438093642066570062}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc770cfee89e3d3409cb6d9025c4c047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlerImage: {fileID: 0}
+  equipedGlass: 0
+  yoyoObject: {fileID: 5691129527651952990}
+  yoyoWire: {fileID: 615702000050760806}
+  leftArms:
+  - {fileID: -7010199680497250642, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  - {fileID: 3785285938016517850, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  - {fileID: 8032165500199843263, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  rightArms:
+  - {fileID: -4341260555911328888, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  - {fileID: 7931817633844071589, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  faces:
+  - {fileID: 2796841161235054742, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  - {fileID: 2806363112574051905, guid: 3f3c4b3ebae1b4044b016e2ea1d29c98, type: 3}
+  skills: []
 --- !u!1 &2438093642083224969
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +945,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5691129527651952990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
