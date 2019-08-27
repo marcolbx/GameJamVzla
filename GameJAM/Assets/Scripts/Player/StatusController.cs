@@ -23,12 +23,12 @@ public class StatusController : MonoBehaviour
     public bool invulnerability;
     public float checkRadius;
     public bool onHazard;
-    public bool onHp;
+    public bool onCollectable;
     private float newExperience=0;
     [SerializeField]private float timer =0;
     [SerializeField] private float flashTime=0.2f;
     public LayerMask hazardLayer;
-    public LayerMask hpLayer;
+    public LayerMask CollectableLayer;
     public bool restore=false;
     public int staminaRecover=50;
     private Collider2D col;
@@ -56,7 +56,7 @@ public class StatusController : MonoBehaviour
         experienceSlider.GetComponent<Image>().fillAmount =experience;
         staminaSlider.GetComponent<Slider>().value=stamina;
         onHazard = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
-        onHp = Physics2D.OverlapCircle(transform.position,checkRadius*2.5f,hpLayer);
+        onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
         if(onHazard == true){
             if(hearths>0 && invulnerability == false){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
@@ -77,12 +77,25 @@ public class StatusController : MonoBehaviour
                 invulnerability =true;
             }    
         }
-        if(onHp == true && hearths>0){
-            col = Physics2D.OverlapCircle(transform.position,checkRadius*2.5f,hpLayer);
-            Destroy(col.gameObject);
-            if(hearths<intialhearts){
-                hearths++;
-                spriteRendHearth.sprite = spriteHearths[hearths];
+        if(onCollectable == true && hearths>0){
+            col = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
+            if(col.tag==("Hp")){
+                if(hearths<intialhearts){
+                    hearths++;
+                    spriteRendHearth.sprite = spriteHearths[hearths];
+                    Destroy(col.gameObject);
+                }
+            }
+            else if(col.tag==("Poison")){
+                    hearths--;
+                    spriteRendHearth.sprite = spriteHearths[hearths];
+                    Destroy(col.gameObject);
+            }
+            else if(col.tag==("Collectable"))
+            {
+                col.gameObject.GetComponent<Money>().Obtain();
+                float money= col.gameObject.GetComponent<Money>().amount;
+                inventory.money +=money;
             }
         }
         if (hearths<=0){

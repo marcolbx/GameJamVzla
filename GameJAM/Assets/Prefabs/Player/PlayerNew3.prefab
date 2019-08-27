@@ -651,15 +651,15 @@ MonoBehaviour:
   invulnerability: 0
   checkRadius: 0.5
   onHazard: 0
-  onHp: 0
+  onCollectable: 0
   timer: 0
   flashTime: 0.2
   hazardLayer:
     serializedVersion: 2
     m_Bits: 2560
-  hpLayer:
+  CollectableLayer:
     serializedVersion: 2
-    m_Bits: 16384
+    m_Bits: 32768
   restore: 0
   staminaRecover: 20
 --- !u!114 &4102912315301727500
@@ -721,6 +721,7 @@ MonoBehaviour:
   - {fileID: -191431627173939306, guid: f26eada841a16a24693b3278aa703872, type: 3}
   - {fileID: 3197849309637569979, guid: f26eada841a16a24693b3278aa703872, type: 3}
   - {fileID: -8599051684187611097, guid: f26eada841a16a24693b3278aa703872, type: 3}
+  money: 0
   restore: 0
 --- !u!1 &817710862536528091
 GameObject:

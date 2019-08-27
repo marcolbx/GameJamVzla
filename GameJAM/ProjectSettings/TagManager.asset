@@ -19,6 +19,7 @@ TagManager:
   - Yoyo
   - Face
   - SlingShot
+  - Poison
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - HazardObject
   - Waypoint
   - Interactable
-  - Hp
+  - 
   - Collectable
   - 
   - 
