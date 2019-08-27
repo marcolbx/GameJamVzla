@@ -15,10 +15,10 @@ public class Bullet : MonoBehaviour
     }
 
     // Update is called once per frame
-    
-    void OnTriggerEnter2D (Collider2D enemy){
-        if(enemy.tag =="Enemy"){
-            enemy.GetComponent<Enemy>().TakeDamage(damage);
+    void OnCollisionEnter2D (Collision2D enemy){
+        if(enemy.gameObject.tag =="Enemy"){
+            Debug.Log("Daño BALAAAAA  "+damage);
+            enemy.gameObject.GetComponent<Enemy>().TakeDamage(damage);
             Destroy(gameObject);
         }
         else{
