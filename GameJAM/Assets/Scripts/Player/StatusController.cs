@@ -117,9 +117,12 @@ public class StatusController : MonoBehaviour
                                 timer=0;
                             }
                         }
-                        else{
-                            sprites[i].enabled = true;
-                            timer=0;
+                        else {
+                            if(sprites[i].tag!="SlingShot" && sprites[i].tag!="Yoyo")
+                            {
+                                sprites[i].enabled = true;
+                                timer=0;
+                            }
                         }
                     }
                 }
@@ -140,6 +143,12 @@ public class StatusController : MonoBehaviour
                     if (sprites[i].tag!="SlingShot")
                     {
                         sprites[i].enabled = true;
+                    }
+                }
+                else{
+                    if(sprites[i].tag!="SlingShot" && sprites[i].tag!="Yoyo")
+                    {
+                       sprites[i].enabled = true; 
                     }
                 }
             }
