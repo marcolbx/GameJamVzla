@@ -23,6 +23,7 @@ public class StatusController : MonoBehaviour
     public bool invulnerability;
     public float checkRadius;
     public bool onHazard;
+    private bool onLift;
     public bool onCollectable;
     private float newExperience=0;
     [SerializeField]private float timer =0;
@@ -35,6 +36,8 @@ public class StatusController : MonoBehaviour
     private SpriteRenderer[] sprites;
     private InventoryController inventory;
     private Animator animator;
+    public LayerMask liftLayer;
+    public float previousGravity;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +48,7 @@ public class StatusController : MonoBehaviour
         sprites = gameObject.GetComponentsInChildren<SpriteRenderer>();
         inventory = gameObject.GetComponent<InventoryController>();
         animator = gameObject.GetComponent<Animator>();
+        previousGravity=rb.gravityScale;
     }
     // Update is called once per frame
     void Update()
@@ -56,7 +60,8 @@ public class StatusController : MonoBehaviour
         experienceSlider.GetComponent<Image>().fillAmount =experience;
         staminaSlider.GetComponent<Slider>().value=stamina;
         onHazard = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
-        onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
+        onLift = Physics2D.OverlapCircle(transform.position,checkRadius,liftLayer);
+        onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius,CollectableLayer);
         if(onHazard == true){
             if(hearths>0 && invulnerability == false){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
@@ -83,8 +88,8 @@ public class StatusController : MonoBehaviour
                 if(hearths<intialhearts){
                     hearths++;
                     spriteRendHearth.sprite = spriteHearths[hearths];
-                    Destroy(col.gameObject);
                 }
+                Destroy(col.gameObject);
             }
             else if(col.tag==("Poison")){
                     hearths--;
@@ -102,6 +107,25 @@ public class StatusController : MonoBehaviour
                 inventory.keys++;
                 Destroy(col.gameObject);
             }
+            else if(col.tag == "WeaponYoyo"){
+                inventory.yoyoWeapon =true;
+                Destroy(col.gameObject);
+
+            }
+            else if(col.tag == "WeaponSlingShot"){
+                inventory.slingshotWeapon=true;
+            }
+            else if(col.tag == "WeaponGlass"){
+                inventory.glassWeapon=true;
+            }
+        }
+        if (onLift==true){
+            animator.SetBool("Lift",true);
+            rb.gravityScale=5;
+        }
+        else{
+            animator.SetBool("Lift",false);
+            rb.gravityScale=previousGravity;
         }
         if (hearths<=0){
             Destroy(this.gameObject);

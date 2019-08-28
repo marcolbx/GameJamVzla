@@ -36,7 +36,7 @@ TagManager:
   - HazardObject
   - Waypoint
   - Interactable
-  - 
+  - Lift
   - Collectable
   - Save&Load
   - 

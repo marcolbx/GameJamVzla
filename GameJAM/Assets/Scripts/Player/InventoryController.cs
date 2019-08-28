@@ -6,6 +6,9 @@ using TMPro;
 
 public class InventoryController : MonoBehaviour
 {
+    public bool yoyoWeapon=true;
+    public bool slingshotWeapon=true;
+    public bool glassWeapon=true;
     public SpriteRenderer controlerImage;
     public bool equipedGlass=false;
     private Animator animator;
@@ -51,7 +54,7 @@ public class InventoryController : MonoBehaviour
         if(statusController.stamina > 0 && equipedGlass ==true){
             statusController.stamina -=Time.deltaTime/staminaLoss;
         }
-        if(Input.GetKey(KeyCode.Alpha3)&& statusController.stamina+0.1f > 0){
+        if(Input.GetKey(KeyCode.Alpha3)&& statusController.stamina+0.1f > 0 && glassWeapon==true){
             HideShow(wires,false);
             HideShow(yoyo,false);
             restore =true;
@@ -65,10 +68,10 @@ public class InventoryController : MonoBehaviour
             animator.SetBool("Yoyo",false);
             animator.SetBool("SlingShot",false);
             animator.SetBool("Glass",true);    
-        }else if(Input.GetKey(KeyCode.Alpha1)){
+        }else if(Input.GetKey(KeyCode.Alpha1) && yoyoWeapon == true){
             EquipYoyo();
         }
-        else if(Input.GetKey(KeyCode.Alpha2)){
+        else if(Input.GetKey(KeyCode.Alpha2) && slingshotWeapon == true){
             HideShow(wires,true);
             restore = false;
             controlerImage.sprite = skills[1];
