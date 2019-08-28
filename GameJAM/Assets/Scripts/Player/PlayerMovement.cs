@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private Rigidbody2D rb;
     private float initialGravity;
+    public float gravityProportion;
 
     private Animator animator;
     // Start is called before the first frame update
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             transitionTimer +=Time.deltaTime;
         }
         if(isWall){
-            rb.gravityScale = initialGravity/5;
+            rb.gravityScale = initialGravity/gravityProportion;
             if(!jumpController.onGround && jumpController.jumpTimeCounter<jumpController.jumpTime/2)
                 rb.velocity = Vector2.down;
             wasOnWall = true;

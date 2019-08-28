@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
+    public float staminaPerBullet;
+    public float bulletTime;
     public float offset;
     public Transform firePoint;
     public GameObject fireBolt;
@@ -46,7 +48,7 @@ public class AttackController : MonoBehaviour
     void Update()
     {
         if (timeBtwAttackCounter<=0){
-            if(Input.GetKey(KeyCode.Space)){
+            if(Input.GetKeyDown(KeyCode.Space)){
                 animator.SetBool("Attack",true);
                 Collider2D interactable = Physics2D.OverlapBox(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,interactableLayer);
                 if(animator.GetBool("Yoyo")==true)
@@ -78,8 +80,9 @@ public class AttackController : MonoBehaviour
         
         StatusController controller = GetComponent<StatusController>();
         if(controller.stamina>0){
-            Instantiate(fireBolt, firePoint.position, firePoint.rotation);
-            controller.stamina -= 0.1f;
+            Destroy(Instantiate(fireBolt, firePoint.position, firePoint.rotation),bulletTime);
+            controller.stamina -= staminaPerBullet;
+
         }
     }
     public void MeleeAttack(){

@@ -586,8 +586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpController: {fileID: 0}
-  wallCheckX: 0
-  wallCheckY: 0
+  wallCheckX: 0.3
+  wallCheckY: 0.3
   wall: {fileID: 817710861574005430}
   transitionTimer: 0.5
   walkingSpeed: 5
@@ -596,6 +596,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  gravityProportion: 7
 --- !u!114 &817710862182082593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,7 +617,7 @@ MonoBehaviour:
   checkRadius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2304
   jumping: 0
 --- !u!114 &4102912315301727501
 MonoBehaviour:
@@ -678,6 +679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b88adcca3c0c348b645533229e824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaPerBullet: 0.2
+  bulletTime: 0.5
   offset: -90
   firePoint: {fileID: 1605608631373294848}
   fireBolt: {fileID: 1710561109499738695, guid: 294ee9dffcc64634085592b82b4c2e8b,
