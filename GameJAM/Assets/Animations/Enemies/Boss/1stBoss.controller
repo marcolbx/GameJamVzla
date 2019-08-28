@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8767d7d463acb4493352e025017273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
 --- !u!1101 &7437500887059370710
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

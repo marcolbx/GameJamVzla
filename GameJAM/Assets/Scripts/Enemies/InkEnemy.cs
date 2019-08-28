@@ -50,6 +50,7 @@ public class InkEnemy : Enemy
             
        // base.Update();
      //  moveDirection = (target.transform.position - transform.position).normalized * speed;
+     if(hurt == false)
        rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
 
        onWall = Physics2D.OverlapCircle(wallTrigger.position, triggerRadius,wall);
@@ -63,6 +64,7 @@ public class InkEnemy : Enemy
                
                transform.eulerAngles = new Vector3(0,0,0);
                moveDirection = Vector2.left * speed;
+               if(hurt == false)
                rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
                 movingRight = false;
                 onWall = false;
@@ -74,6 +76,7 @@ public class InkEnemy : Enemy
                 
                 transform.eulerAngles = new Vector3(0,180,0);
                 moveDirection = Vector2.right.normalized * speed;
+                if(hurt == false)
                 rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
                 movingRight = true;
                 onWall = false;
