@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BossFirst : MonoBehaviour
+public class BossFirst : Enemy
 {
     private SpriteRenderer[] spriteRenderers;
     private bool move =false;
     public GameObject projectile;
     public GameObject inkEnemy;
+    public Slider slider;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +20,13 @@ public class BossFirst : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        base.Update();
         if(move==true)
         InsideSpriteMask();
         if(move == false)
         DisableSpriteMask();
+
+        slider.value = health;
         
     }
 
