@@ -12,7 +12,7 @@ public abstract class Enemy : MonoBehaviour
     protected Transform target;
     public Rigidbody2D rigidbody;
     public GameObject PS_Explosion;
-    private bool oneTimedead = false;
+    protected bool oneTimedead = false;
     public Sprite[] hurtSprites;
     public Sprite[] normalSprites;
     public Sprite[] evilSprites;
@@ -106,6 +106,7 @@ public abstract class Enemy : MonoBehaviour
     public virtual void InstantiateMoneyItems()
     {
         Debug.Log("Instantiate MoneyItems");
+        if(moneyToSpawn.Length>0)
     foreach (GameObject money in moneyToSpawn)
     {
         GameObject geld = Instantiate(money,transform.position,Quaternion.identity);
