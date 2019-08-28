@@ -1,0 +1,1111 @@
+fileFormatVersion: 2
+guid: 91bd915f489d4974b9a0ecfd926039de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8116827009087422750
+    second: TileSet_bricks_0
+  - first:
+      213: 3010618917225959415
+    second: TileSet_bricks_1
+  - first:
+      213: -2774977333070271316
+    second: TileSet_bricks_2
+  - first:
+      213: -201902563951866509
+    second: TileSet_bricks_3
+  - first:
+      213: -6547957894656358699
+    second: TileSet_bricks_4
+  - first:
+      213: 8501493670097452761
+    second: TileSet_bricks_5
+  - first:
+      213: -718942709631090360
+    second: TileSet_bricks_6
+  - first:
+      213: 1548842177802028357
+    second: TileSet_bricks_7
+  - first:
+      213: 6634150200529952961
+    second: TileSet_bricks_8
+  - first:
+      213: 1186439442658372765
+    second: TileSet_bricks_9
+  - first:
+      213: -3389517476400499204
+    second: TileSet_bricks_10
+  - first:
+      213: -577167251668867966
+    second: TileSet_bricks_11
+  - first:
+      213: -5510701476408171969
+    second: TileSet_bricks_12
+  - first:
+      213: 2269678914459756108
+    second: TileSet_bricks_13
+  - first:
+      213: 3942636870160513368
+    second: TileSet_bricks_14
+  - first:
+      213: -2210011673560661678
+    second: TileSet_bricks_15
+  - first:
+      213: 5032883568684553207
+    second: TileSet_bricks_16
+  - first:
+      213: 2824903113810687393
+    second: TileSet_bricks_17
+  - first:
+      213: 1282006053408247830
+    second: TileSet_bricks_18
+  - first:
+      213: -7423813798261762325
+    second: TileSet_bricks_19
+  - first:
+      213: 6216195304128038811
+    second: TileSet_bricks_20
+  - first:
+      213: -2438101306131593216
+    second: TileSet_bricks_21
+  - first:
+      213: -1230063124669854655
+    second: TileSet_bricks_22
+  - first:
+      213: -4077882131668068238
+    second: TileSet_bricks_23
+  - first:
+      213: -7393033641954098595
+    second: TileSet_bricks_24
+  - first:
+      213: -6216706903183284852
+    second: TileSet_bricks_25
+  - first:
+      213: 107002144457022667
+    second: TileSet_bricks_26
+  - first:
+      213: 5680856778757723943
+    second: TileSet_bricks_27
+  - first:
+      213: -2804473786370356712
+    second: TileSet_bricks_28
+  - first:
+      213: 6841646163436645309
+    second: TileSet_bricks_29
+  - first:
+      213: 8433974897859115347
+    second: TileSet_bricks_30
+  - first:
+      213: -2237632588496618266
+    second: TileSet_bricks_31
+  - first:
+      213: -2879641034786342173
+    second: TileSet_bricks_32
+  - first:
+      213: 7396658173708658478
+    second: TileSet_bricks_33
+  - first:
+      213: 3413252653836701443
+    second: TileSet_bricks_34
+  - first:
+      213: -1690825212544905842
+    second: TileSet_bricks_35
+  - first:
+      213: 6208654448772381435
+    second: TileSet_bricks_36
+  - first:
+      213: -7859766520210267792
+    second: TileSet_bricks_37
+  - first:
+      213: 8609090355610990815
+    second: TileSet_bricks_38
+  - first:
+      213: -3902847508712100660
+    second: TileSet_bricks_39
+  - first:
+      213: 6429738889038909996
+    second: TileSet_bricks_40
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileSet_bricks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25e05d1a5cc59046b017b3712beccdd
+      internalID: 8116827009087422750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239d96cd769d665428407ea7362b0db3
+      internalID: 3010618917225959415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ff4fe4ce226114cb5f6ea27b872a1e
+      internalID: -2774977333070271316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729d7271f2e52054b94a9a9ce19eba64
+      internalID: -201902563951866509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3dfe1c0fe1b284594c2dad831b44e5
+      internalID: -6547957894656358699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3d2dca04796dd4894d8277a97bad55
+      internalID: 8501493670097452761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bf57d22e519ad4e93e93ad3ab05046
+      internalID: -718942709631090360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9e3b764a68aa740997d858acd37a9f
+      internalID: 1548842177802028357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a389855e46cb3b74b9fa2aac99818a5d
+      internalID: 6634150200529952961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410876c1f250878438e8ac5438109b99
+      internalID: 1186439442658372765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4655f10d4d79654b8ada0a68ba79ade
+      internalID: -3389517476400499204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9d390c602543f4583dbe74536d059a
+      internalID: -577167251668867966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27ffca37bf0e5a4d9e07ad922286f7a
+      internalID: -5510701476408171969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_13
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2b4ef30befbaf4dabd8ebd92179b0e
+      internalID: 2269678914459756108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db03e8c16b4c10e4abeac344b0686b0d
+      internalID: 3942636870160513368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d1d563d31884642976fdc0963fb4dc
+      internalID: -2210011673560661678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc26b6aa7db9e49438d5ea29a2fb712e
+      internalID: 5032883568684553207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_17
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625d5d028a08e8a44936b84e040db049
+      internalID: 2824903113810687393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_18
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a41089e744543d48971e2d610e7b985
+      internalID: 1282006053408247830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_19
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548484f5f949426419a2de0a8754d17a
+      internalID: -7423813798261762325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_20
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7097f4895b362ee4e84ed0b885d57ddf
+      internalID: 6216195304128038811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_21
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908dcb2c28593ab418a982bc3a2832dc
+      internalID: -2438101306131593216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_22
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bb1037d5b58ad44a3930c7f232ef1a
+      internalID: -1230063124669854655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_23
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7798a9f8782226e479bc778e173b53cc
+      internalID: -4077882131668068238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa6aa3f607b7874d83dbb1c86a71cdd
+      internalID: -7393033641954098595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_25
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebbc3dfac5df0d4e8a09971e565043b
+      internalID: -6216706903183284852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_26
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ef43537398ca74c904f9bb6633bd7b
+      internalID: 107002144457022667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_27
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f0abe1306b8024b85d18b737d4dab9
+      internalID: 5680856778757723943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_28
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df492e66cc74c354cb0c9b633e6426b9
+      internalID: -2804473786370356712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_29
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c08a32a14f860488180dbba5b066fb
+      internalID: 6841646163436645309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_30
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c611e9272f8284640919063649c63677
+      internalID: 8433974897859115347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_31
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1537
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed2f4a50f68e5e44b298cffb651cfaf
+      internalID: -2237632588496618266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_32
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04eab798980b0f0499f28e9c98d8a166
+      internalID: -2879641034786342173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_33
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5c28f8e15680542bf30bff5c4c180c
+      internalID: 7396658173708658478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_34
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a803c0556a943d4790a4479c6acd3ee
+      internalID: 3413252653836701443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_35
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf52464b5871204984b03b1d66a658c
+      internalID: -1690825212544905842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_36
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9301b37b5cfdcc40bdec3d9039f6956
+      internalID: 6208654448772381435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_37
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2e8ec069a517f498fc756c1456fa1a
+      internalID: -7859766520210267792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_38
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 1026
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31793ffe2abf5ec4ab655c6afb1608db
+      internalID: 8609090355610990815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_39
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 515
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc66c51f332d58e419e2dfaecca72fbf
+      internalID: -3902847508712100660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_bricks_40
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 4
+        width: 512
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeeb0cafc2c97dd448335946046ecff4
+      internalID: 6429738889038909996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
