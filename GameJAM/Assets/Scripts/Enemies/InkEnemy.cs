@@ -13,6 +13,7 @@ public class InkEnemy : Enemy
     public LayerMask wall;
     bool movingRight = false;
     bool atk = false;
+    float timer = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +44,7 @@ public class InkEnemy : Enemy
     {
         if(health > 0)
         {
+            timer -= Time.deltaTime;
             if(atk == true){
 
             
@@ -78,6 +80,8 @@ public class InkEnemy : Enemy
                 }
             }
         }
+        if(timer<= 0)
+        health = 0;
         }
 
        if(health <= 0 && oneTimedead == false )
