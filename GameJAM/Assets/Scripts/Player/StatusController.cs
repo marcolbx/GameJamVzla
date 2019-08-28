@@ -38,6 +38,10 @@ public class StatusController : MonoBehaviour
     private Animator animator;
     public LayerMask liftLayer;
     public float previousGravity;
+    public AudioSource playerHurtSound;
+    public AudioSource playerCoin;
+    public AudioSource playerHeal;
+    public AudioSource playerPoison;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +68,7 @@ public class StatusController : MonoBehaviour
         onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius,CollectableLayer);
         Debug.Log(invulnerability);
         if(onHazard == true && invulnerability==false){
-            if(hearths>0 && invulnerability == false){
+            if(hearths>0){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
                 float dot = Vector2.Dot(transform.right,col.gameObject.transform.right);
                 if(dot < -0.998){
@@ -79,26 +83,31 @@ public class StatusController : MonoBehaviour
                     Debug.Log("derecha");
                 }
                 hearths--;
+
                 spriteRendHearth.sprite = spriteHearths[hearths];
                 invulnerability =true;
+                playerHurtSound.Play();
             }    
         }
         if(onCollectable == true && hearths>0){
             col = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
             if(col.tag==("Hp")){
                 if(hearths<intialhearts){
+                    playerHeal.Play();
                     hearths++;
                     spriteRendHearth.sprite = spriteHearths[hearths];
                 }
                 Destroy(col.gameObject);
             }
             else if(col.tag==("Poison")){
+                playerPoison.Play();
                     hearths--;
                     spriteRendHearth.sprite = spriteHearths[hearths];
                     Destroy(col.gameObject);
             }
             else if(col.tag==("Collectable"))
             {
+                playerCoin.Play();
                 col.gameObject.GetComponent<Money>().Obtain();
                 float money= col.gameObject.GetComponent<Money>().amount;
                 inventory.money +=money;

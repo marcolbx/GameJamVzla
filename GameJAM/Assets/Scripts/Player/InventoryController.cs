@@ -28,7 +28,7 @@ public class InventoryController : MonoBehaviour
     public GameObject keysUI;
     private StatusController statusController;
     private GameObject[] wires;
-    private int weapon;
+    public int weapon=1;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,8 +56,8 @@ public class InventoryController : MonoBehaviour
         if(statusController.stamina > 0 && equipedGlass ==true){
             statusController.stamina -=Time.deltaTime/staminaLoss;
         }
-        if(Input.GetKeyDown(KeyCode.DownArrow) && statusController.stamina+0.1f > 0 && glassWeapon==true && weapon==2){
-            weapon=3;
+        //if(Input.GetKeyDown(KeyCode.DownArrow) && statusController.stamina+0.1f > 0 && glassWeapon==true && weapon==2){
+            /*weapon=3;
             HideShow(wires,false);
             HideShow(yoyo,false);
             restore =true;
@@ -70,8 +70,9 @@ public class InventoryController : MonoBehaviour
                 statusController.stamina -=0.2f;
             animator.SetBool("Yoyo",false);
             animator.SetBool("SlingShot",false);
-            animator.SetBool("Glass",true);    
-        }else if(Input.GetKeyDown(KeyCode.DownArrow) && yoyoWeapon == true && weapon==3){
+            animator.SetBool("Glass",true);*/
+        //}else 
+        if(Input.GetKeyDown(KeyCode.DownArrow) && yoyoWeapon == true && weapon==2){
             EquipYoyo();
         }
         else if(Input.GetKeyDown(KeyCode.DownArrow) && slingshotWeapon == true && weapon==1){
