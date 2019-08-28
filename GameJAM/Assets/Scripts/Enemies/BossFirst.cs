@@ -13,6 +13,7 @@ public class BossFirst : Enemy
     public GameObject table;
     public GameObject healthBar;
     public GameObject boss2ndForm;
+    public GameObject background;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class BossFirst : Enemy
             table.SetActive(false);
             healthBar.SetActive(false);
             boss2ndForm.SetActive(true);
+            background.GetComponent<Animator>().SetTrigger("Change");
         }
         
         
