@@ -116,7 +116,9 @@ public abstract class Enemy : MonoBehaviour
     if(items.Length>0)
     {
         int random = Random.Range(0,2);
-        GameObject item = Instantiate(items[random],transform.position,Quaternion.identity);
+        GameObject item;
+        if(random == 0)
+         item = Instantiate(items[random],transform.position,Quaternion.identity);
     }
     
     }

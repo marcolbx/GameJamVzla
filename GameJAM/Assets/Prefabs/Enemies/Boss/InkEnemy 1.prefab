@@ -86,7 +86,8 @@ MonoBehaviour:
   hurtTimer: 0
   isEvil: 1
   moneyToSpawn: []
-  items: []
+  items:
+  - {fileID: 7948575567793885224, guid: 5c900ac12d03f124eabe43ffba84da4d, type: 3}
   hurtSound: {fileID: 756549132888577220}
   collider: {fileID: 756549132888577243}
   wallTrigger: {fileID: 756549133310927413}

@@ -10,6 +10,9 @@ public class BossFirst : Enemy
     public GameObject projectile;
     public GameObject inkEnemy;
     public Slider slider;
+    public GameObject table;
+    public GameObject healthBar;
+    public GameObject boss2ndForm;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,14 @@ public class BossFirst : Enemy
         DisableSpriteMask();
 
         slider.value = health;
+
+        if(health<= 0)
+        {
+            table.SetActive(false);
+            healthBar.SetActive(false);
+            boss2ndForm.SetActive(true);
+        }
+        
         
     }
 

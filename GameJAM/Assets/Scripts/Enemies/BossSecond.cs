@@ -13,12 +13,15 @@ public class BossSecond : Enemy
     private bool completeHealth = false;
     Vector3 pos;
     public Transform head;
+    public GameObject healthBar;
+    public GameObject particles;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
         health = 1f;
-       // InstantiateProjectile();
+        healthBar.SetActive(true);
+        Instantiate(particles,transform.position,Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -26,10 +29,10 @@ public class BossSecond : Enemy
     {
         if(completeHealth == false)
         {
-            health = Mathf.Lerp(health,20,Time.deltaTime * 0.5f);
-            if(health >= 19)
+            health = Mathf.Lerp(health,25,Time.deltaTime * 0.35f);
+            if(health >= 24)
             {
-                health = 20;
+                health = 25;
                 completeHealth = true;
             }
             
