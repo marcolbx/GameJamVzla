@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    [SerializeField] protected float health;
+    [SerializeField] public float health;
     [SerializeField] protected int   damage;
     [SerializeField] protected float experience;
     [SerializeField] protected float speed;
@@ -115,7 +115,7 @@ public abstract class Enemy : MonoBehaviour
     
     if(items.Length>0)
     {
-        int random = Random.Range(0,2);
+        int random = Random.Range(0,4);
         GameObject item;
         if(random == 0)
          item = Instantiate(items[random],transform.position,Quaternion.identity);

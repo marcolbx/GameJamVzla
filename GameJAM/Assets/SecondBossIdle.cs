@@ -14,12 +14,8 @@ public class SecondBossIdle : StateMachineBehaviour
         
         //Random
         timer = 5f;
-       rand = Random.Range(1,4);
-
-        if(timer <= 0f)
-        {
-            rand = Random.Range(1,10);
-            Debug.Log("Random" + rand);
+       rand = Random.Range(1,5);
+           // Debug.Log("Random" + rand);
             if(rand == 1)
        animator.SetInteger("Attack",1);
        else if(rand==2)
@@ -30,7 +26,6 @@ public class SecondBossIdle : StateMachineBehaviour
        {
            animator.SetInteger("Attack",3);
        }
-        }
 
     }
 
