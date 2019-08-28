@@ -7,10 +7,12 @@ public class BossFirst : MonoBehaviour
     private SpriteRenderer[] spriteRenderers;
     private bool move =false;
     public GameObject projectile;
+    public GameObject inkEnemy;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+       // InstantiateProjectile();
     }
 
     // Update is called once per frame
@@ -42,5 +44,10 @@ public class BossFirst : MonoBehaviour
     public void InstantiateProjectile()
     {
         GameObject bullet = Instantiate(projectile,transform.position,Quaternion.identity);
+    }
+
+    public void InstantiateInkEnemy()
+    {
+        GameObject enemy = Instantiate(inkEnemy,transform.position,Quaternion.identity);
     }
 }

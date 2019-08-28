@@ -12,17 +12,19 @@ public class InkEnemy : Enemy
     [SerializeField] private float triggerRadius = 1f;
     public LayerMask wall;
     bool movingRight = false;
+    bool atk = false;
     // Start is called before the first frame update
     void Start()
     {
         target = PlayerManager.instance.player.transform;
        // moveDirection = (target.transform.position - transform.position).normalized * speed;
-       moveDirection = Vector2.right.normalized * speed;
-        rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
+       
         if(target.position.x < animator.transform.position.x)
         {
                 animator.transform.eulerAngles = new Vector3(0,0,0);
                 movingRight = false;
+                moveDirection = Vector2.left.normalized * speed;
+      //  rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
         }
         
         else
@@ -30,7 +32,10 @@ public class InkEnemy : Enemy
 
                 animator.transform.eulerAngles = new Vector3(0,180,0);
                 movingRight = true;
+                moveDirection = Vector2.right.normalized * speed;
+     //   rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
         }
+        StartCoroutine(WaitEntering());
     }
 
     // Update is called once per frame
@@ -38,16 +43,19 @@ public class InkEnemy : Enemy
     {
         if(health > 0)
         {
+            if(atk == true){
+
+            
        // base.Update();
      //  moveDirection = (target.transform.position - transform.position).normalized * speed;
        rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
 
        onWall = Physics2D.OverlapCircle(wallTrigger.position, triggerRadius,wall);
         Debug.Log(onWall);
-       if(onWall == true)
-       {
-           if(movingRight == true)
-           {
+            if(onWall == true)
+            {
+                if(movingRight == true)
+                {
                
               // moveDirection = (target.transform.position - transform.position).normalized * speed;
                
@@ -56,9 +64,9 @@ public class InkEnemy : Enemy
                rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
                 movingRight = false;
                 onWall = false;
-           }
-           else
-           {
+                }
+                else
+                {
                
              //  moveDirection = (target.transform.position - transform.position).normalized * speed;
                 
@@ -67,9 +75,10 @@ public class InkEnemy : Enemy
                 rigidbody.velocity = new Vector2(moveDirection.x,transform.position.y);
                 movingRight = true;
                 onWall = false;
-           }
-       }
-       }
+                }
+            }
+        }
+        }
 
        if(health <= 0 && oneTimedead == false )
         {
@@ -121,7 +130,16 @@ public class InkEnemy : Enemy
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Die();
+        }
+    }
+
+    IEnumerator WaitEntering()
+    {
+        yield return new WaitForSeconds(0.5f);
+        atk = true;
     }
 
     

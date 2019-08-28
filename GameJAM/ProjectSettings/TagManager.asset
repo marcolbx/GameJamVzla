@@ -21,6 +21,8 @@ TagManager:
   - SlingShot
   - Poison
   - SaveLoad
+  - Waypoint2
+  - WaypointCentral
   layers:
   - Default
   - TransparentFX
