@@ -23,6 +23,7 @@ TagManager:
   - SaveLoad
   - Waypoint2
   - WaypointCentral
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -62,6 +63,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3302901405
+    locked: 0
+  - name: Door
+    uniqueID: 3413074763
     locked: 0
   - name: Tileset
     uniqueID: 3636220827

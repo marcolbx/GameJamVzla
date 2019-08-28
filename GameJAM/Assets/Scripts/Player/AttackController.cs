@@ -22,11 +22,13 @@ public class AttackController : MonoBehaviour
     private GameObject Weapon;
     private Animator animator;
     private PlayerMovement movementController;
+    private InventoryController inventoryController;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         movementController = GetComponent<PlayerMovement>();
+        inventoryController = GetComponent<InventoryController>();
     }
 
     private void FixedUpdate() {
@@ -59,7 +61,13 @@ public class AttackController : MonoBehaviour
                     Shoot();
                 }
                 if (interactable != null){
-                    interactable.GetComponent<Interactable>().Action();
+                    if(interactable.tag=="Door"){
+                        interactable.GetComponent<DoorController>().OpenDoor();
+                        inventoryController.keys--;
+                    }
+                    else{
+                        interactable.GetComponent<Interactable>().Action();
+                    }
                 }
                 timeBtwAttackCounter=timeBtwAttack;  
             }
