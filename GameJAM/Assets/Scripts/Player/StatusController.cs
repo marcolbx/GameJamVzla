@@ -62,7 +62,8 @@ public class StatusController : MonoBehaviour
         onHazard = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
         onLift = Physics2D.OverlapCircle(transform.position,checkRadius,liftLayer);
         onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius,CollectableLayer);
-        if(onHazard == true){
+        Debug.Log(invulnerability);
+        if(onHazard == true && invulnerability==false){
             if(hearths>0 && invulnerability == false){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
                 float dot = Vector2.Dot(transform.right,col.gameObject.transform.right);

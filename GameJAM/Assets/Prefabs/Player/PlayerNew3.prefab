@@ -647,7 +647,7 @@ MonoBehaviour:
   - {fileID: 5670370932310569416, guid: 79392e5f41e3f104abb44e46c506a4de, type: 3}
   - {fileID: 8133923789288904650, guid: 79392e5f41e3f104abb44e46c506a4de, type: 3}
   - {fileID: 5407656843090688360, guid: 79392e5f41e3f104abb44e46c506a4de, type: 3}
-  invulnerableTime: 1
+  invulnerableTime: 2
   invulnerability: 0
   checkRadius: 0.5
   onHazard: 0
@@ -662,6 +662,10 @@ MonoBehaviour:
     m_Bits: 32768
   restore: 0
   staminaRecover: 20
+  liftLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  previousGravity: 0
 --- !u!114 &4102912315301727500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,6 +708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc770cfee89e3d3409cb6d9025c4c047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yoyoWeapon: 1
+  slingshotWeapon: 1
+  glassWeapon: 1
   controlerImage: {fileID: 0}
   equipedGlass: 0
   leftArms:
