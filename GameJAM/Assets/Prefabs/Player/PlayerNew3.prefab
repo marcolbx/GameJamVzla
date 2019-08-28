@@ -586,8 +586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpController: {fileID: 0}
-  wallCheckX: 0
-  wallCheckY: 0
+  wallCheckX: 0.3
+  wallCheckY: 0.3
   wall: {fileID: 817710861574005430}
   transitionTimer: 0.5
   walkingSpeed: 5
@@ -596,6 +596,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  gravityProportion: 7
 --- !u!114 &817710862182082593
 MonoBehaviour:
   m_ObjectHideFlags: 0

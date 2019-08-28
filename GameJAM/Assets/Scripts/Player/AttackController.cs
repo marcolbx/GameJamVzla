@@ -48,7 +48,7 @@ public class AttackController : MonoBehaviour
     void Update()
     {
         if (timeBtwAttackCounter<=0){
-            if(Input.GetKey(KeyCode.Space)){
+            if(Input.GetKeyDown(KeyCode.Space)){
                 animator.SetBool("Attack",true);
                 Collider2D interactable = Physics2D.OverlapBox(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,interactableLayer);
                 if(animator.GetBool("Yoyo")==true)
