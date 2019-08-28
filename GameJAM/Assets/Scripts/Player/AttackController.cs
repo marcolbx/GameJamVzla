@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
+    public float staminaPerBullet;
     public float bulletTime;
     public float offset;
     public Transform firePoint;
@@ -80,7 +81,7 @@ public class AttackController : MonoBehaviour
         StatusController controller = GetComponent<StatusController>();
         if(controller.stamina>0){
             Destroy(Instantiate(fireBolt, firePoint.position, firePoint.rotation),bulletTime);
-            controller.stamina -= 0.1f;
+            controller.stamina -= staminaPerBullet;
 
         }
     }

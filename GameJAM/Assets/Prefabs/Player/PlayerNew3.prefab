@@ -678,6 +678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b88adcca3c0c348b645533229e824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaPerBullet: 0.2
+  bulletTime: 0.5
   offset: -90
   firePoint: {fileID: 1605608631373294848}
   fireBolt: {fileID: 1710561109499738695, guid: 294ee9dffcc64634085592b82b4c2e8b,

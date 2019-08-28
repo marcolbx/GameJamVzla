@@ -2238,11 +2238,6 @@ PrefabInstance:
       propertyPath: transitionTimer
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4102912315301727500, guid: 4b6abea9eba76d742b64c43119621fe4,
-        type: 3}
-      propertyPath: bulletTime
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6abea9eba76d742b64c43119621fe4, type: 3}
 --- !u!1 &119716935
