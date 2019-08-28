@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
+    public float bulletTime;
     public float offset;
     public Transform firePoint;
     public GameObject fireBolt;
@@ -78,8 +79,9 @@ public class AttackController : MonoBehaviour
         
         StatusController controller = GetComponent<StatusController>();
         if(controller.stamina>0){
-            Instantiate(fireBolt, firePoint.position, firePoint.rotation);
+            Destroy(Instantiate(fireBolt, firePoint.position, firePoint.rotation),bulletTime);
             controller.stamina -= 0.1f;
+
         }
     }
     public void MeleeAttack(){
