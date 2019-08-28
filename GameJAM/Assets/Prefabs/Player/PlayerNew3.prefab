@@ -662,7 +662,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32768
   restore: 0
-  staminaRecover: 20
+  staminaRecover: 15
   liftLayer:
     serializedVersion: 2
     m_Bits: 16384
