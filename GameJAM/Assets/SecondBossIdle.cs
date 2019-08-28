@@ -15,7 +15,7 @@ public class SecondBossIdle : StateMachineBehaviour
         //Random
         timer = 5f;
        rand = Random.Range(1,5);
-            Debug.Log("Random" + rand);
+           // Debug.Log("Random" + rand);
             if(rand == 1)
        animator.SetInteger("Attack",1);
        else if(rand==2)

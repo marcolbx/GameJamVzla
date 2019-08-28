@@ -9946,8 +9946,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_Sprite: {fileID: -6383593028077055542, guid: 7f8c7bcfa0972bc48bda8a2f12dd028b,
     type: 3}
@@ -10027,8 +10027,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -3630715336776707437, guid: 7f8c7bcfa0972bc48bda8a2f12dd028b,
     type: 3}
@@ -10108,8 +10108,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Sprite: {fileID: -506799062480594922, guid: 7f8c7bcfa0972bc48bda8a2f12dd028b,
     type: 3}
@@ -10189,8 +10189,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -677852456134701518, guid: 7f8c7bcfa0972bc48bda8a2f12dd028b,
     type: 3}
@@ -10270,8 +10270,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_Sprite: {fileID: 5723553297636362406, guid: 7f8c7bcfa0972bc48bda8a2f12dd028b,
     type: 3}
@@ -10354,8 +10354,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1457666827
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 2609941704308559495, guid: 7f8c7bcfa0972bc48bda8a2f12dd028b,
     type: 3}

@@ -80,7 +80,7 @@ public class BossSecond : Enemy
         Debug.Log("DIE()");
         PlayerManager.instance.player.GetComponent<StatusController>().ObtainExp(this.experience);
         GameObject explosion = Instantiate(PS_Explosion,head.position,Quaternion.identity);
-        Destroy(gameObject,0.87f); // asi esta bien
+        Destroy(gameObject,3f); // asi esta bien
 
 
     }
