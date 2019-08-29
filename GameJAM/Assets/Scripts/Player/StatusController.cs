@@ -90,7 +90,7 @@ public class StatusController : MonoBehaviour
             }    
         }
         if(onCollectable == true && hearths>0){
-            col = Physics2D.OverlapCircle(transform.position,checkRadius*1.01f,CollectableLayer);
+            col = Physics2D.OverlapCircle(transform.position,checkRadius*0.5f,CollectableLayer);
             if(col.tag==("Hp")){
                 if(hearths<intialhearts){
                     playerHeal.Play();
