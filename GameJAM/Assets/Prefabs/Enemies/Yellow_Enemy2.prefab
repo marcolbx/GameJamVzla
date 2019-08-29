@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 2718958900234236909}
   - component: {fileID: 2718958900234236910}
   - component: {fileID: 2718958900234236911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Yellow_Enemy_Umbrella (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 2718958900601072084}
   - component: {fileID: 2718958900601072075}
   - component: {fileID: 2718958900601072085}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Yellow_Enemy_Umbrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}

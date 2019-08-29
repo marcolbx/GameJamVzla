@@ -7,7 +7,7 @@ public class YellowEnemyProjectile : MonoBehaviour
     Vector2 moveDirection;
     Transform player;
     public float speed = 5f;
-    Rigidbody2D rigidbody;
+    private Rigidbody2D rigidbody;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +20,9 @@ public class YellowEnemyProjectile : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    /* private void OnTriggerEnter2D(Collider2D other) {
     if(other.CompareTag("Player") && !other.isTrigger) 
     other.gameObject.GetComponent<StatusController>().TakeDamage();   
-    }
+    }*/
 
 }
