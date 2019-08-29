@@ -6,7 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
 
     public Dialogue dialogue;
-    public Transform player;
+   /*  public Transform player;
     private bool triggered = false;
     public GameObject canvasObject;
     // Start is called before the first frame update
@@ -32,9 +32,12 @@ public class DialogueTrigger : MonoBehaviour
         }
         
     }
-
+*/
     public void TriggerDialogue()
     {
+        if (Input.GetKey(KeyCode.Space))
+        {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        }
     }
 }
