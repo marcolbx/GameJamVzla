@@ -17,7 +17,7 @@ public class StatusController : MonoBehaviour
     public int hearths;
     public int intialhearts=5;
     [SerializeField] private float invulnerableTimeCounter=0;
-    public SpriteRenderer spriteRendHearth;
+    private SpriteRenderer spriteRendHearth;
     public Sprite[] spriteHearths;
     [SerializeField] private float invulnerableTime;
     public bool invulnerability;
@@ -53,6 +53,9 @@ public class StatusController : MonoBehaviour
         inventory = gameObject.GetComponent<InventoryController>();
         animator = gameObject.GetComponent<Animator>();
         previousGravity=rb.gravityScale;
+        GameObject ga= GameObject.FindGameObjectWithTag("Hearth");
+        spriteRendHearth = ga.GetComponent<SpriteRenderer>();
+        
     }
     // Update is called once per frame
     void Update()
@@ -89,7 +92,7 @@ public class StatusController : MonoBehaviour
                 playerHurtSound.Play();
             }    
         }
-        if(onCollectable == true && hearths>0){
+        if(onCollectable == true && hearths>0 && Physics2D.OverlapCircle(transform.position,checkRadius*0.5f,CollectableLayer)){
             col = Physics2D.OverlapCircle(transform.position,checkRadius*0.5f,CollectableLayer);
             if(col.tag==("Hp")){
                 if(hearths<intialhearts){

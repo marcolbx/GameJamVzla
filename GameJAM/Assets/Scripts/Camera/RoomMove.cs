@@ -40,7 +40,7 @@ public class RoomMove : MonoBehaviour
             cam.maxPosition += cameraChange;
       //  //    other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
             other.transform.position += playerChange;
-            cameraMov.justLoaded = false;
+            //cameraMov.justLoaded = false;
             if(needText)
             {
                 StartCoroutine(placeNameCo());

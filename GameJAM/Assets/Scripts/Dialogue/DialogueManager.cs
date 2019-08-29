@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public Animator animator;
     private Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
@@ -16,15 +17,17 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
-        sentences.Clear();
+        
+            animator.SetBool("isOpen", true);
+            nameText.text = dialogue.name;
+            sentences.Clear();
 
-        foreach ( string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-        DisplayNextSentence();
+            foreach ( string sentence in dialogue.sentences)
+            {
+                sentences.Enqueue(sentence);
+            }
+            DisplayNextSentence();
+        
     }
 
     public void DisplayNextSentence()
@@ -35,7 +38,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-      //  StopAllCoroutines();
+        StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
 
