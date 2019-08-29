@@ -61,7 +61,7 @@ public class AttackController : MonoBehaviour
                     Shoot();
                 }
                 if (interactable != null){
-                    if(interactable.tag=="Door" && inventoryController.keys>0){
+                    if(interactable.tag=="Door" && inventoryController.keys>0 ){
                         interactable.GetComponent<DoorController>().OpenDoor();
                         inventoryController.keys--;
                     }
