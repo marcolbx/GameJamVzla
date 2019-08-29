@@ -92,45 +92,46 @@ public class StatusController : MonoBehaviour
                 playerHurtSound.Play();
             }    
         }
-        if(onCollectable == true && hearths>0 && Physics2D.OverlapCircle(transform.position,checkRadius*0.9f,CollectableLayer)){
-            col = Physics2D.OverlapCircle(transform.position,checkRadius*0.5f,CollectableLayer);
-            if(col.tag==("Hp")){
-                if(hearths<intialhearts){
-                    playerHeal.Play();
-                    hearths++;
-                    spriteRendHearth.sprite = spriteHearths[hearths];
-                }
-                Destroy(col.gameObject);
-            }
-            else if(col.tag==("Poison")){
-                playerPoison.Play();
-                    hearths--;
-                    spriteRendHearth.sprite = spriteHearths[hearths];
+        if(onCollectable == true && hearths>0){
+            col = Physics2D.OverlapCircle(transform.position,checkRadius*0.7f,CollectableLayer);
+            if (col){
+                if(col.tag==("Hp")){
+                    if(hearths<intialhearts){
+                        playerHeal.Play();
+                        hearths++;
+                        spriteRendHearth.sprite = spriteHearths[hearths];
+                    }
                     Destroy(col.gameObject);
-            }
-            else if(col.tag==("Collectable"))
-            {
-                col = Physics2D.OverlapCircle(transform.position,checkRadius*0.9f,CollectableLayer);
-                playerCoin.Play();
-                col.gameObject.GetComponent<Money>().Obtain();
-                float money= col.gameObject.GetComponent<Money>().amount;
-                inventory.money +=money;
-            }
-            else if(col.tag==("Key"))
-            {
-                inventory.keys++;
-                Destroy(col.gameObject);
-            }
-            else if(col.tag == "WeaponYoyo"){
-                inventory.yoyoWeapon =true;
-                Destroy(col.gameObject);
+                }
+                else if(col.tag==("Poison")){
+                    playerPoison.Play();
+                        hearths--;
+                        spriteRendHearth.sprite = spriteHearths[hearths];
+                        Destroy(col.gameObject);
+                }
+                else if(col.tag==("Collectable"))
+                {
+                    playerCoin.Play();
+                    col.gameObject.GetComponent<Money>().Obtain();
+                    float money= col.gameObject.GetComponent<Money>().amount;
+                    inventory.money +=money;
+                }
+                else if(col.tag==("Key"))
+                {
+                    inventory.keys++;
+                    Destroy(col.gameObject);
+                }
+                else if(col.tag == "WeaponYoyo"){
+                    inventory.yoyoWeapon =true;
+                    Destroy(col.gameObject);
 
-            }
-            else if(col.tag == "WeaponSlingShot"){
-                inventory.slingshotWeapon=true;
-            }
-            else if(col.tag == "WeaponGlass"){
-                inventory.glassWeapon=true;
+                }
+                else if(col.tag == "WeaponSlingShot"){
+                    inventory.slingshotWeapon=true;
+                }
+                else if(col.tag == "WeaponGlass"){
+                    inventory.glassWeapon=true;
+                }
             }
         }
         if (onLift==true){
