@@ -18,7 +18,7 @@ public class DialogueTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if( Vector2.Distance(player.transform.position,this.transform.position) < 3)
+        if( Vector2.Distance(player.transform.position,this.transform.position) < 5f)
         {
             canvasObject.GetComponent<Canvas>().enabled = true;
             if(triggered == false)

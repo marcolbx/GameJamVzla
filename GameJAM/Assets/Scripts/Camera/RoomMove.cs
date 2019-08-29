@@ -13,6 +13,7 @@ public class RoomMove : MonoBehaviour
     public GameObject text;
     public Text placeText;
     public CameraMovement cameraMov;
+    [SerializeField] private bool isBossLVL = false;   //SOLO SI ES DEL BOSS ROOM #Hardcoded
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,8 @@ public class RoomMove : MonoBehaviour
         
         if(other.CompareTag("Player") && !other.isTrigger && other.gameObject.GetComponent<PlayerMovement>().transitionTimer>=0.2f)
         {
+            if(isBossLVL == false)
+            {
             Debug.Log("TRIGGERED");
             Debug.Log("Velocity"+other.GetComponent<Rigidbody2D>().velocity);
             cam.minPosition += cameraChange;
@@ -41,6 +44,22 @@ public class RoomMove : MonoBehaviour
             if(needText)
             {
                 StartCoroutine(placeNameCo());
+            }
+            }
+
+            else
+            {
+                Debug.Log("TRIGGERED");
+            Debug.Log("Velocity"+other.GetComponent<Rigidbody2D>().velocity);
+            cam.minPosition = new Vector2(0,0);
+            cam.maxPosition = new Vector2(0,0);
+      //  //    other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
+            other.transform.position += playerChange;
+            cameraMov.justLoaded = false;
+            if(needText)
+            {
+                StartCoroutine(placeNameCo());
+            }
             }
 
         }

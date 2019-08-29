@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
         pos.y = data.position[1];
         pos.z = data.position[2];
         transform.position = pos;
+
+        Debug.Log("Loaded PlayerData: " + pos);
+        Debug.Log("Loaded PlayerData: level=" + level);
     }
 
     public Vector3 SavedPlayerPosition()

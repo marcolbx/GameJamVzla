@@ -7,16 +7,20 @@ public class MusicManagerBoss : MonoBehaviour
     public AudioSource firstSong;
     public AudioSource secondSongIntro;
     public AudioSource secondSong;
+    public AudioSource typeWriterSound;
     public GameObject firstBoss;
     private float health;
     private float playedTimer = 0.5f;
+    private bool playedOnceFirstSong = false; 
     private bool playedOnce = false;
     private bool playedOnceSecond = false;
+    Transform player;
     // Start is called before the first frame update
     void Start()
     {
         secondSongIntro.Pause();
         secondSong.Pause();
+        player = PlayerManager.instance.player.transform;
     }
 
     // Update is called once per frame
@@ -24,6 +28,15 @@ public class MusicManagerBoss : MonoBehaviour
     {
         if(firstBoss != null)
         health = firstBoss.GetComponent<BossFirst>().health;
+
+        if(player != null)
+        if(Vector3.Distance(firstBoss.transform.position,player.position) < 5f && playedOnceFirstSong == false)
+        {
+            firstSong.Play();
+            typeWriterSound.Pause();
+            playedOnceFirstSong = true;
+        }
+
         if(health <= 0 && playedOnce==false && playedTimer == 0.5f)
         {
             secondSongIntro.Play();
