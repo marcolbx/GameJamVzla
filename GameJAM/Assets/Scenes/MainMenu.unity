@@ -4543,7 +4543,7 @@ PrefabInstance:
     - target: {fileID: 7861759870278703950, guid: 011da3ceda0a70f449a11f0c60d24a43,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7861759870278703951, guid: 011da3ceda0a70f449a11f0c60d24a43,
         type: 3}
@@ -4803,7 +4803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e22dc08bdeac84bb16cee21c22e1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: SampleScene
+  nextScene: Player Scene 2
 --- !u!1 &1633340558
 GameObject:
   m_ObjectHideFlags: 0
