@@ -6,7 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
 
     public Dialogue dialogue;
-    public Transform player;
+   /*  public Transform player;
     private bool triggered = false;
     public GameObject canvasObject;
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class DialogueTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if( Vector2.Distance(player.transform.position,this.transform.position) < 3)
+        if( Vector2.Distance(player.transform.position,this.transform.position) < 5f)
         {
             canvasObject.GetComponent<Canvas>().enabled = true;
             if(triggered == false)
@@ -32,9 +32,12 @@ public class DialogueTrigger : MonoBehaviour
         }
         
     }
-
+*/
     public void TriggerDialogue()
     {
+        if (Input.GetKey(KeyCode.Space))
+        {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        }
     }
 }

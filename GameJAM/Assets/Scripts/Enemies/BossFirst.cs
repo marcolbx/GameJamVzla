@@ -14,10 +14,13 @@ public class BossFirst : Enemy
     public GameObject healthBar;
     public GameObject boss2ndForm;
     public GameObject background;
+    [SerializeField] private float activationDistance =3f;
+    Transform player;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+        player = PlayerManager.instance.player.transform;
        // InstantiateProjectile();
     }
 
@@ -25,6 +28,13 @@ public class BossFirst : Enemy
     void Update()
     {
         base.Update();
+
+        if(Vector3.Distance(transform.position,player.position) < 5f)
+        {
+            animator.SetTrigger("Idle");
+            healthBar.SetActive(true);
+        }
+        
         if(move==true)
         InsideSpriteMask();
         if(move == false)
@@ -67,5 +77,12 @@ public class BossFirst : Enemy
     public void InstantiateInkEnemy()
     {
         GameObject enemy = Instantiate(inkEnemy,transform.position,Quaternion.identity);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        
+        Gizmos.DrawWireSphere(transform.position, activationDistance);
     }
 }
