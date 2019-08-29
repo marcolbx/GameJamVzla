@@ -618,7 +618,7 @@ MonoBehaviour:
   jumpforce: 7
   feetPos: {fileID: 817710861236594516}
   jumpTimeCounter: 0
-  jumpTime: 0.2
+  jumpTime: 0.18
   checkRadius: 0.1
   groundLayer:
     serializedVersion: 2
@@ -645,7 +645,6 @@ MonoBehaviour:
   hearths: 0
   intialhearts: 5
   invulnerableTimeCounter: 0
-  spriteRendHearth: {fileID: 0}
   spriteHearths:
   - {fileID: -8630923909508717717, guid: 79392e5f41e3f104abb44e46c506a4de, type: 3}
   - {fileID: -5731162285055332302, guid: 79392e5f41e3f104abb44e46c506a4de, type: 3}
@@ -700,7 +699,7 @@ MonoBehaviour:
   timeBtwAttackCounter: 0
   attackPos: {fileID: 1028597638088864122}
   attackRangeX: 1.2
-  attackRangeY: 1.29
+  attackRangeY: 1.5
   damage: 1
   enemyLayer:
     serializedVersion: 2
@@ -1589,7 +1588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7370077234987702407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.575, y: 0.301, z: 0}
+  m_LocalPosition: {x: 0.62, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 817710862182082620}

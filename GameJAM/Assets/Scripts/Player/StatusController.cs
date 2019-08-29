@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StatusController : MonoBehaviour
 {
@@ -69,7 +70,6 @@ public class StatusController : MonoBehaviour
         onHazard = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
         onLift = Physics2D.OverlapCircle(transform.position,checkRadius,liftLayer);
         onCollectable = Physics2D.OverlapCircle(transform.position,checkRadius,CollectableLayer);
-        Debug.Log(invulnerability);
         if(onHazard == true && invulnerability==false){
             if(hearths>0){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
@@ -93,7 +93,7 @@ public class StatusController : MonoBehaviour
             }    
         }
         if(onCollectable == true && hearths>0){
-            col = Physics2D.OverlapCircle(transform.position,checkRadius*0.7f,CollectableLayer);
+            col = Physics2D.OverlapCircle(transform.position,checkRadius*0.9f,CollectableLayer);
             if (col){
                 if(col.tag==("Hp")){
                     if(hearths<intialhearts){
@@ -143,7 +143,9 @@ public class StatusController : MonoBehaviour
             rb.gravityScale=previousGravity;
         }
         if (hearths<=0){
-            Destroy(this.gameObject);
+            SceneManager.LoadScene("MainMenu");
+            this.gameObject.SetActive(false);
+            
         }
         if(invulnerability == true){
             timer += Time.deltaTime;
