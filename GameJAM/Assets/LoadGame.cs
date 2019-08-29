@@ -21,10 +21,18 @@ public class LoadGame : MonoBehaviour
     public void LoadGameScene()
     {
         Debug.Log("Player.level= " +  player.level);
+        if(player.level == 0)
+        SceneManager.LoadScene("Player Scene 2");
+
+        if(player.level == 1)
+        SceneManager.LoadScene("2ndLevel");
+
         if(player.level == 3)
         SceneManager.LoadScene("BossScene");
 
-        if(player.level == 0)
-        SceneManager.LoadScene("Player Scene 2");
+      //  if(player.level == 4)
+      //  SceneManager.LoadScene("BossScene"); //Pones el nombre de la Scene !
+
+        
     }
 }
