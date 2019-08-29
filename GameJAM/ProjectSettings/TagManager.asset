@@ -24,6 +24,7 @@ TagManager:
   - Waypoint2
   - WaypointCentral
   - Door
+  - Hearth
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ public class RoomMove : MonoBehaviour
     public string placeName;
     public GameObject text;
     public Text placeText;
-    public CameraMovement cameraMov;
+    //public CameraMovement cameraMov;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,7 @@ public class RoomMove : MonoBehaviour
             cam.maxPosition += cameraChange;
       //  //    other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
             other.transform.position += playerChange;
-            cameraMov.justLoaded = false;
+            //cameraMov.justLoaded = false;
             if(needText)
             {
                 StartCoroutine(placeNameCo());
