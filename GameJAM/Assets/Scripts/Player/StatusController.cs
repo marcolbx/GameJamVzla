@@ -92,7 +92,7 @@ public class StatusController : MonoBehaviour
                 playerHurtSound.Play();
             }    
         }
-        if(onCollectable == true && hearths>0 && Physics2D.OverlapCircle(transform.position,checkRadius*0.5f,CollectableLayer)){
+        if(onCollectable == true && hearths>0 && Physics2D.OverlapCircle(transform.position,checkRadius*0.9f,CollectableLayer)){
             col = Physics2D.OverlapCircle(transform.position,checkRadius*0.5f,CollectableLayer);
             if(col.tag==("Hp")){
                 if(hearths<intialhearts){
@@ -110,6 +110,7 @@ public class StatusController : MonoBehaviour
             }
             else if(col.tag==("Collectable"))
             {
+                col = Physics2D.OverlapCircle(transform.position,checkRadius*0.9f,CollectableLayer);
                 playerCoin.Play();
                 col.gameObject.GetComponent<Money>().Obtain();
                 float money= col.gameObject.GetComponent<Money>().amount;
