@@ -15,6 +15,7 @@ public class BossSecond : Enemy
     public Transform head;
     public GameObject healthBar;
     public GameObject particles;
+    public SceneTransition transition;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,11 @@ public class BossSecond : Enemy
                 completeHealth = true;
             }
             
+        }
+
+        if(health <= 0)
+        {
+            transition.LoadNextScene();
         }
         
 

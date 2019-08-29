@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour
     public string sceneName;
     private bool triggered = false;
     private bool triggeredOnce = false;
+    [SerializeField] private bool isBossLvl = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +33,28 @@ public class SceneTransition : MonoBehaviour
     IEnumerator LoadScene()
     {
         if(transitionAnim!=null)
+        {
+            if(isBossLvl == true)
+            yield return new WaitForSeconds(4f);
             transitionAnim.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
+        }
+            
+            if(isBossLvl == false)
+        yield return new WaitForSeconds(0.9f);
+        else
+        {
+            yield return new WaitForSeconds(5f);
+        }
         SceneManager.LoadScene(sceneName);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player") && !other.isTrigger)
+        triggered = true;
+    }
+
+    public void LoadNextScene()
+    {
         triggered = true;
     }
 }

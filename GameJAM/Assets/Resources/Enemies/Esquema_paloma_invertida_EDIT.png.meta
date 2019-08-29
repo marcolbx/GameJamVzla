@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: b1db2d05b702eb145acd97bcc7cb28be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7855572670229692087
+    second: Paloma_Head
+  - first:
+      213: -8976238499908939007
+    second: Esquema_paloma_invertida_EDIT_1
+  - first:
+      213: 6940239170488421533
+    second: Paloma_Wing
+  - first:
+      213: 7460985344255864887
+    second: Dragon_Head
+  - first:
+      213: -1825512563753517886
+    second: Paloma_Chest
+  - first:
+      213: -3802561944939045057
+    second: Dragonito
+  - first:
+      213: -8696971417757247777
+    second: Dragon_LeftWing
+  - first:
+      213: 8896444954782398989
+    second: Dragon_RightWing
+  - first:
+      213: 7398544376925548419
+    second: Dragon_Chest
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Paloma_Head
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2339
+        width: 592
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ec1bf3b37110542a8de9beb341d622
+      internalID: -7855572670229692087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esquema_paloma_invertida_EDIT_1
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1530
+        width: 526
+        height: 1289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46554dbe22a94fb4483eabb359442485
+      internalID: -8976238499908939007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paloma_Wing
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 1589
+        width: 822
+        height: 1171
+      alignment: 9
+      pivot: {x: 0.18044814, y: 0.11020833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994ecdbae760d854e8cbfe87ae033b87
+      internalID: 6940239170488421533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_Head
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 945
+        width: 692
+        height: 603
+      alignment: 9
+      pivot: {x: 0.910697, y: 0.29304066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfff69f08d2d2244c940501b8ecfd018
+      internalID: 7460985344255864887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paloma_Chest
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1530
+        width: 1187
+        height: 702
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4280b9b0d695d448c4199f0d5e6cfb
+      internalID: -1825512563753517886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragonito
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 945
+        width: 245
+        height: 146
+      alignment: 9
+      pivot: {x: 0.83394253, y: 0.23455644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3888cf4a9b4d5aa4fb580270448c230e
+      internalID: -3802561944939045057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_LeftWing
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 127
+        width: 622
+        height: 1224
+      alignment: 9
+      pivot: {x: 0.79502404, y: 0.9432748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36e46b6dd5a1d24282fd2c711dedc9d
+      internalID: -8696971417757247777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_RightWing
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 228
+        width: 731
+        height: 1165
+      alignment: 9
+      pivot: {x: 0.24205528, y: 0.06754247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e944923722475146945bc4f2e2ed5b6
+      internalID: 8896444954782398989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_Chest
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 19
+        width: 1130
+        height: 802
+      alignment: 9
+      pivot: {x: 0.38948974, y: 0.6825528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f341fb8980e0d488da364c2456be0b
+      internalID: 7398544376925548419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
