@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yoyoWeapon: 1
-  slingshotWeapon: 0
+  slingshotWeapon: 1
   glassWeapon: 1
   controlerImage: {fileID: 0}
   equipedGlass: 0
