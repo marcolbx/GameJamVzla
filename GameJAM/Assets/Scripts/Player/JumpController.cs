@@ -39,13 +39,13 @@ public class JumpController : MonoBehaviour
         else{
             animator.SetBool("OnAir",true);
         }
-        if ((Input.GetKeyDown(KeyCode.X)|| Input.GetKeyDown(KeyCode.UpArrow))&& onGround ==true && pm.isWall==false){ 
+        if ((Input.GetKeyDown(KeyCode.X))&& onGround ==true && pm.isWall==false){ 
             animator.SetBool("Jumping",true);  
             animator.SetBool("Fall",false);
             rb.velocity = Vector2.up * jumpforce;
             jumping= true;
         }
-        if  ((Input.GetKey(KeyCode.X)|| Input.GetKeyDown(KeyCode.UpArrow)) && jumping==true && pm.isWall==false){
+        if  ((Input.GetKey(KeyCode.X)) && jumping==true && pm.isWall==false){
             if(jumpTimeCounter > 0){
                 animator.SetBool("Jumping",true);  
                 animator.SetBool("Fall",false);
@@ -53,7 +53,7 @@ public class JumpController : MonoBehaviour
                 jumpTimeCounter -= Time.deltaTime;
             }
         }
-        if  (Input.GetKeyUp(KeyCode.X)|| Input.GetKeyDown(KeyCode.UpArrow)){
+        if  (Input.GetKeyUp(KeyCode.X)){
             jumping = false;
         }
     }

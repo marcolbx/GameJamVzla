@@ -695,7 +695,7 @@ MonoBehaviour:
     type: 3}
   knockbackEnemyForcex: 100
   knockbackEnemyForcey: 4
-  timeBtwAttack: 0.2
+  timeBtwAttack: 0.25
   timeBtwAttackCounter: 0
   attackPos: {fileID: 1028597638088864122}
   attackRangeX: 1.2
