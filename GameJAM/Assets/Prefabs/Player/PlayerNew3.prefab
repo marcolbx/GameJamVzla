@@ -626,6 +626,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 10496
   jumping: 0
+  firstTime: 1
 --- !u!114 &4102912315301727501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +711,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   yoyoSound: {fileID: 8590570985137133955}
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 1499714816514654681}
 --- !u!114 &4995507536910727436
 MonoBehaviour:
   m_ObjectHideFlags: 0

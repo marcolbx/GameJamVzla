@@ -16,6 +16,7 @@ public class JumpController : MonoBehaviour
 
     private Animator animator;
     private PlayerMovement pm;
+    public bool firstTime=true;
 
     // Start is called before the first frame update
     void Start()
@@ -33,13 +34,20 @@ public class JumpController : MonoBehaviour
             animator.SetBool("Jumping",false);
             animator.SetBool("Fall",true);
             animator.SetBool("OnAir",false);
-            animator.SetBool("Fall",true);
+            if(firstTime==true)
+            {
+                animator.SetBool("Fall",true);
+                firstTime=false;
+            }
+            else
+                animator.SetBool("Fall",false);
             jumpTimeCounter = jumpTime;
         }
         else{
             animator.SetBool("OnAir",true);
         }
         if ((Input.GetKeyDown(KeyCode.X))&& onGround ==true && pm.isWall==false){ 
+            
             animator.SetBool("Jumping",true);  
             animator.SetBool("Fall",false);
             rb.velocity = Vector2.up * jumpforce;
@@ -54,6 +62,7 @@ public class JumpController : MonoBehaviour
             }
         }
         if  (Input.GetKeyUp(KeyCode.X)){
+            firstTime=true;
             jumping = false;
         }
     }
