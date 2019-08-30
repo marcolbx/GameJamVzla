@@ -93,6 +93,10 @@ public class AttackController : MonoBehaviour
                 }
                 timeBtwAttackCounter=timeBtwAttack;  
             }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                animator.SetBool("Attack",false);
+            }
             
         }
         else{
