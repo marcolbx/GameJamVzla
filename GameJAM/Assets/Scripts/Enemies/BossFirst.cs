@@ -16,6 +16,7 @@ public class BossFirst : Enemy
     public GameObject background;
     [SerializeField] private float activationDistance =3f;
     Transform player;
+    //public AudioSource letterAtk;
     // Start is called before the first frame update
     void Start()
     {
