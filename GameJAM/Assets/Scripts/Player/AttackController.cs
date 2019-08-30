@@ -23,12 +23,14 @@ public class AttackController : MonoBehaviour
     private Animator animator;
     private PlayerMovement movementController;
     private InventoryController inventoryController;
+    private StatusController sc;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         movementController = GetComponent<PlayerMovement>();
         inventoryController = GetComponent<InventoryController>();
+        sc = GetComponent<StatusController>();
     }
 
     private void FixedUpdate() {
@@ -64,6 +66,18 @@ public class AttackController : MonoBehaviour
                     if(interactable.tag=="Door" && inventoryController.keys>0 ){
                         interactable.GetComponent<DoorController>().OpenDoor();
                         inventoryController.keys--;
+                    }
+                    else if(interactable.tag=="Hp")
+                    {
+                        if(sc.hearths++ < sc.intialhearts)
+                        {
+                            sc.hearths++;
+                            sc.playerHeal.Play();
+                            Destroy(interactable.gameObject);
+                        }
+                    }
+                    else if(interactable.tag=="ItemSlingShot"){
+
                     }
                     else{
                         interactable.GetComponent<Interactable>().Action();

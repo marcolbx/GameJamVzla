@@ -26,6 +26,7 @@ TagManager:
   - Door
   - Hearth
   - Chest
+  - ItemSlingShot
   layers:
   - Default
   - TransparentFX
