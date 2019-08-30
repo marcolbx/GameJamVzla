@@ -29,6 +29,6 @@ public class DragonEnemy : Enemy
 
     void InstantiateProjectile()
     {
-        Destroy(Instantiate(projectile,transform.position,Quaternion.identity),7f);
+        Destroy(Instantiate(projectile,transform.position,Quaternion.identity),5f);
     }
 }
