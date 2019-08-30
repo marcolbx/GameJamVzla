@@ -30,15 +30,21 @@ public class MusicManagerBoss : MonoBehaviour
         health = firstBoss.GetComponent<BossFirst>().health;
 
         if(player != null)
-        if(Vector3.Distance(firstBoss.transform.position,player.position) < 5f && playedOnceFirstSong == false)
         {
+            if(playedOnceFirstSong == false)
+            if(Vector3.Distance(firstBoss.transform.position,player.position) < 5f)
+        {
+            Debug.Log("1stSONG");
             firstSong.Play();
             typeWriterSound.Pause();
             playedOnceFirstSong = true;
         }
+        }
+        
 
         if(health <= 0 && playedOnce==false && playedTimer == 0.5f)
         {
+            Debug.Log("2ndSONG");
             secondSongIntro.Play();
             firstSong.Pause();
             playedTimer -= Time.deltaTime;
@@ -47,7 +53,7 @@ public class MusicManagerBoss : MonoBehaviour
         }
         if(secondSongIntro.isPlaying == false && playedOnce ==true && playedOnceSecond == false)
         {
-            Debug.Log("2ndSONG");
+            Debug.Log("3rdSONG");
             secondSong.PlayScheduled(75f);
             playedOnceSecond = true;
         }
