@@ -17,6 +17,8 @@ public class JumpController : MonoBehaviour
     private Animator animator;
     private PlayerMovement pm;
     public bool firstTime=true;
+    public AudioSource jumpSound;
+    public bool playSound;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class JumpController : MonoBehaviour
         onGround = Physics2D.OverlapCircle(feetPos.position,checkRadius,groundLayer);
         if(onGround == true){
             animator.SetBool("Jumping",false);
+            playSound=true;
             animator.SetBool("Fall",true);
             animator.SetBool("OnAir",false);
             if(firstTime==true)
@@ -45,9 +48,9 @@ public class JumpController : MonoBehaviour
         }
         else{
             animator.SetBool("OnAir",true);
+            firstTime=true;
         }
         if ((Input.GetKeyDown(KeyCode.X))&& onGround ==true && pm.isWall==false){ 
-            
             animator.SetBool("Jumping",true);  
             animator.SetBool("Fall",false);
             rb.velocity = Vector2.up * jumpforce;
@@ -55,6 +58,11 @@ public class JumpController : MonoBehaviour
         }
         if  ((Input.GetKey(KeyCode.X)) && jumping==true && pm.isWall==false){
             if(jumpTimeCounter > 0){
+                if(playSound==true)
+                {
+                    jumpSound.Play();
+                    playSound=false;
+                }
                 animator.SetBool("Jumping",true);  
                 animator.SetBool("Fall",false);
                 rb.velocity = Vector2.up * jumpforce;
