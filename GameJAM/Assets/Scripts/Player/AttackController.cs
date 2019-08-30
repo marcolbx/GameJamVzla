@@ -24,6 +24,8 @@ public class AttackController : MonoBehaviour
     private PlayerMovement movementController;
     private InventoryController inventoryController;
     private StatusController sc;
+    public AudioSource yoyoSound;
+    public AudioSource doorSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +66,7 @@ public class AttackController : MonoBehaviour
                 }
                 if (interactable != null){
                     if(interactable.tag=="Door" && inventoryController.keys>0 ){
+                        doorSound.Play();
                         interactable.GetComponent<DoorController>().OpenDoor();
                         inventoryController.keys--;
                     }
@@ -113,6 +116,7 @@ public class AttackController : MonoBehaviour
         }
     }
     public void MeleeAttack(){
+        yoyoSound.Play();
         Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,enemyLayer);
         if(enemiesToDamage.Length>0){
             for (int i=0; i < enemiesToDamage.Length; i++){
