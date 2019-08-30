@@ -8,7 +8,7 @@ public class DragonProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this,8f);
+       
     }
 
     // Update is called once per frame
@@ -16,4 +16,9 @@ public class DragonProjectile : MonoBehaviour
     {
         transform.Translate(Vector3.left * Time.deltaTime * speed, Camera.main.transform);
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        Destroy(this);
+    }
+
 }

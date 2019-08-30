@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
             enemy.gameObject.GetComponent<Enemy>().TakeDamage(damage);
             Destroy(gameObject);
         }
-        else{
+        else if(enemy.gameObject.tag != "Poison" && enemy.gameObject.tag != "Hp" && enemy.gameObject.tag != "Collectable"){
             Destroy(gameObject); 
         }
     }
