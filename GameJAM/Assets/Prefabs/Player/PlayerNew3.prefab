@@ -560,7 +560,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &817710862182082592
 CapsuleCollider2D:
@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yoyoWeapon: 1
-  slingshotWeapon: 1
+  slingshotWeapon: 0
   glassWeapon: 1
   controlerImage: {fileID: 0}
   equipedGlass: 0

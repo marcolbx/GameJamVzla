@@ -69,15 +69,20 @@ public class AttackController : MonoBehaviour
                     }
                     else if(interactable.tag=="Hp")
                     {
-                        if(sc.hearths++ < sc.intialhearts)
+                        if(sc.hearths++ < sc.intialhearts && inventoryController.money>=100)
                         {
+                            inventoryController.money-=100;
                             sc.hearths++;
                             sc.playerHeal.Play();
                             Destroy(interactable.gameObject);
                         }
                     }
                     else if(interactable.tag=="ItemSlingShot"){
-
+                        if(inventoryController.slingshotWeapon==false &&  inventoryController.money>=500){
+                            inventoryController.slingshotWeapon=true;
+                            inventoryController.money-=500;
+                            Destroy(interactable.gameObject);
+                        }
                     }
                     else{
                         interactable.GetComponent<Interactable>().Action();

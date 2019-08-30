@@ -7,8 +7,8 @@ using TMPro;
 public class InventoryController : MonoBehaviour
 {
     public bool yoyoWeapon=true;
-    public bool slingshotWeapon=true;
-    public bool glassWeapon=true;
+    public bool slingshotWeapon;
+    public bool glassWeapon=false;
     public SpriteRenderer controlerImage;
     public bool equipedGlass=false;
     private Animator animator;
