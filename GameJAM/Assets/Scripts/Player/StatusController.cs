@@ -43,6 +43,7 @@ public class StatusController : MonoBehaviour
     public AudioSource playerCoin;
     public AudioSource playerHeal;
     public AudioSource playerPoison;
+    private JumpController jc;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +57,7 @@ public class StatusController : MonoBehaviour
         previousGravity=rb.gravityScale;
         GameObject ga= GameObject.FindGameObjectWithTag("Hearth");
         spriteRendHearth = ga.GetComponent<SpriteRenderer>();
+        jc= GetComponent<JumpController>();
         
     }
     // Update is called once per frame
@@ -74,6 +76,7 @@ public class StatusController : MonoBehaviour
             if(hearths>0){
                 col = Physics2D.OverlapCircle(transform.position,checkRadius,hazardLayer);
                 float dot = Vector2.Dot(transform.right,col.gameObject.transform.right);
+                jc.firstTime=true;
                 if(dot < -0.998){
                     rb.AddForce(new Vector3(knockbackforcex ,0,0));
                     rb.velocity = Vector2.up * knockbackforcey;
@@ -136,6 +139,7 @@ public class StatusController : MonoBehaviour
         }
         if (onLift==true){
             animator.SetBool("Lift",true);
+            jc.firstTime=true;
             rb.gravityScale=5;
         }
         else{
@@ -236,5 +240,8 @@ public class StatusController : MonoBehaviour
         else{
             newExperience +=exp;
         }
+    }
+    public void RefreshHealth(){
+        spriteRendHearth.sprite = spriteHearths[hearths];
     }
 }

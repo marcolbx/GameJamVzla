@@ -26,6 +26,7 @@ public class AttackController : MonoBehaviour
     private StatusController sc;
     public AudioSource yoyoSound;
     public AudioSource doorSound;
+    public AudioSource slingShotSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,10 +73,11 @@ public class AttackController : MonoBehaviour
                     }
                     else if(interactable.tag=="Hp")
                     {
-                        if(sc.hearths++ < sc.intialhearts && inventoryController.money>=100)
+                        if(sc.hearths< sc.intialhearts && inventoryController.money>=100)
                         {
                             inventoryController.money-=100;
                             sc.hearths++;
+                            sc.RefreshHealth();
                             sc.playerHeal.Play();
                             Destroy(interactable.gameObject);
                         }
@@ -111,9 +113,9 @@ public class AttackController : MonoBehaviour
     }
     
     private void Shoot(){
-        
         StatusController controller = GetComponent<StatusController>();
         if(controller.stamina>0){
+            slingShotSound.Play();
             Destroy(Instantiate(fireBolt, firePoint.position, firePoint.rotation),bulletTime);
             controller.stamina -= staminaPerBullet;
 

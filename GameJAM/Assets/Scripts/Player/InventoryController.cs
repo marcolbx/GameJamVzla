@@ -29,9 +29,13 @@ public class InventoryController : MonoBehaviour
     private StatusController statusController;
     private GameObject[] wires;
     public int weapon=1;
+    public Player pl;
     // Start is called before the first frame update
     void Start()
     {
+        pl=GetComponent<Player>();
+        if(pl.level==0)
+            slingshotWeapon=false;
         controlerImage.enabled = true;
         animator = GetComponent<Animator>();
         rightArm = GameObject.FindGameObjectWithTag("RightArm");
