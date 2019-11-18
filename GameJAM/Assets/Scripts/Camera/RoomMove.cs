@@ -34,8 +34,8 @@ public class RoomMove : MonoBehaviour
         {
             if(isBossLVL == false)
             {
-            Debug.Log("TRIGGERED");
-            Debug.Log("Velocity"+other.GetComponent<Rigidbody2D>().velocity);
+            //Debug.Log("TRIGGERED");
+            //Debug.Log("Velocity"+other.GetComponent<Rigidbody2D>().velocity);
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
       //  //    other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
@@ -49,8 +49,8 @@ public class RoomMove : MonoBehaviour
 
             else
             {
-                Debug.Log("TRIGGERED");
-            Debug.Log("Velocity"+other.GetComponent<Rigidbody2D>().velocity);
+                //Debug.Log("TRIGGERED");
+            //Debug.Log("Velocity"+other.GetComponent<Rigidbody2D>().velocity);
             cam.minPosition = new Vector2(0,0);
             cam.maxPosition = new Vector2(0,0);
       //  //    other.gameObject.GetComponent<PlayerMovement>().transitionTimer = 0;
