@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
+
+/* Nombre:  PlayerData
+ * Descripcion: Clase que contiene las variables a guardar del player en persistencia.
+ * 
+ */
 public class PlayerData
 {
         public int level;
