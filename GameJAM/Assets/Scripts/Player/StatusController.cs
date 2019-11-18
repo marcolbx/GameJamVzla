@@ -144,7 +144,7 @@ public class StatusController : MonoBehaviour
         }
         else{
             animator.SetBool("Lift",false);
-            rb.gravityScale=previousGravity;
+            //rb.gravityScale=previousGravity;
         }
         if (hearths<=0){
             SceneManager.LoadScene("MainMenu");

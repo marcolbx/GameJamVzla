@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float initialGravity;
     public float gravityProportion;
+    
+    private float wallfly;
 
     private Animator animator;
     // Start is called before the first frame update
@@ -37,9 +39,14 @@ public class PlayerMovement : MonoBehaviour
             transitionTimer +=Time.deltaTime;
         }
         if(isWall){
+            jumpController.jumpTimeCounter=jumpController.jumpTime;
             rb.gravityScale = initialGravity/gravityProportion;
-            if(!jumpController.onGround && jumpController.jumpTimeCounter<jumpController.jumpTime/2)
-                rb.velocity = Vector2.down;
+            if(wasOnWall==false)
+                rb.velocity=new Vector2(0,0);
+            /*if(jumpController.jumpTimeCounter>0)
+                rb.velocity=new Vector2(0,0);*/
+            //if(!jumpController.onGround && jumpController.jumpTimeCounter<jumpController.jumpTime/2)
+                //rb.velocity = Vector2.down;
             wasOnWall = true;
             animator.SetBool("Walking",false);
         }
@@ -50,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
                 jumpController.jumpTimeCounter=jumpController.jumpTime;
             }
             wasOnWall = false;
+            Debug.Log("ya no estoy en pared");
         }
         if(Input.GetKey(KeyCode.RightArrow)){
             transform.eulerAngles = new Vector3 (0,0,0);
