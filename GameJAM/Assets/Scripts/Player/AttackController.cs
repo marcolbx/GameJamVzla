@@ -27,6 +27,9 @@ public class AttackController : MonoBehaviour
     public AudioSource yoyoSound;
     public AudioSource doorSound;
     public AudioSource slingShotSound;
+
+    private bool ableToAtk = true;
+    private float atkRate = 0.4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +61,7 @@ public class AttackController : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Space)){
                 animator.SetBool("Attack",true);
                 Collider2D interactable = Physics2D.OverlapBox(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,interactableLayer);
+                if(ableToAtk)
                 if(animator.GetBool("Yoyo")==true)
                 {
                     MeleeAttack();
@@ -95,16 +99,16 @@ public class AttackController : MonoBehaviour
                 }
                 timeBtwAttackCounter=timeBtwAttack;  
             }
-            else if (Input.GetKeyDown(KeyCode.Space))
-            {
-                animator.SetBool("Attack",false);
-            }
+            
             
         }
         else{
             timeBtwAttackCounter -= Time.deltaTime;
             animator.SetBool("Attack",false);
-        } 
+        }
+        atkRate += Time.deltaTime;
+        if (atkRate > 0.4f)
+            ableToAtk = true;
     }
 
     void OnDrawGizmosSelected(){
@@ -122,7 +126,9 @@ public class AttackController : MonoBehaviour
         }
     }
     public void MeleeAttack(){
+        ableToAtk = false;
         yoyoSound.Play();
+        atkRate = 0;
         Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position,new Vector2(attackRangeX,attackRangeY),0,enemyLayer);
         if(enemiesToDamage.Length>0){
             for (int i=0; i < enemiesToDamage.Length; i++){
@@ -138,5 +144,13 @@ public class AttackController : MonoBehaviour
                 }
             }
         }
+        AttackRate();
+    }
+
+    public bool AttackRate()
+    {
+        if(atkRate > 0.4f)
+        ableToAtk = true;
+        return ableToAtk;
     }
 }
