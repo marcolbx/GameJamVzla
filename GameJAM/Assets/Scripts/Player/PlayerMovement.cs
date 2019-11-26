@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float walkingSpeed=1f;
     public float horizontal=1;
     public bool isWall;
-    private bool wasOnWall;
+    public bool wasOnWall;
     public LayerMask groundLayer;
     private Rigidbody2D rb;
     private float initialGravity;
@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         isWall = Physics2D.OverlapBox(wall.position,new Vector2(wallCheckX,wallCheckY),0,groundLayer);
         if(transitionTimer <=0.5){
@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         if(isWall){
             jumpController.jumpTimeCounter=jumpController.jumpTime;
             rb.gravityScale = initialGravity/gravityProportion;
+            jumpController.allowWallJump=true;
             if(wasOnWall==false)
                 rb.velocity=new Vector2(0,0);
             /*if(jumpController.jumpTimeCounter>0)
@@ -51,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Walking",false);
         }
         else{
+            jumpController.allowWallJump=false;
             rb.gravityScale = initialGravity;
             if(wasOnWall == true){
                 jumpController.jumping=true;

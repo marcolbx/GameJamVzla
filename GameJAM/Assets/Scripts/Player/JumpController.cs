@@ -21,8 +21,9 @@ public class JumpController : MonoBehaviour
     public bool playSound;
     [SerializeField] private float groundRangeX;
     [SerializeField] private float groundRangeY;
+    public float jumpWallCounter;
 
-    [SerializeField] private bool allowWallJump;
+    public bool allowWallJump;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class JumpController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         onGround = Physics2D.OverlapBox(feetPos.position,new Vector2(groundRangeX,groundRangeY),0,groundLayer);
         if(onGround == true){
@@ -63,10 +64,11 @@ public class JumpController : MonoBehaviour
             else if(allowWallJump==true)
             {
                 rb.velocity = Vector2.up * jumpforce*2;
-                transform.Translate(-1f,0,0);
+                rb.AddForce( new Vector2(jumpforce*100*-1*pm.horizontal,0));
+                allowWallJump=false;
+                jumpWallCounter=jumpTime;
             }
             jumping= true;
-            allowWallJump=false;
         }
         if  ((Input.GetKey(KeyCode.X)) && jumping==true && pm.isWall==false){
             if(jumpTimeCounter > 0){
@@ -81,12 +83,17 @@ public class JumpController : MonoBehaviour
                 jumpTimeCounter -= Time.deltaTime;
             }
         }
+        if(allowWallJump==false && pm.wasOnWall==true){
+            jumpWallCounter-=Time.deltaTime;
+        }
+        if(jumpWallCounter<0){
+            rb.velocity=new Vector2(0,0);
+        }
         if  (Input.GetKeyUp(KeyCode.X)){
             if(pm.isWall==true)
                 rb.velocity=new Vector2(0,0);
             firstTime=true;
             jumping = false;
-            allowWallJump=true;
         }
     }
 
